@@ -16,5 +16,10 @@ namespace IOOP_Assignment_Group_Adlina
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
