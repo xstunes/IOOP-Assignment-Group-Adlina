@@ -93,24 +93,27 @@
             // 
             // TbLoginUserEmail
             // 
+            this.TbLoginUserEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TbLoginUserEmail.Location = new System.Drawing.Point(219, 180);
             this.TbLoginUserEmail.Name = "TbLoginUserEmail";
-            this.TbLoginUserEmail.Size = new System.Drawing.Size(338, 22);
+            this.TbLoginUserEmail.Size = new System.Drawing.Size(338, 24);
             this.TbLoginUserEmail.TabIndex = 5;
             // 
             // TbLoginPass
             // 
+            this.TbLoginPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TbLoginPass.Location = new System.Drawing.Point(219, 249);
             this.TbLoginPass.Name = "TbLoginPass";
-            this.TbLoginPass.Size = new System.Drawing.Size(338, 22);
+            this.TbLoginPass.Size = new System.Drawing.Size(338, 24);
             this.TbLoginPass.TabIndex = 6;
             // 
             // LlForgotPass
             // 
             this.LlForgotPass.AutoSize = true;
-            this.LlForgotPass.Location = new System.Drawing.Point(448, 274);
+            this.LlForgotPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LlForgotPass.Location = new System.Drawing.Point(421, 276);
             this.LlForgotPass.Name = "LlForgotPass";
-            this.LlForgotPass.Size = new System.Drawing.Size(109, 16);
+            this.LlForgotPass.Size = new System.Drawing.Size(136, 20);
             this.LlForgotPass.TabIndex = 7;
             this.LlForgotPass.TabStop = true;
             this.LlForgotPass.Text = "Forgot Password";

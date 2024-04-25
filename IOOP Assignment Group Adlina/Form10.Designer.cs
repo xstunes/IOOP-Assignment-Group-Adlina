@@ -106,9 +106,10 @@
             // 
             // TbNewEmail
             // 
+            this.TbNewEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TbNewEmail.Location = new System.Drawing.Point(272, 259);
             this.TbNewEmail.Name = "TbNewEmail";
-            this.TbNewEmail.Size = new System.Drawing.Size(265, 22);
+            this.TbNewEmail.Size = new System.Drawing.Size(265, 24);
             this.TbNewEmail.TabIndex = 31;
             // 
             // Form10

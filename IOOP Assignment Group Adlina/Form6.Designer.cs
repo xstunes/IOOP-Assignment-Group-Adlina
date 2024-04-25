@@ -79,9 +79,10 @@
             // 
             // TbUserID
             // 
+            this.TbUserID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TbUserID.Location = new System.Drawing.Point(262, 206);
             this.TbUserID.Name = "TbUserID";
-            this.TbUserID.Size = new System.Drawing.Size(280, 22);
+            this.TbUserID.Size = new System.Drawing.Size(280, 24);
             this.TbUserID.TabIndex = 16;
             // 
             // BtnDelete
