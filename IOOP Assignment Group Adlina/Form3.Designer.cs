@@ -34,7 +34,7 @@
             this.RbtnAddNew = new System.Windows.Forms.RadioButton();
             this.RbtnViewUsers = new System.Windows.Forms.RadioButton();
             this.RbtnDeleteUser = new System.Windows.Forms.RadioButton();
-            this.BtnNext = new System.Windows.Forms.Button();
+            this.BtnNext1 = new System.Windows.Forms.Button();
             this.BtnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -71,7 +71,7 @@
             // RbtnAddNew
             // 
             this.RbtnAddNew.AutoSize = true;
-            this.RbtnAddNew.Location = new System.Drawing.Point(287, 179);
+            this.RbtnAddNew.Location = new System.Drawing.Point(320, 205);
             this.RbtnAddNew.Name = "RbtnAddNew";
             this.RbtnAddNew.Size = new System.Drawing.Size(115, 20);
             this.RbtnAddNew.TabIndex = 7;
@@ -82,7 +82,7 @@
             // RbtnViewUsers
             // 
             this.RbtnViewUsers.AutoSize = true;
-            this.RbtnViewUsers.Location = new System.Drawing.Point(287, 224);
+            this.RbtnViewUsers.Location = new System.Drawing.Point(320, 250);
             this.RbtnViewUsers.Name = "RbtnViewUsers";
             this.RbtnViewUsers.Size = new System.Drawing.Size(166, 20);
             this.RbtnViewUsers.TabIndex = 8;
@@ -93,7 +93,7 @@
             // RbtnDeleteUser
             // 
             this.RbtnDeleteUser.AutoSize = true;
-            this.RbtnDeleteUser.Location = new System.Drawing.Point(287, 268);
+            this.RbtnDeleteUser.Location = new System.Drawing.Point(320, 294);
             this.RbtnDeleteUser.Name = "RbtnDeleteUser";
             this.RbtnDeleteUser.Size = new System.Drawing.Size(170, 20);
             this.RbtnDeleteUser.TabIndex = 9;
@@ -101,18 +101,18 @@
             this.RbtnDeleteUser.Text = "Delete Registered User";
             this.RbtnDeleteUser.UseVisualStyleBackColor = true;
             // 
-            // BtnNext
+            // BtnNext1
             // 
-            this.BtnNext.Location = new System.Drawing.Point(542, 336);
-            this.BtnNext.Name = "BtnNext";
-            this.BtnNext.Size = new System.Drawing.Size(79, 36);
-            this.BtnNext.TabIndex = 11;
-            this.BtnNext.Text = "Next";
-            this.BtnNext.UseVisualStyleBackColor = true;
+            this.BtnNext1.Location = new System.Drawing.Point(586, 389);
+            this.BtnNext1.Name = "BtnNext1";
+            this.BtnNext1.Size = new System.Drawing.Size(79, 36);
+            this.BtnNext1.TabIndex = 11;
+            this.BtnNext1.Text = "Next";
+            this.BtnNext1.UseVisualStyleBackColor = true;
             // 
             // BtnBack
             // 
-            this.BtnBack.Location = new System.Drawing.Point(172, 336);
+            this.BtnBack.Location = new System.Drawing.Point(151, 389);
             this.BtnBack.Name = "BtnBack";
             this.BtnBack.Size = new System.Drawing.Size(79, 36);
             this.BtnBack.TabIndex = 12;
@@ -124,9 +124,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 484);
             this.Controls.Add(this.BtnBack);
-            this.Controls.Add(this.BtnNext);
+            this.Controls.Add(this.BtnNext1);
             this.Controls.Add(this.RbtnDeleteUser);
             this.Controls.Add(this.RbtnViewUsers);
             this.Controls.Add(this.RbtnAddNew);
@@ -148,7 +148,7 @@
         private System.Windows.Forms.RadioButton RbtnAddNew;
         private System.Windows.Forms.RadioButton RbtnViewUsers;
         private System.Windows.Forms.RadioButton RbtnDeleteUser;
-        private System.Windows.Forms.Button BtnNext;
+        private System.Windows.Forms.Button BtnNext1;
         private System.Windows.Forms.Button BtnBack;
     }
 }

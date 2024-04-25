@@ -72,7 +72,7 @@
             // RbtnManageAdmin
             // 
             this.RbtnManageAdmin.AutoSize = true;
-            this.RbtnManageAdmin.Location = new System.Drawing.Point(257, 170);
+            this.RbtnManageAdmin.Location = new System.Drawing.Point(350, 195);
             this.RbtnManageAdmin.Name = "RbtnManageAdmin";
             this.RbtnManageAdmin.Size = new System.Drawing.Size(117, 20);
             this.RbtnManageAdmin.TabIndex = 5;
@@ -83,7 +83,7 @@
             // RbtnFeedback
             // 
             this.RbtnFeedback.AutoSize = true;
-            this.RbtnFeedback.Location = new System.Drawing.Point(256, 204);
+            this.RbtnFeedback.Location = new System.Drawing.Point(349, 229);
             this.RbtnFeedback.Name = "RbtnFeedback";
             this.RbtnFeedback.Size = new System.Drawing.Size(90, 20);
             this.RbtnFeedback.TabIndex = 6;
@@ -94,7 +94,7 @@
             // RbtnSales
             // 
             this.RbtnSales.AutoSize = true;
-            this.RbtnSales.Location = new System.Drawing.Point(256, 239);
+            this.RbtnSales.Location = new System.Drawing.Point(349, 264);
             this.RbtnSales.Name = "RbtnSales";
             this.RbtnSales.Size = new System.Drawing.Size(63, 20);
             this.RbtnSales.TabIndex = 7;
@@ -105,7 +105,7 @@
             // RbtnProfile
             // 
             this.RbtnProfile.AutoSize = true;
-            this.RbtnProfile.Location = new System.Drawing.Point(256, 274);
+            this.RbtnProfile.Location = new System.Drawing.Point(349, 299);
             this.RbtnProfile.Name = "RbtnProfile";
             this.RbtnProfile.Size = new System.Drawing.Size(119, 20);
             this.RbtnProfile.TabIndex = 8;
@@ -115,7 +115,7 @@
             // 
             // BtnLogout
             // 
-            this.BtnLogout.Location = new System.Drawing.Point(183, 347);
+            this.BtnLogout.Location = new System.Drawing.Point(168, 405);
             this.BtnLogout.Name = "BtnLogout";
             this.BtnLogout.Size = new System.Drawing.Size(78, 36);
             this.BtnLogout.TabIndex = 9;
@@ -124,7 +124,7 @@
             // 
             // BtnNext
             // 
-            this.BtnNext.Location = new System.Drawing.Point(562, 347);
+            this.BtnNext.Location = new System.Drawing.Point(603, 405);
             this.BtnNext.Name = "BtnNext";
             this.BtnNext.Size = new System.Drawing.Size(79, 36);
             this.BtnNext.TabIndex = 10;
@@ -136,7 +136,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 487);
             this.Controls.Add(this.BtnNext);
             this.Controls.Add(this.BtnLogout);
             this.Controls.Add(this.RbtnProfile);
