@@ -16,7 +16,7 @@ namespace IOOP_Assignment_Group_Adlina
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form13());
+            Application.Run(new FormLogin());
         }
     }
 }
