@@ -16,5 +16,15 @@ namespace IOOP_Assignment_Group_Adlina
         {
             InitializeComponent();
         }
+
+        private void Form16_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
