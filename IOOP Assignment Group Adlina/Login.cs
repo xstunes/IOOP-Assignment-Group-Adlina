@@ -71,7 +71,7 @@ namespace IOOP_Assignment_Group_Adlina
                 }
                 else
 
-                    MessageBox.Show("Incorrect Username/Email or Password.");
+                    status = ("Incorrect Username/Email or Password.");
 
             }                
             con.Close();
