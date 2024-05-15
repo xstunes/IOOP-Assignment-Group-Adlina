@@ -67,3 +67,10 @@ insert into userData (Username, Email, Password, Role) values
 ('Lim', 'Lim@mail.com', 'lim123', 'Chef'),
 ('Tayyeba', 'Tayy@mail.com', 'tayy123', 'Customer');
 
+alter table menu
+
+
+
+
+
+

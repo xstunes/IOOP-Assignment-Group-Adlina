@@ -36,6 +36,7 @@
             this.RbtnDeleteUser = new System.Windows.Forms.RadioButton();
             this.BtnNext1 = new System.Windows.Forms.Button();
             this.BtnBack = new System.Windows.Forms.Button();
+            this.RbtnUserRoles = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // LblKL
@@ -71,7 +72,7 @@
             // RbtnAddNew
             // 
             this.RbtnAddNew.AutoSize = true;
-            this.RbtnAddNew.Location = new System.Drawing.Point(320, 205);
+            this.RbtnAddNew.Location = new System.Drawing.Point(320, 179);
             this.RbtnAddNew.Name = "RbtnAddNew";
             this.RbtnAddNew.Size = new System.Drawing.Size(115, 20);
             this.RbtnAddNew.TabIndex = 7;
@@ -82,7 +83,7 @@
             // RbtnViewUsers
             // 
             this.RbtnViewUsers.AutoSize = true;
-            this.RbtnViewUsers.Location = new System.Drawing.Point(320, 250);
+            this.RbtnViewUsers.Location = new System.Drawing.Point(320, 217);
             this.RbtnViewUsers.Name = "RbtnViewUsers";
             this.RbtnViewUsers.Size = new System.Drawing.Size(166, 20);
             this.RbtnViewUsers.TabIndex = 8;
@@ -93,7 +94,7 @@
             // RbtnDeleteUser
             // 
             this.RbtnDeleteUser.AutoSize = true;
-            this.RbtnDeleteUser.Location = new System.Drawing.Point(320, 294);
+            this.RbtnDeleteUser.Location = new System.Drawing.Point(320, 252);
             this.RbtnDeleteUser.Name = "RbtnDeleteUser";
             this.RbtnDeleteUser.Size = new System.Drawing.Size(170, 20);
             this.RbtnDeleteUser.TabIndex = 9;
@@ -119,12 +120,24 @@
             this.BtnBack.Text = "Back";
             this.BtnBack.UseVisualStyleBackColor = true;
             // 
-            // Form3
+            // RbtnUserRoles
+            // 
+            this.RbtnUserRoles.AutoSize = true;
+            this.RbtnUserRoles.Location = new System.Drawing.Point(320, 292);
+            this.RbtnUserRoles.Name = "RbtnUserRoles";
+            this.RbtnUserRoles.Size = new System.Drawing.Size(146, 20);
+            this.RbtnUserRoles.TabIndex = 13;
+            this.RbtnUserRoles.TabStop = true;
+            this.RbtnUserRoles.Text = "Change User Roles";
+            this.RbtnUserRoles.UseVisualStyleBackColor = true;
+            // 
+            // ManageUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(800, 484);
+            this.Controls.Add(this.RbtnUserRoles);
             this.Controls.Add(this.BtnBack);
             this.Controls.Add(this.BtnNext1);
             this.Controls.Add(this.RbtnDeleteUser);
@@ -133,7 +146,7 @@
             this.Controls.Add(this.LblManageUser);
             this.Controls.Add(this.LblKL);
             this.Controls.Add(this.LblRestaurant);
-            this.Name = "Form3";
+            this.Name = "ManageUserForm";
             this.Text = "Form3";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -150,5 +163,6 @@
         private System.Windows.Forms.RadioButton RbtnDeleteUser;
         private System.Windows.Forms.Button BtnNext1;
         private System.Windows.Forms.Button BtnBack;
+        private System.Windows.Forms.RadioButton RbtnUserRoles;
     }
 }
