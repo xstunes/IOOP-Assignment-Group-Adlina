@@ -16,5 +16,10 @@ namespace IOOP_Assignment_Group_Adlina
         {
             InitializeComponent();
         }
+
+        private void CustomerMainMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

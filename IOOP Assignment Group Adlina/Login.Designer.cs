@@ -44,6 +44,7 @@
             // LblRestaurant
             // 
             this.LblRestaurant.AutoSize = true;
+            this.LblRestaurant.BackColor = System.Drawing.Color.Bisque;
             this.LblRestaurant.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblRestaurant.Location = new System.Drawing.Point(135, 18);
             this.LblRestaurant.Name = "LblRestaurant";
@@ -120,6 +121,7 @@
             this.LlForgotPass.TabIndex = 7;
             this.LlForgotPass.TabStop = true;
             this.LlForgotPass.Text = "Forgot Password";
+            this.LlForgotPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LlForgotPass_LinkClicked);
             // 
             // BtnLogin
             // 
@@ -141,6 +143,7 @@
             this.BtnSignup.TabIndex = 9;
             this.BtnSignup.Text = "Sign Up";
             this.BtnSignup.UseVisualStyleBackColor = true;
+            this.BtnSignup.Click += new System.EventHandler(this.BtnSignup_Click);
             // 
             // FormLogin
             // 

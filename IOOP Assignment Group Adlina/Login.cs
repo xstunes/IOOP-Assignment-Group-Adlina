@@ -65,15 +65,15 @@ namespace IOOP_Assignment_Group_Adlina
                 else if (userRole == "Customer")
                 {
                     //redirect to Customer page
-                    On9PayForm op = new On9PayForm();
+                    CustomerMainMenu op = new CustomerMainMenu();//replace later
                     op.Show();
                     this.Hide();
                 }
-                else
 
-                    status = ("Incorrect Username/Email or Password.");
+            }
+            else
+                status = ("Incorrect Username/Email or Password.");
 
-            }                
             con.Close();
             return status;
         }
@@ -88,11 +88,6 @@ namespace IOOP_Assignment_Group_Adlina
             return TbLoginPass.Text;
         }
 
-        private void FormLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnLogin_Click(object sender, EventArgs e) //When clicking login
         {
             string stat;
@@ -105,7 +100,25 @@ namespace IOOP_Assignment_Group_Adlina
             }
             TbLoginUserEmail.Text = string.Empty;
             TbLoginPass.Text = string.Empty;
+            
+        }
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
 
+        }
+
+        private void BtnSignup_Click(object sender, EventArgs e)
+        {
+            SignUp newsu = new SignUp();
+            newsu.Show();
+            this.Hide();
+        }
+
+        private void LlForgotPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ForgotPassword newfp = new ForgotPassword();
+            newfp.Show();
+            this.Hide();
         }
     }
 }
