@@ -30,18 +30,17 @@
         {
             this.BtnSignUp = new System.Windows.Forms.Button();
             this.BtnBack3 = new System.Windows.Forms.Button();
-            this.BtnGen = new System.Windows.Forms.Button();
-            this.LblGenPass = new System.Windows.Forms.Label();
             this.CBSignrole = new System.Windows.Forms.ComboBox();
             this.TbSignEm = new System.Windows.Forms.TextBox();
             this.TbSignUser = new System.Windows.Forms.TextBox();
-            this.LblNewPass = new System.Windows.Forms.Label();
             this.LblNewRole = new System.Windows.Forms.Label();
             this.LblNewEmail = new System.Windows.Forms.Label();
             this.LblNewUser = new System.Windows.Forms.Label();
             this.LblShowSignup = new System.Windows.Forms.Label();
             this.LblKL = new System.Windows.Forms.Label();
             this.LblRestaurant = new System.Windows.Forms.Label();
+            this.TbNewPass = new System.Windows.Forms.TextBox();
+            this.LblNewPass = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnSignUp
@@ -63,28 +62,6 @@
             this.BtnBack3.TabIndex = 32;
             this.BtnBack3.Text = "Back";
             this.BtnBack3.UseVisualStyleBackColor = true;
-            // 
-            // BtnGen
-            // 
-            this.BtnGen.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGen.Location = new System.Drawing.Point(274, 467);
-            this.BtnGen.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnGen.Name = "BtnGen";
-            this.BtnGen.Size = new System.Drawing.Size(62, 27);
-            this.BtnGen.TabIndex = 31;
-            this.BtnGen.Text = "Generate";
-            this.BtnGen.UseVisualStyleBackColor = true;
-            // 
-            // LblGenPass
-            // 
-            this.LblGenPass.AutoSize = true;
-            this.LblGenPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblGenPass.Location = new System.Drawing.Point(272, 437);
-            this.LblGenPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LblGenPass.Name = "LblGenPass";
-            this.LblGenPass.Size = new System.Drawing.Size(100, 17);
-            this.LblGenPass.TabIndex = 30;
-            this.LblGenPass.Text = "New Password";
             // 
             // CBSignrole
             // 
@@ -113,17 +90,6 @@
             this.TbSignUser.Name = "TbSignUser";
             this.TbSignUser.Size = new System.Drawing.Size(233, 21);
             this.TbSignUser.TabIndex = 27;
-            // 
-            // LblNewPass
-            // 
-            this.LblNewPass.AutoSize = true;
-            this.LblNewPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNewPass.Location = new System.Drawing.Point(272, 408);
-            this.LblNewPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LblNewPass.Name = "LblNewPass";
-            this.LblNewPass.Size = new System.Drawing.Size(180, 17);
-            this.LblNewPass.TabIndex = 26;
-            this.LblNewPass.Text = "Auto-generated Password :";
             // 
             // LblNewRole
             // 
@@ -191,20 +157,37 @@
             this.LblRestaurant.TabIndex = 20;
             this.LblRestaurant.Text = "Hashbrown Restaurant";
             // 
+            // TbNewPass
+            // 
+            this.TbNewPass.Location = new System.Drawing.Point(274, 445);
+            this.TbNewPass.Name = "TbNewPass";
+            this.TbNewPass.Size = new System.Drawing.Size(203, 20);
+            this.TbNewPass.TabIndex = 38;
+            // 
+            // LblNewPass
+            // 
+            this.LblNewPass.AutoSize = true;
+            this.LblNewPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNewPass.Location = new System.Drawing.Point(271, 414);
+            this.LblNewPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblNewPass.Name = "LblNewPass";
+            this.LblNewPass.Size = new System.Drawing.Size(100, 17);
+            this.LblNewPass.TabIndex = 37;
+            this.LblNewPass.Text = "New Password";
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(800, 713);
+            this.Controls.Add(this.TbNewPass);
+            this.Controls.Add(this.LblNewPass);
             this.Controls.Add(this.BtnSignUp);
             this.Controls.Add(this.BtnBack3);
-            this.Controls.Add(this.BtnGen);
-            this.Controls.Add(this.LblGenPass);
             this.Controls.Add(this.CBSignrole);
             this.Controls.Add(this.TbSignEm);
             this.Controls.Add(this.TbSignUser);
-            this.Controls.Add(this.LblNewPass);
             this.Controls.Add(this.LblNewRole);
             this.Controls.Add(this.LblNewEmail);
             this.Controls.Add(this.LblNewUser);
@@ -222,17 +205,16 @@
 
         private System.Windows.Forms.Button BtnSignUp;
         private System.Windows.Forms.Button BtnBack3;
-        private System.Windows.Forms.Button BtnGen;
-        private System.Windows.Forms.Label LblGenPass;
         private System.Windows.Forms.ComboBox CBSignrole;
         private System.Windows.Forms.TextBox TbSignEm;
         private System.Windows.Forms.TextBox TbSignUser;
-        private System.Windows.Forms.Label LblNewPass;
         private System.Windows.Forms.Label LblNewRole;
         private System.Windows.Forms.Label LblNewEmail;
         private System.Windows.Forms.Label LblNewUser;
         private System.Windows.Forms.Label LblShowSignup;
         private System.Windows.Forms.Label LblKL;
         private System.Windows.Forms.Label LblRestaurant;
+        private System.Windows.Forms.TextBox TbNewPass;
+        private System.Windows.Forms.Label LblNewPass;
     }
 }
