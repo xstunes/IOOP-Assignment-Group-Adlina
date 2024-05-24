@@ -41,74 +41,73 @@
             this.LblRestaurant = new System.Windows.Forms.Label();
             this.TbNewPass = new System.Windows.Forms.TextBox();
             this.LblNewPass = new System.Windows.Forms.Label();
+            this.TbSignPass = new System.Windows.Forms.TextBox();
+            this.LblSignPass = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnSignUp
             // 
-            this.BtnSignUp.Location = new System.Drawing.Point(688, 654);
-            this.BtnSignUp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnSignUp.Location = new System.Drawing.Point(516, 531);
+            this.BtnSignUp.Margin = new System.Windows.Forms.Padding(2);
             this.BtnSignUp.Name = "BtnSignUp";
-            this.BtnSignUp.Size = new System.Drawing.Size(79, 36);
+            this.BtnSignUp.Size = new System.Drawing.Size(59, 29);
             this.BtnSignUp.TabIndex = 33;
             this.BtnSignUp.Text = "Sign Up";
             this.BtnSignUp.UseVisualStyleBackColor = true;
+            this.BtnSignUp.Click += new System.EventHandler(this.BtnSignUp_Click);
             // 
             // BtnBack3
             // 
-            this.BtnBack3.Location = new System.Drawing.Point(253, 654);
-            this.BtnBack3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnBack3.Location = new System.Drawing.Point(190, 531);
+            this.BtnBack3.Margin = new System.Windows.Forms.Padding(2);
             this.BtnBack3.Name = "BtnBack3";
-            this.BtnBack3.Size = new System.Drawing.Size(79, 36);
+            this.BtnBack3.Size = new System.Drawing.Size(59, 29);
             this.BtnBack3.TabIndex = 32;
             this.BtnBack3.Text = "Back";
             this.BtnBack3.UseVisualStyleBackColor = true;
+            this.BtnBack3.Click += new System.EventHandler(this.BtnBack3_Click);
             // 
             // CBSignrole
             // 
             this.CBSignrole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CBSignrole.FormattingEnabled = true;
-            this.CBSignrole.Location = new System.Drawing.Point(350, 437);
-            this.CBSignrole.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CBSignrole.Items.AddRange(new object[] {
+            "Manager",
+            "Chef",
+            "Customer"});
+            this.CBSignrole.Location = new System.Drawing.Point(262, 355);
+            this.CBSignrole.Margin = new System.Windows.Forms.Padding(2);
             this.CBSignrole.Name = "CBSignrole";
-            this.CBSignrole.Size = new System.Drawing.Size(121, 28);
+            this.CBSignrole.Size = new System.Drawing.Size(92, 25);
             this.CBSignrole.TabIndex = 29;
+            this.CBSignrole.SelectedIndexChanged += new System.EventHandler(this.CBSignrole_SelectedIndexChanged);
             // 
             // TbSignEm
             // 
             this.TbSignEm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TbSignEm.Location = new System.Drawing.Point(350, 362);
-            this.TbSignEm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TbSignEm.Location = new System.Drawing.Point(262, 294);
+            this.TbSignEm.Margin = new System.Windows.Forms.Padding(2);
             this.TbSignEm.Name = "TbSignEm";
-            this.TbSignEm.Size = new System.Drawing.Size(309, 24);
+            this.TbSignEm.Size = new System.Drawing.Size(233, 21);
             this.TbSignEm.TabIndex = 28;
             // 
             // TbSignUser
             // 
             this.TbSignUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TbSignUser.Location = new System.Drawing.Point(350, 291);
-            this.TbSignUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TbSignUser.Location = new System.Drawing.Point(262, 236);
+            this.TbSignUser.Margin = new System.Windows.Forms.Padding(2);
             this.TbSignUser.Name = "TbSignUser";
-            this.TbSignUser.Size = new System.Drawing.Size(309, 24);
+            this.TbSignUser.Size = new System.Drawing.Size(233, 21);
             this.TbSignUser.TabIndex = 27;
-            // 
-            // LblNewPass
-            // 
-            this.LblNewPass.AutoSize = true;
-            this.LblNewPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNewPass.Location = new System.Drawing.Point(272, 408);
-            this.LblNewPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LblNewPass.Name = "LblNewPass";
-            this.LblNewPass.Size = new System.Drawing.Size(180, 17);
-            this.LblNewPass.TabIndex = 26;
-            this.LblNewPass.Text = "Auto-generated Password :";
             // 
             // LblNewRole
             // 
             this.LblNewRole.AutoSize = true;
             this.LblNewRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNewRole.Location = new System.Drawing.Point(346, 414);
+            this.LblNewRole.Location = new System.Drawing.Point(260, 336);
+            this.LblNewRole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblNewRole.Name = "LblNewRole";
-            this.LblNewRole.Size = new System.Drawing.Size(52, 20);
+            this.LblNewRole.Size = new System.Drawing.Size(44, 17);
             this.LblNewRole.TabIndex = 25;
             this.LblNewRole.Text = "Roles";
             // 
@@ -116,9 +115,10 @@
             // 
             this.LblNewEmail.AutoSize = true;
             this.LblNewEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNewEmail.Location = new System.Drawing.Point(346, 340);
+            this.LblNewEmail.Location = new System.Drawing.Point(260, 276);
+            this.LblNewEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblNewEmail.Name = "LblNewEmail";
-            this.LblNewEmail.Size = new System.Drawing.Size(51, 20);
+            this.LblNewEmail.Size = new System.Drawing.Size(42, 17);
             this.LblNewEmail.TabIndex = 24;
             this.LblNewEmail.Text = "Email";
             // 
@@ -126,9 +126,10 @@
             // 
             this.LblNewUser.AutoSize = true;
             this.LblNewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNewUser.Location = new System.Drawing.Point(346, 267);
+            this.LblNewUser.Location = new System.Drawing.Point(260, 217);
+            this.LblNewUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblNewUser.Name = "LblNewUser";
-            this.LblNewUser.Size = new System.Drawing.Size(86, 20);
+            this.LblNewUser.Size = new System.Drawing.Size(73, 17);
             this.LblNewUser.TabIndex = 23;
             this.LblNewUser.Text = "Username";
             // 
@@ -136,9 +137,10 @@
             // 
             this.LblShowSignup.AutoSize = true;
             this.LblShowSignup.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblShowSignup.Location = new System.Drawing.Point(450, 227);
+            this.LblShowSignup.Location = new System.Drawing.Point(338, 184);
+            this.LblShowSignup.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblShowSignup.Name = "LblShowSignup";
-            this.LblShowSignup.Size = new System.Drawing.Size(106, 29);
+            this.LblShowSignup.Size = new System.Drawing.Size(84, 24);
             this.LblShowSignup.TabIndex = 22;
             this.LblShowSignup.Text = "Sign Up";
             // 
@@ -146,9 +148,10 @@
             // 
             this.LblKL.AutoSize = true;
             this.LblKL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblKL.Location = new System.Drawing.Point(384, 179);
+            this.LblKL.Location = new System.Drawing.Point(288, 145);
+            this.LblKL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblKL.Name = "LblKL";
-            this.LblKL.Size = new System.Drawing.Size(222, 25);
+            this.LblKL.Size = new System.Drawing.Size(176, 20);
             this.LblKL.TabIndex = 21;
             this.LblKL.Text = "Kuala Lumpur, Malaysia";
             // 
@@ -156,9 +159,10 @@
             // 
             this.LblRestaurant.AutoSize = true;
             this.LblRestaurant.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRestaurant.Location = new System.Drawing.Point(244, 125);
+            this.LblRestaurant.Location = new System.Drawing.Point(183, 102);
+            this.LblRestaurant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblRestaurant.Name = "LblRestaurant";
-            this.LblRestaurant.Size = new System.Drawing.Size(523, 54);
+            this.LblRestaurant.Size = new System.Drawing.Size(426, 44);
             this.LblRestaurant.TabIndex = 20;
             this.LblRestaurant.Text = "Hashbrown Restaurant";
             // 
@@ -180,12 +184,33 @@
             this.LblNewPass.TabIndex = 37;
             this.LblNewPass.Text = "New Password";
             // 
+            // TbSignPass
+            // 
+            this.TbSignPass.Location = new System.Drawing.Point(263, 426);
+            this.TbSignPass.Name = "TbSignPass";
+            this.TbSignPass.Size = new System.Drawing.Size(203, 20);
+            this.TbSignPass.TabIndex = 38;
+            this.TbSignPass.UseSystemPasswordChar = true;
+            // 
+            // LblSignPass
+            // 
+            this.LblSignPass.AutoSize = true;
+            this.LblSignPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblSignPass.Location = new System.Drawing.Point(260, 395);
+            this.LblSignPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSignPass.Name = "LblSignPass";
+            this.LblSignPass.Size = new System.Drawing.Size(100, 17);
+            this.LblSignPass.TabIndex = 37;
+            this.LblSignPass.Text = "New Password";
+            // 
             // SignUp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(800, 713);
+            this.ClientSize = new System.Drawing.Size(820, 579);
+            this.Controls.Add(this.TbSignPass);
+            this.Controls.Add(this.LblSignPass);
             this.Controls.Add(this.BtnSignUp);
             this.Controls.Add(this.BtnBack3);
             this.Controls.Add(this.CBSignrole);
@@ -197,7 +222,6 @@
             this.Controls.Add(this.LblShowSignup);
             this.Controls.Add(this.LblKL);
             this.Controls.Add(this.LblRestaurant);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SignUp";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.SignUp_Load);
@@ -221,5 +245,7 @@
         private System.Windows.Forms.Label LblRestaurant;
         private System.Windows.Forms.TextBox TbNewPass;
         private System.Windows.Forms.Label LblNewPass;
+        private System.Windows.Forms.TextBox TbSignPass;
+        private System.Windows.Forms.Label LblSignPass;
     }
 }

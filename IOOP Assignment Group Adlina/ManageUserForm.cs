@@ -16,5 +16,10 @@ namespace IOOP_Assignment_Group_Adlina
         {
             InitializeComponent();
         }
+
+        private void RbtnViewUsers_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

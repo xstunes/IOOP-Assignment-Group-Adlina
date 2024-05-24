@@ -17,7 +17,14 @@ namespace IOOP_Assignment_Group_Adlina
     public partial class FormLogin : Form
     {
         private UserClass user;
-        private static string Connectionstring = "IOOP_Assignment_Group_Adlina.Properties.Settings.MainDBConnectionString";
+        private static string Connectionstring = ConfigurationManager.ConnectionStrings["IOOP_Assignment_Group_Adlina.Properties.Settings.MainDBConnectionString"].ToString();
+
+        public void EmptyAll()
+        {
+            TbLoginUserEmail.Text = string.Empty;
+            TbLoginPass.Text = string.Empty;
+        }
+
         public FormLogin()
         {
             InitializeComponent();
@@ -25,42 +32,36 @@ namespace IOOP_Assignment_Group_Adlina
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
-            SqlConnection cn = new SqlConnection(Connectionstring);
-            cn.Open();
-        }
-
-        private void FormLogin_Load(object sender, EventArgs e)
-        {
 
         }
+
 
         private void BtnLogin_Click(object sender, EventArgs e) //When clicking login
         {
-            string stat;
-            UserClass obj = new UserClass(TbLoginUserEmail.Text, TbLoginPass.Text);
-            stat = LoginAuth(TbLoginUserEmail.Text);
+            string stat = null;
+            stat = UserClass.Login(TbLoginUserEmail.Text, TbLoginPass.Text);
             if (stat != null)
             {
                 MessageBox.Show(stat);
-
             }
-            TbLoginUserEmail.Text = string.Empty;
-            TbLoginPass.Text = string.Empty;
+            EmptyAll();
 
         }
 
         private void BtnSignup_Click(object sender, EventArgs e)
         {
-            SignUp newsu = new SignUp();
-            newsu.Show();
             this.Hide();
+            SignUp newsu = new SignUp();
+            newsu.ShowDialog();
+
         }
 
         private void LlForgotPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            ForgotPassword newfp = new ForgotPassword();
-            newfp.Show();
             this.Hide();
+            ForgotPassword newfp = new ForgotPassword();
+            newfp.ShowDialog();
+
         }
     }
 }
