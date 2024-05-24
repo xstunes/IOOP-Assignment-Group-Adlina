@@ -44,6 +44,7 @@
             // LblRestaurant
             // 
             this.LblRestaurant.AutoSize = true;
+            this.LblRestaurant.BackColor = System.Drawing.Color.Bisque;
             this.LblRestaurant.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblRestaurant.Location = new System.Drawing.Point(101, 15);
             this.LblRestaurant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -126,6 +127,7 @@
             this.LlForgotPass.TabIndex = 7;
             this.LlForgotPass.TabStop = true;
             this.LlForgotPass.Text = "Forgot Password";
+            this.LlForgotPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LlForgotPass_LinkClicked);
             // 
             // BtnLogin
             // 

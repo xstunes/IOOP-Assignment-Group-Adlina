@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace IOOP_Assignment_Group_Adlina
 {
-    public partial class FeedbackForm : Form
+    public partial class PayatCounter : Form
     {
-        public FeedbackForm()
+        public PayatCounter()
         {
             InitializeComponent();
-        }
-
-        private void FeedbackForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

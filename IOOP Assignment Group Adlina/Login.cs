@@ -29,6 +29,11 @@ namespace IOOP_Assignment_Group_Adlina
             cn.Open();
         }
 
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void BtnLogin_Click(object sender, EventArgs e) //When clicking login
         {
             string stat;
@@ -46,9 +51,16 @@ namespace IOOP_Assignment_Group_Adlina
 
         private void BtnSignup_Click(object sender, EventArgs e)
         {
+            SignUp newsu = new SignUp();
+            newsu.Show();
             this.Hide();
-            SignUp signUp = new SignUp();
-            signUp.ShowDialog();
+        }
+
+        private void LlForgotPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ForgotPassword newfp = new ForgotPassword();
+            newfp.Show();
+            this.Hide();
         }
     }
 }
