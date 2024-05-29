@@ -103,7 +103,8 @@ namespace IOOP_Assignment_Group_Adlina
                     else if (userRole == "Manager")
                     {
                         FormLogin login = new FormLogin();
-                        ManagerForm manager = new ManagerForm();
+                        ManagerForm manager = new ManagerForm(username);
+                        MessageBox.Show(username);
                         login.Hide();
                         manager.ShowDialog();
                     }

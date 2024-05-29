@@ -73,6 +73,7 @@
     <Compile Include="CustomerMainMenu.Designer.cs">
       <DependentUpon>CustomerMainMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FoodMenu.cs" />
     <Compile Include="ForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>

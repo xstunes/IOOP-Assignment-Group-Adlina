@@ -19,20 +19,20 @@ namespace IOOP_Assignment_Group_Adlina
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ManagerProfileUpdate obj1 = new ManagerProfileUpdate(olusername);
-            MessageBox.Show(obj1.updateProfile(txtUsername.Text, txtEmail.Text, txtPassword.Text));
-        }
-
         private void UpdateProfileForm_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            ManagerProfileUpdate obj1 = new ManagerProfileUpdate(olusername);
+            MessageBox.Show(obj1.updateProfile(txtUsername.Text, txtEmail.Text, txtPassword.Text));
         }
     }
 }
