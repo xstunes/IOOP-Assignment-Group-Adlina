@@ -39,7 +39,6 @@ namespace IOOP_Assignment_Group_Adlina
         public string updateProfile(string un, string em, string pas)
         {
             string status;
-            MessageBox.Show($"{un}, {em}, {pas}, {username}");
             con.Open();
 
             SqlCommand cmd = new SqlCommand("update userData set Username =@nm ,Email =@e,Password=@p where Username like @ou", con);
@@ -48,27 +47,28 @@ namespace IOOP_Assignment_Group_Adlina
             cmd.Parameters.AddWithValue("@p", pas);
             cmd.Parameters.AddWithValue("@ou", username);
 
-            try
-            {
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Update Successful");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            //try
+            //{
+            //    cmd.ExecuteNonQuery();
+            //    MessageBox.Show("Update Successful");
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+            //return username;
 
-            //int i = cmd.ExecuteNonQuery();
-            //if (i != 0)
-            //{
-            //    status = "Update Successfully.";
-            //}
-            //else
-            //{
-            //    status = "Unable to update.";
-            //}
-            //con.Close();
-            return username;
+            int i = cmd.ExecuteNonQuery();
+            if (i != 0)
+            {
+                status = "Update Successfully.";
+            }
+            else
+            {
+                status = "Unable to update.";
+            }
+            con.Close();
+            return status;
         }
     }
 }

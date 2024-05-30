@@ -52,5 +52,10 @@ namespace IOOP_Assignment_Group_Adlina
             MenuForm ad = new MenuForm();
             ad.ShowDialog();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"Welcome", olUsername);
+        }
     }
 }

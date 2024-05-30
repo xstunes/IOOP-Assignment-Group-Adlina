@@ -104,7 +104,6 @@ namespace IOOP_Assignment_Group_Adlina
                     {
                         FormLogin login = new FormLogin();
                         ManagerForm manager = new ManagerForm(username);
-                        MessageBox.Show(username);
                         login.Hide();
                         manager.ShowDialog();
                     }
