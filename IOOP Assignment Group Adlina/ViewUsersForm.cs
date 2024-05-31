@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,14 +16,24 @@ namespace IOOP_Assignment_Group_Adlina
     {
         private UserClass user;
         private static string Connectionstring = ConfigurationManager.ConnectionStrings["IOOP_Assignment_Group_Adlina.Properties.Settings.MainDBConnectionString"].ToString();
-
+        static SqlConnection con; //SqlConnection is assigned to con
+        static SqlCommand cmd; //SqlCommand is assigned to cmd
+        static SqlDataReader dr; //SqlDataReader assigned to dr
+        static SqlDataAdapter da; //SQlDataAdapter assigned to da
         public ViewUsersForm()
         {
             InitializeComponent();
         }
         private void ViewUsersForm_Load(object sender, EventArgs e)
         {
-
+            using (con = new SqlConnection(Connectionstring))
+            {
+                con.Open();
+                da = new SqlDataAdapter("SELECT * FROM userData", con);
+                DataSet ds = new DataSet();
+                da.Fill(ds, "userData");
+                dataGridView1.DataSource = ds.Tables["userData"].DefaultView;
+            }
         }
 
 
@@ -34,9 +45,8 @@ namespace IOOP_Assignment_Group_Adlina
             admin.ShowDialog();
         }
 
-        private void LviewList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
+
+
+
     }
 }

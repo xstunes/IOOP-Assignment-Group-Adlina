@@ -38,6 +38,7 @@ namespace IOOP_Assignment_Group_Adlina
 
         private void BtnLogin_Click(object sender, EventArgs e) //When clicking login
         {
+            this.Hide();
             string stat = null;
             stat = UserClass.Login(TbLoginUserEmail.Text, TbLoginPass.Text);
             if (stat != null)

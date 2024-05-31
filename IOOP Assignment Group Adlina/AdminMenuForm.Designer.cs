@@ -31,12 +31,11 @@
             this.LblKL = new System.Windows.Forms.Label();
             this.LblRestaurant = new System.Windows.Forms.Label();
             this.LblAdmin = new System.Windows.Forms.Label();
-            this.RbtnManageAdmin = new System.Windows.Forms.RadioButton();
-            this.RbtnFeedback = new System.Windows.Forms.RadioButton();
-            this.RbtnSales = new System.Windows.Forms.RadioButton();
-            this.RbtnProfile = new System.Windows.Forms.RadioButton();
             this.BtnLogout = new System.Windows.Forms.Button();
-            this.BtnNext = new System.Windows.Forms.Button();
+            this.ManAllUser = new System.Windows.Forms.Button();
+            this.BtnViewFeed = new System.Windows.Forms.Button();
+            this.BtnViewSales = new System.Windows.Forms.Button();
+            this.BtnManProfile1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LblKL
@@ -72,93 +71,74 @@
             this.LblAdmin.TabIndex = 4;
             this.LblAdmin.Text = "Welcome, Admin.";
             // 
-            // RbtnManageAdmin
-            // 
-            this.RbtnManageAdmin.AutoSize = true;
-            this.RbtnManageAdmin.Location = new System.Drawing.Point(262, 158);
-            this.RbtnManageAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.RbtnManageAdmin.Name = "RbtnManageAdmin";
-            this.RbtnManageAdmin.Size = new System.Drawing.Size(94, 17);
-            this.RbtnManageAdmin.TabIndex = 5;
-            this.RbtnManageAdmin.TabStop = true;
-            this.RbtnManageAdmin.Text = "Manage Users";
-            this.RbtnManageAdmin.UseVisualStyleBackColor = true;
-            this.RbtnManageAdmin.CheckedChanged += new System.EventHandler(this.RbtnManageAdmin_CheckedChanged);
-            // 
-            // RbtnFeedback
-            // 
-            this.RbtnFeedback.AutoSize = true;
-            this.RbtnFeedback.Location = new System.Drawing.Point(262, 186);
-            this.RbtnFeedback.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.RbtnFeedback.Name = "RbtnFeedback";
-            this.RbtnFeedback.Size = new System.Drawing.Size(73, 17);
-            this.RbtnFeedback.TabIndex = 6;
-            this.RbtnFeedback.TabStop = true;
-            this.RbtnFeedback.Text = "Feedback";
-            this.RbtnFeedback.UseVisualStyleBackColor = true;
-            // 
-            // RbtnSales
-            // 
-            this.RbtnSales.AutoSize = true;
-            this.RbtnSales.Location = new System.Drawing.Point(262, 214);
-            this.RbtnSales.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.RbtnSales.Name = "RbtnSales";
-            this.RbtnSales.Size = new System.Drawing.Size(51, 17);
-            this.RbtnSales.TabIndex = 7;
-            this.RbtnSales.TabStop = true;
-            this.RbtnSales.Text = "Sales";
-            this.RbtnSales.UseVisualStyleBackColor = true;
-            // 
-            // RbtnProfile
-            // 
-            this.RbtnProfile.AutoSize = true;
-            this.RbtnProfile.Location = new System.Drawing.Point(262, 243);
-            this.RbtnProfile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.RbtnProfile.Name = "RbtnProfile";
-            this.RbtnProfile.Size = new System.Drawing.Size(96, 17);
-            this.RbtnProfile.TabIndex = 8;
-            this.RbtnProfile.TabStop = true;
-            this.RbtnProfile.Text = "Manage Profile";
-            this.RbtnProfile.UseVisualStyleBackColor = true;
-            // 
             // BtnLogout
             // 
-            this.BtnLogout.Location = new System.Drawing.Point(126, 329);
-            this.BtnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnLogout.Location = new System.Drawing.Point(127, 396);
+            this.BtnLogout.Margin = new System.Windows.Forms.Padding(2);
             this.BtnLogout.Name = "BtnLogout";
             this.BtnLogout.Size = new System.Drawing.Size(58, 29);
             this.BtnLogout.TabIndex = 9;
-            this.BtnLogout.Text = "Logout";
+            this.BtnLogout.Text = "Sign out";
             this.BtnLogout.UseVisualStyleBackColor = true;
             // 
-            // BtnNext
+            // ManAllUser
             // 
-            this.BtnNext.Location = new System.Drawing.Point(452, 329);
-            this.BtnNext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.BtnNext.Name = "BtnNext";
-            this.BtnNext.Size = new System.Drawing.Size(59, 29);
-            this.BtnNext.TabIndex = 10;
-            this.BtnNext.Text = "Next";
-            this.BtnNext.UseVisualStyleBackColor = true;
+            this.ManAllUser.Location = new System.Drawing.Point(258, 151);
+            this.ManAllUser.Name = "ManAllUser";
+            this.ManAllUser.Size = new System.Drawing.Size(116, 34);
+            this.ManAllUser.TabIndex = 11;
+            this.ManAllUser.Text = "Manage Users";
+            this.ManAllUser.UseVisualStyleBackColor = true;
+            this.ManAllUser.Click += new System.EventHandler(this.ManAllUser_Click);
+            // 
+            // BtnViewFeed
+            // 
+            this.BtnViewFeed.Location = new System.Drawing.Point(258, 203);
+            this.BtnViewFeed.Name = "BtnViewFeed";
+            this.BtnViewFeed.Size = new System.Drawing.Size(114, 34);
+            this.BtnViewFeed.TabIndex = 12;
+            this.BtnViewFeed.Text = "View Feedback";
+            this.BtnViewFeed.UseVisualStyleBackColor = true;
+            this.BtnViewFeed.Click += new System.EventHandler(this.BtnViewFeed_Click);
+            // 
+            // BtnViewSales
+            // 
+            this.BtnViewSales.Location = new System.Drawing.Point(258, 254);
+            this.BtnViewSales.Name = "BtnViewSales";
+            this.BtnViewSales.Size = new System.Drawing.Size(114, 35);
+            this.BtnViewSales.TabIndex = 13;
+            this.BtnViewSales.Text = "View Sales";
+            this.BtnViewSales.UseVisualStyleBackColor = true;
+            this.BtnViewSales.Click += new System.EventHandler(this.BtnViewSales_Click);
+            // 
+            // BtnManProfile1
+            // 
+            this.BtnManProfile1.Location = new System.Drawing.Point(258, 307);
+            this.BtnManProfile1.Name = "BtnManProfile1";
+            this.BtnManProfile1.Size = new System.Drawing.Size(116, 36);
+            this.BtnManProfile1.TabIndex = 14;
+            this.BtnManProfile1.Text = "Manage Profile";
+            this.BtnManProfile1.UseVisualStyleBackColor = true;
+            this.BtnManProfile1.Click += new System.EventHandler(this.BtnManProfile1_Click);
             // 
             // AdminMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(600, 396);
-            this.Controls.Add(this.BtnNext);
+            this.ClientSize = new System.Drawing.Size(600, 464);
+            this.Controls.Add(this.BtnManProfile1);
+            this.Controls.Add(this.BtnViewSales);
+            this.Controls.Add(this.BtnViewFeed);
+            this.Controls.Add(this.ManAllUser);
             this.Controls.Add(this.BtnLogout);
-            this.Controls.Add(this.RbtnProfile);
-            this.Controls.Add(this.RbtnSales);
-            this.Controls.Add(this.RbtnFeedback);
-            this.Controls.Add(this.RbtnManageAdmin);
             this.Controls.Add(this.LblAdmin);
             this.Controls.Add(this.LblKL);
             this.Controls.Add(this.LblRestaurant);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AdminMenuForm";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.AdminMenuForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,11 +149,10 @@
         private System.Windows.Forms.Label LblKL;
         private System.Windows.Forms.Label LblRestaurant;
         private System.Windows.Forms.Label LblAdmin;
-        private System.Windows.Forms.RadioButton RbtnManageAdmin;
-        private System.Windows.Forms.RadioButton RbtnFeedback;
-        private System.Windows.Forms.RadioButton RbtnSales;
-        private System.Windows.Forms.RadioButton RbtnProfile;
         private System.Windows.Forms.Button BtnLogout;
-        private System.Windows.Forms.Button BtnNext;
+        private System.Windows.Forms.Button ManAllUser;
+        private System.Windows.Forms.Button BtnViewFeed;
+        private System.Windows.Forms.Button BtnViewSales;
+        private System.Windows.Forms.Button BtnManProfile1;
     }
 }

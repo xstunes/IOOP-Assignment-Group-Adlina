@@ -32,7 +32,8 @@
             this.LblKL = new System.Windows.Forms.Label();
             this.LblRestaurant = new System.Windows.Forms.Label();
             this.BtnBack2 = new System.Windows.Forms.Button();
-            this.LviewList = new System.Windows.Forms.ListView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // LblViewUser
@@ -70,8 +71,8 @@
             // 
             // BtnBack2
             // 
-            this.BtnBack2.Location = new System.Drawing.Point(112, 494);
-            this.BtnBack2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnBack2.Location = new System.Drawing.Point(271, 498);
+            this.BtnBack2.Margin = new System.Windows.Forms.Padding(2);
             this.BtnBack2.Name = "BtnBack2";
             this.BtnBack2.Size = new System.Drawing.Size(59, 29);
             this.BtnBack2.TabIndex = 19;
@@ -79,15 +80,17 @@
             this.BtnBack2.UseVisualStyleBackColor = true;
             this.BtnBack2.Click += new System.EventHandler(this.BtnBack2_Click);
             // 
-            // LviewList
+            // dataGridView1
             // 
-            this.LviewList.HideSelection = false;
-            this.LviewList.Location = new System.Drawing.Point(114, 141);
-            this.LviewList.Name = "LviewList";
-            this.LviewList.Size = new System.Drawing.Size(372, 309);
-            this.LviewList.TabIndex = 20;
-            this.LviewList.UseCompatibleStateImageBehavior = false;
-            this.LviewList.SelectedIndexChanged += new System.EventHandler(this.LviewList_SelectedIndexChanged);
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 141);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(576, 314);
+            this.dataGridView1.TabIndex = 20;
             // 
             // ViewUsersForm
             // 
@@ -95,15 +98,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(600, 548);
-            this.Controls.Add(this.LviewList);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.BtnBack2);
             this.Controls.Add(this.LblViewUser);
             this.Controls.Add(this.LblKL);
             this.Controls.Add(this.LblRestaurant);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ViewUsersForm";
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.ViewUsersForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -115,6 +119,6 @@
         private System.Windows.Forms.Label LblKL;
         private System.Windows.Forms.Label LblRestaurant;
         private System.Windows.Forms.Button BtnBack2;
-        private System.Windows.Forms.ListView LviewList;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

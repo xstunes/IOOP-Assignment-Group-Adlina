@@ -8,16 +8,18 @@ using System.Windows.Forms;
 using System.Configuration;
 using System.Security.Cryptography.X509Certificates;
 using System.Runtime.CompilerServices;
+using System.Data;
 namespace IOOP_Assignment_Group_Adlina
 {
     public class UserClass
     {
         public int id;
         public string username, email, password, role;
-        private static string Connectionstring = ConfigurationManager.ConnectionStrings["IOOP_Assignment_Group_Adlina.Properties.Settings.MainDBConnectionString"].ToString();
+        private static string Connectionstring = ConfigurationManager.ConnectionStrings["IOOP_Assignment_Group_Adlina.Properties.Settings.MainDBConnectionString"].ConnectionString;
         static SqlConnection con; //SqlConnection is assigned to con
         static SqlCommand cmd; //SqlCommand is assigned to cmd
         static SqlDataReader dr; //SqlDataReader assigned to dr
+        static SqlDataAdapter da; //SQlDataAdapter assigned to da
 
         public UserClass(string username, string email, string password, string role)
         {
@@ -103,9 +105,9 @@ namespace IOOP_Assignment_Group_Adlina
                     else if (userRole == "Manager")
                     {
                         FormLogin login = new FormLogin();
-                        ManagerForm manager = new ManagerForm();
+                        ManagerForm man = new ManagerForm();
                         login.Hide();
-                        manager.ShowDialog();
+                        man.ShowDialog();
                     }
                     else if (userRole == "Chef")
                     {
@@ -168,31 +170,6 @@ namespace IOOP_Assignment_Group_Adlina
 
         }
     
-        public static List<UserClass> GetUsers()
-        {
-            using (con = new SqlConnection(Connectionstring))
-            {
-                con.Open();
-                cmd = new SqlCommand("SELECT Username, Email, Role FROM userTable", con);
-                dr = cmd.ExecuteReader();
-                List<UserClass> users = new List<UserClass>();
-
-                while (dr.Read())
-                {
-                    UserClass user = new UserClass
-                    {
-                        username = dr[0].ToString(),
-                        email = dr[1].ToString(),
-                        role = dr[2].ToString(),
-                    };
-
-                    users.Add(user);
-
-                }
-                con.Close();
-                return users;
-            }
-        }
     }
 
 }

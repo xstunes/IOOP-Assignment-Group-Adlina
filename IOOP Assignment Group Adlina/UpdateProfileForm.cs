@@ -12,17 +12,9 @@ namespace IOOP_Assignment_Group_Adlina
 {
     public partial class UpdateProfileForm : Form
     {
-        string olusername;
-        public UpdateProfileForm(string olUsername)
+        public UpdateProfileForm()
         {
-            this.olusername = olUsername;
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            ManagerProfileUpdate obj1 = new ManagerProfileUpdate(olusername);
-            MessageBox.Show(obj1.updateProfile(txtUsername.Text, txtEmail.Text, txtPassword.Text));
         }
 
         private void UpdateProfileForm_Load(object sender, EventArgs e)
@@ -33,6 +25,32 @@ namespace IOOP_Assignment_Group_Adlina
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void LblProfileSett_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnNewUser_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            NewUserForm changeuser = new NewUserForm();
+            changeuser.ShowDialog();
+        }
+
+        private void BtnNewEm_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            NewEmForm changeem = new NewEmForm();
+            changeem.ShowDialog();
+        }
+
+        private void BtnNewPass_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            NewPassForm changepass = new NewPassForm();
+            changepass.ShowDialog();
         }
     }
 }

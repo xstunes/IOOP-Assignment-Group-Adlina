@@ -37,7 +37,7 @@ namespace IOOP_Assignment_Group_Adlina
         public void BtnSignUp_Click(object sender, EventArgs e)
         {
             string stat = null;
-            stat = UserClass.Registernew(TbSignUser.Text, TbSignEm.Text, TbNewPass.Text, CBSignrole.Text);
+            stat = UserClass.Registernew(TbSignUser.Text, TbSignEm.Text, TbSignPass.Text, CBSignrole.Text);
             if (stat != null)
             {
                 MessageBox.Show(stat);

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -12,9 +13,29 @@ namespace IOOP_Assignment_Group_Adlina
 {
     public partial class NewUserForm : Form
     {
+        private ProfileUpdate updateuser;
+        private static string Connectionstring = ConfigurationManager.ConnectionStrings["IOOP_Assignment_Group_Adlina.Properties.Settings.MainDBConnectionString"].ToString();
+
         public NewUserForm()
         {
             InitializeComponent();
+        }
+
+        public void EmptyAll()
+        {
+            TbNewUser.Text = string.Empty;
+        }
+    
+        private void BtnUpdate_Click(object sender, EventArgs e)
+        {
+            string stat = null;
+            stat = ProfileUpdate.updateUser(TbNewUser.Text);
+            if (stat != null)
+            {
+                MessageBox.Show(stat);
+            }
+            EmptyAll();
+
         }
     }
 }
