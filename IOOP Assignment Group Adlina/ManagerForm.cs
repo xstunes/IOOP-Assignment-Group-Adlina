@@ -17,21 +17,9 @@ namespace IOOP_Assignment_Group_Adlina
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        public ManagerForm()
         {
-            MenuForm ad = new MenuForm();
-            ad.ShowDialog();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            ReservationForm ad = new ReservationForm();
-            ad.ShowDialog();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
+            InitializeComponent();
         }
 
         private void ManagerForm_Load(object sender, EventArgs e)
@@ -39,14 +27,30 @@ namespace IOOP_Assignment_Group_Adlina
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button5_Click_1(object sender, EventArgs e)
         {
 
         }
 
-        private void button5_Click_1(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
+            this.Close();
+        }
 
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            ReservationForm ad = new ReservationForm();
+            ad.ShowDialog();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"Welcome", olUsername);
         }
     }
 }

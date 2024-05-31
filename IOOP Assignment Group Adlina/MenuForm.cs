@@ -94,23 +94,44 @@ namespace IOOP_Assignment_Group_Adlina
 
         void BinData()
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\xiang\source\repos\IOOP-Assignment-Group-Adlina1\IOOP Assignment Group Adlina\MainDB.mdf"";Integrated Security=True;Connect Timeout=30;Encrypt=False");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\xiang\source\repos\IOOP-Assignment-Group-Adlina3\IOOP Assignment Group Adlina\MainDB.mdf"";Integrated Security=True;Connect Timeout=30;Encrypt=False");
             con.Open();
-            SqlCommand cmd = new SqlCommand("select * from menu", con);
+            SqlCommand cmd = new SqlCommand("select * from menu order by menuID asc", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            dataGridView2.DataSource = dt;
+            s.DataSource = dt;
         }
 
-        private void MenuForm_Load(object sender, EventArgs e)
+        private void MenuForm_Load_1(object sender, EventArgs e)
         {
             BinData();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button4_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            FoodMenu obj1 = new FoodMenu(textBox2.Text, textBox3.Text, comboBox1.GetItemText(comboBox1.SelectedItem));
+            MessageBox.Show(obj1.MenuInsert());
+            BinData();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            FoodMenu obj1 = new FoodMenu(textBox1.Text, textBox2.Text, textBox3.Text, comboBox1.GetItemText(comboBox1.SelectedItem));
+            MessageBox.Show(obj1.MenuUpdate());
+            BinData();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            FoodMenu obj1 = new FoodMenu(textBox1.Text, textBox2.Text, textBox3.Text, comboBox1.GetItemText(comboBox1.SelectedItem));
+            MessageBox.Show(obj1.MenuDelete());
+            BinData();
         }
     }
 }
