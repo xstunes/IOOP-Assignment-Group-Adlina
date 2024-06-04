@@ -13,12 +13,13 @@ namespace IOOP_Assignment_Group_Adlina
 {
     public partial class NewUserForm : Form
     {
-        private ProfileUpdate updateuser;
+        private ProfileUpdate updateUser;
         private static string Connectionstring = ConfigurationManager.ConnectionStrings["IOOP_Assignment_Group_Adlina.Properties.Settings.MainDBConnectionString"].ToString();
 
-        public NewUserForm()
+        public NewUserForm(string olusername)
         {
             InitializeComponent();
+            updateUser = new ProfileUpdate(olusername);
         }
 
         public void EmptyAll()
@@ -29,7 +30,7 @@ namespace IOOP_Assignment_Group_Adlina
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
             string stat = null;
-            stat = ProfileUpdate.updateUser(TbNewUser.Text);
+            stat = updateUser.updateUser(TbNewUser.Text);
             if (stat != null)
             {
                 MessageBox.Show(stat);

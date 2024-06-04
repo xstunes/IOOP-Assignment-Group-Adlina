@@ -43,10 +43,9 @@
             // 
             this.LblRestaurant.AutoSize = true;
             this.LblRestaurant.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRestaurant.Location = new System.Drawing.Point(217, 8);
-            this.LblRestaurant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblRestaurant.Location = new System.Drawing.Point(326, 12);
             this.LblRestaurant.Name = "LblRestaurant";
-            this.LblRestaurant.Size = new System.Drawing.Size(426, 44);
+            this.LblRestaurant.Size = new System.Drawing.Size(634, 65);
             this.LblRestaurant.TabIndex = 18;
             this.LblRestaurant.Text = "Hashbrown Restaurant";
             // 
@@ -54,10 +53,9 @@
             // 
             this.LblKL.AutoSize = true;
             this.LblKL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblKL.Location = new System.Drawing.Point(321, 53);
-            this.LblKL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblKL.Location = new System.Drawing.Point(482, 82);
             this.LblKL.Name = "LblKL";
-            this.LblKL.Size = new System.Drawing.Size(176, 20);
+            this.LblKL.Size = new System.Drawing.Size(267, 29);
             this.LblKL.TabIndex = 19;
             this.LblKL.Text = "Kuala Lumpur, Malaysia";
             // 
@@ -65,10 +63,9 @@
             // 
             this.LblProfileSett.AutoSize = true;
             this.LblProfileSett.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblProfileSett.Location = new System.Drawing.Point(330, 83);
-            this.LblProfileSett.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblProfileSett.Location = new System.Drawing.Point(495, 128);
             this.LblProfileSett.Name = "LblProfileSett";
-            this.LblProfileSett.Size = new System.Drawing.Size(150, 24);
+            this.LblProfileSett.Size = new System.Drawing.Size(220, 32);
             this.LblProfileSett.TabIndex = 20;
             this.LblProfileSett.Text = "Manage Profile";
             this.LblProfileSett.Click += new System.EventHandler(this.LblProfileSett_Click);
@@ -79,29 +76,28 @@
             this.panel1.Controls.Add(this.LblRestaurant);
             this.panel1.Controls.Add(this.LblKL);
             this.panel1.Controls.Add(this.LblProfileSett);
-            this.panel1.Location = new System.Drawing.Point(-1, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(-2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(826, 112);
+            this.panel1.Size = new System.Drawing.Size(1239, 172);
             this.panel1.TabIndex = 38;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.BurlyWood;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(86, 367);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(129, 565);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 31);
+            this.button2.Size = new System.Drawing.Size(186, 48);
             this.button2.TabIndex = 37;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // BtnNewUser
             // 
-            this.BtnNewUser.Location = new System.Drawing.Point(337, 172);
+            this.BtnNewUser.Location = new System.Drawing.Point(506, 265);
+            this.BtnNewUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnNewUser.Name = "BtnNewUser";
-            this.BtnNewUser.Size = new System.Drawing.Size(149, 43);
+            this.BtnNewUser.Size = new System.Drawing.Size(224, 66);
             this.BtnNewUser.TabIndex = 39;
             this.BtnNewUser.Text = "Change Username";
             this.BtnNewUser.UseVisualStyleBackColor = true;
@@ -109,9 +105,10 @@
             // 
             // BtnNewEm
             // 
-            this.BtnNewEm.Location = new System.Drawing.Point(337, 231);
+            this.BtnNewEm.Location = new System.Drawing.Point(506, 355);
+            this.BtnNewEm.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnNewEm.Name = "BtnNewEm";
-            this.BtnNewEm.Size = new System.Drawing.Size(149, 39);
+            this.BtnNewEm.Size = new System.Drawing.Size(224, 60);
             this.BtnNewEm.TabIndex = 40;
             this.BtnNewEm.Text = "Change Email";
             this.BtnNewEm.UseVisualStyleBackColor = true;
@@ -119,9 +116,10 @@
             // 
             // BtnNewPass
             // 
-            this.BtnNewPass.Location = new System.Drawing.Point(337, 287);
+            this.BtnNewPass.Location = new System.Drawing.Point(506, 442);
+            this.BtnNewPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnNewPass.Name = "BtnNewPass";
-            this.BtnNewPass.Size = new System.Drawing.Size(149, 41);
+            this.BtnNewPass.Size = new System.Drawing.Size(224, 63);
             this.BtnNewPass.TabIndex = 41;
             this.BtnNewPass.Text = "Change Password";
             this.BtnNewPass.UseVisualStyleBackColor = true;
@@ -129,17 +127,18 @@
             // 
             // UpdateProfileForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.BtnNewPass);
             this.Controls.Add(this.BtnNewEm);
             this.Controls.Add(this.BtnNewUser);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UpdateProfileForm";
-            this.Text = "UpdateProfileForm";
+            this.Text = "0";
             this.Load += new System.EventHandler(this.UpdateProfileForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

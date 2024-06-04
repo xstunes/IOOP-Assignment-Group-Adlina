@@ -98,14 +98,14 @@ namespace IOOP_Assignment_Group_Adlina
                     if (userRole == "Admin")
                     {
                         FormLogin login = new FormLogin();
-                        AdminMenuForm admin =new AdminMenuForm();
+                        AdminMenuForm admin =new AdminMenuForm(username);
                         login.Hide();
                         admin.ShowDialog();
                     }
                     else if (userRole == "Manager")
                     {
                         FormLogin login = new FormLogin();
-                        ManagerForm man = new ManagerForm();
+                        ManagerForm man = new ManagerForm(username);
                         login.Hide();
                         man.ShowDialog();
                     }

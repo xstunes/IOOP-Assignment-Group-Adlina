@@ -41,10 +41,9 @@
             // 
             this.LblProfileSett.AutoSize = true;
             this.LblProfileSett.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblProfileSett.Location = new System.Drawing.Point(196, 101);
-            this.LblProfileSett.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblProfileSett.Location = new System.Drawing.Point(294, 155);
             this.LblProfileSett.Name = "LblProfileSett";
-            this.LblProfileSett.Size = new System.Drawing.Size(209, 24);
+            this.LblProfileSett.Size = new System.Drawing.Size(310, 32);
             this.LblProfileSett.TabIndex = 21;
             this.LblProfileSett.Text = "Profile Setting : Email";
             // 
@@ -52,10 +51,9 @@
             // 
             this.LblKL.AutoSize = true;
             this.LblKL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblKL.Location = new System.Drawing.Point(214, 63);
-            this.LblKL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblKL.Location = new System.Drawing.Point(321, 97);
             this.LblKL.Name = "LblKL";
-            this.LblKL.Size = new System.Drawing.Size(176, 20);
+            this.LblKL.Size = new System.Drawing.Size(267, 29);
             this.LblKL.TabIndex = 20;
             this.LblKL.Text = "Kuala Lumpur, Malaysia";
             // 
@@ -63,29 +61,27 @@
             // 
             this.LblRestaurant.AutoSize = true;
             this.LblRestaurant.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRestaurant.Location = new System.Drawing.Point(109, 19);
-            this.LblRestaurant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblRestaurant.Location = new System.Drawing.Point(164, 29);
             this.LblRestaurant.Name = "LblRestaurant";
-            this.LblRestaurant.Size = new System.Drawing.Size(426, 44);
+            this.LblRestaurant.Size = new System.Drawing.Size(634, 65);
             this.LblRestaurant.TabIndex = 19;
             this.LblRestaurant.Text = "Hashbrown Restaurant";
             // 
             // BtnUpdate
             // 
-            this.BtnUpdate.Location = new System.Drawing.Point(442, 314);
-            this.BtnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnUpdate.Location = new System.Drawing.Point(663, 483);
             this.BtnUpdate.Name = "BtnUpdate";
-            this.BtnUpdate.Size = new System.Drawing.Size(59, 29);
+            this.BtnUpdate.Size = new System.Drawing.Size(88, 45);
             this.BtnUpdate.TabIndex = 34;
             this.BtnUpdate.Text = "Update";
             this.BtnUpdate.UseVisualStyleBackColor = true;
+            this.BtnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
             // BtnBack6
             // 
-            this.BtnBack6.Location = new System.Drawing.Point(116, 314);
-            this.BtnBack6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnBack6.Location = new System.Drawing.Point(174, 483);
             this.BtnBack6.Name = "BtnBack6";
-            this.BtnBack6.Size = new System.Drawing.Size(59, 29);
+            this.BtnBack6.Size = new System.Drawing.Size(88, 45);
             this.BtnBack6.TabIndex = 33;
             this.BtnBack6.Text = "Back";
             this.BtnBack6.UseVisualStyleBackColor = true;
@@ -94,28 +90,26 @@
             // 
             this.LblNewEmail.AutoSize = true;
             this.LblNewEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNewEmail.Location = new System.Drawing.Point(197, 178);
-            this.LblNewEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblNewEmail.Location = new System.Drawing.Point(296, 274);
             this.LblNewEmail.Name = "LblNewEmail";
-            this.LblNewEmail.Size = new System.Drawing.Size(73, 17);
+            this.LblNewEmail.Size = new System.Drawing.Size(113, 25);
             this.LblNewEmail.TabIndex = 32;
             this.LblNewEmail.Text = "New Email";
             // 
             // TbNewEmail
             // 
             this.TbNewEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TbNewEmail.Location = new System.Drawing.Point(200, 204);
-            this.TbNewEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TbNewEmail.Location = new System.Drawing.Point(300, 314);
             this.TbNewEmail.Name = "TbNewEmail";
-            this.TbNewEmail.Size = new System.Drawing.Size(200, 21);
+            this.TbNewEmail.Size = new System.Drawing.Size(298, 28);
             this.TbNewEmail.TabIndex = 31;
             // 
             // NewEmForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(900, 563);
             this.Controls.Add(this.BtnUpdate);
             this.Controls.Add(this.BtnBack6);
             this.Controls.Add(this.LblNewEmail);
@@ -123,7 +117,6 @@
             this.Controls.Add(this.LblProfileSett);
             this.Controls.Add(this.LblKL);
             this.Controls.Add(this.LblRestaurant);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "NewEmForm";
             this.Text = "Form10";
             this.ResumeLayout(false);

@@ -12,11 +12,11 @@ namespace IOOP_Assignment_Group_Adlina
 {
     internal class ProfileUpdate
     {
-        private string username, email, password;
+        string username, email, password;
         private static string Connectionstring = ConfigurationManager.ConnectionStrings["IOOP_Assignment_Group_Adlina.Properties.Settings.MainDBConnectionString"].ConnectionString;
-        static SqlConnection con; //SqlConnection is assigned to con
-        static SqlCommand cmd; //SqlCommand is assigned to cmd
-        static SqlDataReader dr; //SqlDataReader assigned to dr
+        SqlConnection con = new SqlConnection(Connectionstring); //SqlConnection is assigned to con
+        SqlCommand cmd; //SqlCommand is assigned to cmd
+        //SqlDataReader dr; //SqlDataReader assigned to dr
 
         //Constructor with three parameters  
         public ProfileUpdate(string username, string email, string password)
@@ -32,7 +32,7 @@ namespace IOOP_Assignment_Group_Adlina
             this.username = username;
         }
 
-        public static string updateUser(string un)
+        public string updateUser(string un)
         {
             string status;
             con.Open();
@@ -54,12 +54,12 @@ namespace IOOP_Assignment_Group_Adlina
             return status;
         }
 
-        public static string updateEm(string em)
+        public string updateEm(string em)
         {
             string status;
             con.Open();
 
-            SqlCommand cmd = new SqlCommand("UPDATE userData SET Username =@em WHERE Username LIKE @ou;", con);
+            SqlCommand cmd = new SqlCommand("UPDATE userData SET Email =@em WHERE Username LIKE @ou;", con);
             cmd.Parameters.AddWithValue("@em", em);
             cmd.Parameters.AddWithValue("@ou", username);
 
@@ -76,12 +76,12 @@ namespace IOOP_Assignment_Group_Adlina
             return status;
         }
 
-        public static string updatePass(string pa)
+        public string updatePass(string pa)
         {
             string status;
             con.Open();
 
-            SqlCommand cmd = new SqlCommand("UPDATE userData SET Username =@pa WHERE Username LIKE @ou;", con);
+            SqlCommand cmd = new SqlCommand("UPDATE userData SET Password =@pa WHERE Username LIKE @ou;", con);
             cmd.Parameters.AddWithValue("@pa", pa);
             cmd.Parameters.AddWithValue("@ou", username);
 

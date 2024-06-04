@@ -12,14 +12,19 @@ namespace IOOP_Assignment_Group_Adlina
 {
     public partial class ManagerForm : Form
     {
+        string olUsername;
+
+        public string OlUsername { get { return olUsername; } }
+
         public ManagerForm()
         {
             InitializeComponent();
         }
 
-        public ManagerForm()
+        public ManagerForm(string olUsername)
         {
             InitializeComponent();
+            this.olUsername = olUsername;
         }
 
         private void ManagerForm_Load(object sender, EventArgs e)
@@ -29,7 +34,8 @@ namespace IOOP_Assignment_Group_Adlina
 
         private void button5_Click_1(object sender, EventArgs e)
         {
-
+            UpdateProfileForm ad= new UpdateProfileForm(olUsername);
+            ad.ShowDialog();
         }
 
         private void button1_Click_1(object sender, EventArgs e)

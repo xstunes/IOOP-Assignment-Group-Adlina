@@ -12,9 +12,17 @@ namespace IOOP_Assignment_Group_Adlina
 {
     public partial class AdminMenuForm : Form
     {
+        string OlUsername;
         public AdminMenuForm()
         {
             InitializeComponent();
+        }
+
+        public AdminMenuForm(string olusername)
+        {
+            InitializeComponent();
+            this.OlUsername = olusername;
+
         }
 
         private void RbtnManageAdmin_CheckedChanged(object sender, EventArgs e)
@@ -47,7 +55,7 @@ namespace IOOP_Assignment_Group_Adlina
         private void BtnManProfile1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            UpdateProfileForm up = new UpdateProfileForm();
+            UpdateProfileForm up = new UpdateProfileForm(OlUsername);
             up.ShowDialog();
         }
 
