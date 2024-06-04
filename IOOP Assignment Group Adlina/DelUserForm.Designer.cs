@@ -93,6 +93,7 @@
             this.BtnDelete.TabIndex = 17;
             this.BtnDelete.Text = "Delete";
             this.BtnDelete.UseVisualStyleBackColor = true;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
             // BtnBack3
             // 
@@ -103,7 +104,7 @@
             this.BtnBack3.Text = "Back";
             this.BtnBack3.UseVisualStyleBackColor = true;
             // 
-            // Form6
+            // DelUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -116,7 +117,7 @@
             this.Controls.Add(this.LblDelUser);
             this.Controls.Add(this.LblKL);
             this.Controls.Add(this.LblRestaurant);
-            this.Name = "Form6";
+            this.Name = "DelUserForm";
             this.Text = "Form6";
             this.ResumeLayout(false);
             this.PerformLayout();
