@@ -45,6 +45,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label19 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -93,7 +94,7 @@
             this.checkBox13.AutoSize = true;
             this.checkBox13.Location = new System.Drawing.Point(34, 142);
             this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(133, 24);
+            this.checkBox13.Size = new System.Drawing.Size(126, 24);
             this.checkBox13.TabIndex = 3;
             this.checkBox13.Text = "Beef Chilli Dry";
             this.checkBox13.UseVisualStyleBackColor = true;
@@ -103,7 +104,7 @@
             this.checkBox12.AutoSize = true;
             this.checkBox12.Location = new System.Drawing.Point(34, 97);
             this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(109, 24);
+            this.checkBox12.Size = new System.Drawing.Size(102, 24);
             this.checkBox12.TabIndex = 2;
             this.checkBox12.Text = "Chowmein";
             this.checkBox12.UseVisualStyleBackColor = true;
@@ -122,7 +123,7 @@
             this.checkBox10.AutoSize = true;
             this.checkBox10.Location = new System.Drawing.Point(34, 223);
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(142, 24);
+            this.checkBox10.Size = new System.Drawing.Size(135, 24);
             this.checkBox10.TabIndex = 6;
             this.checkBox10.Text = "Beef Sandwich";
             this.checkBox10.UseVisualStyleBackColor = true;
@@ -132,7 +133,7 @@
             this.checkBox8.AutoSize = true;
             this.checkBox8.Location = new System.Drawing.Point(34, 142);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(121, 24);
+            this.checkBox8.Size = new System.Drawing.Size(114, 24);
             this.checkBox8.TabIndex = 3;
             this.checkBox8.Text = "Beef Burger";
             this.checkBox8.UseVisualStyleBackColor = true;
@@ -142,7 +143,7 @@
             this.checkBox9.AutoSize = true;
             this.checkBox9.Location = new System.Drawing.Point(34, 180);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(115, 24);
+            this.checkBox9.Size = new System.Drawing.Size(108, 24);
             this.checkBox9.TabIndex = 5;
             this.checkBox9.Text = "Beef Steak";
             this.checkBox9.UseVisualStyleBackColor = true;
@@ -152,7 +153,7 @@
             this.checkBox7.AutoSize = true;
             this.checkBox7.Location = new System.Drawing.Point(34, 97);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(110, 24);
+            this.checkBox7.Size = new System.Drawing.Size(103, 24);
             this.checkBox7.TabIndex = 2;
             this.checkBox7.Text = "Beef Curry";
             this.checkBox7.UseVisualStyleBackColor = true;
@@ -171,7 +172,7 @@
             this.checkBox6.AutoSize = true;
             this.checkBox6.Location = new System.Drawing.Point(34, 55);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(114, 24);
+            this.checkBox6.Size = new System.Drawing.Size(107, 24);
             this.checkBox6.TabIndex = 1;
             this.checkBox6.Text = "Beef Pasta";
             this.checkBox6.UseVisualStyleBackColor = true;
@@ -208,7 +209,7 @@
             this.checkBox11.AutoSize = true;
             this.checkBox11.Location = new System.Drawing.Point(34, 55);
             this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(107, 24);
+            this.checkBox11.Size = new System.Drawing.Size(100, 24);
             this.checkBox11.TabIndex = 1;
             this.checkBox11.Text = "Fried Rice";
             this.checkBox11.UseVisualStyleBackColor = true;
@@ -216,6 +217,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel2.Controls.Add(this.label19);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label16);
@@ -228,6 +230,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(840, 325);
             this.panel2.TabIndex = 30;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.ForeColor = System.Drawing.Color.ForestGreen;
+            this.label19.Location = new System.Drawing.Point(200, 54);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(177, 20);
+            this.label19.TabIndex = 18;
+            this.label19.Text = "Only for Edit and Delete";
             // 
             // textBox1
             // 
@@ -244,7 +256,7 @@
             this.label15.Location = new System.Drawing.Point(16, 28);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(96, 29);
+            this.label15.Size = new System.Drawing.Size(59, 18);
             this.label15.TabIndex = 6;
             this.label15.Text = "MenuID";
             // 
@@ -255,7 +267,7 @@
             this.label16.Location = new System.Drawing.Point(16, 108);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(116, 29);
+            this.label16.Size = new System.Drawing.Size(71, 18);
             this.label16.TabIndex = 7;
             this.label16.Text = "FoodItem";
             // 
@@ -279,7 +291,7 @@
             this.label17.Location = new System.Drawing.Point(16, 183);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(69, 29);
+            this.label17.Size = new System.Drawing.Size(42, 18);
             this.label17.TabIndex = 8;
             this.label17.Text = "Price";
             // 
@@ -290,7 +302,7 @@
             this.label18.Location = new System.Drawing.Point(16, 262);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(110, 29);
+            this.label18.Size = new System.Drawing.Size(68, 18);
             this.label18.TabIndex = 9;
             this.label18.Text = "Category";
             // 
@@ -367,7 +379,7 @@
             this.lblfood.ForeColor = System.Drawing.Color.Black;
             this.lblfood.Location = new System.Drawing.Point(87, 25);
             this.lblfood.Name = "lblfood";
-            this.lblfood.Size = new System.Drawing.Size(222, 37);
+            this.lblfood.Size = new System.Drawing.Size(155, 26);
             this.lblfood.TabIndex = 0;
             this.lblfood.Text = "FOOD MENU";
             // 
@@ -451,7 +463,7 @@
             this.checkBox5.AutoSize = true;
             this.checkBox5.Location = new System.Drawing.Point(39, 223);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(165, 24);
+            this.checkBox5.Size = new System.Drawing.Size(158, 24);
             this.checkBox5.TabIndex = 8;
             this.checkBox5.Text = "Chicken Sandwich";
             this.checkBox5.UseVisualStyleBackColor = true;
@@ -461,7 +473,7 @@
             this.checkBox4.AutoSize = true;
             this.checkBox4.Location = new System.Drawing.Point(39, 180);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(139, 24);
+            this.checkBox4.Size = new System.Drawing.Size(132, 24);
             this.checkBox4.TabIndex = 5;
             this.checkBox4.Text = "Chicken Mandi";
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -471,7 +483,7 @@
             this.checkBox3.AutoSize = true;
             this.checkBox3.Location = new System.Drawing.Point(39, 142);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(144, 24);
+            this.checkBox3.Size = new System.Drawing.Size(137, 24);
             this.checkBox3.TabIndex = 7;
             this.checkBox3.Text = "Chicken Burger";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -481,7 +493,7 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(39, 97);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(133, 24);
+            this.checkBox2.Size = new System.Drawing.Size(126, 24);
             this.checkBox2.TabIndex = 6;
             this.checkBox2.Text = "Chicken Curry";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -491,7 +503,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(39, 55);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(159, 24);
+            this.checkBox1.Size = new System.Drawing.Size(152, 24);
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "Chicken and Rice";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -591,7 +603,7 @@
             this.checkBox14.AutoSize = true;
             this.checkBox14.Location = new System.Drawing.Point(34, 180);
             this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(160, 24);
+            this.checkBox14.Size = new System.Drawing.Size(153, 24);
             this.checkBox14.TabIndex = 5;
             this.checkBox14.Text = "Chicken Chilli Dry ";
             this.checkBox14.UseVisualStyleBackColor = true;
@@ -642,6 +654,7 @@
             this.Controls.Add(this.grpChinese);
             this.Controls.Add(this.grpBeef);
             this.Name = "MenuForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form20";
             this.Load += new System.EventHandler(this.MenuForm_Load_1);
             this.panel2.ResumeLayout(false);
@@ -710,5 +723,6 @@
         private System.Windows.Forms.CheckBox checkBox14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.GroupBox grpBeef;
+        private System.Windows.Forms.Label label19;
     }
 }

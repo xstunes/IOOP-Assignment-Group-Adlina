@@ -38,5 +38,10 @@ namespace IOOP_Assignment_Group_Adlina
             EmptyAll();
 
         }
+
+        private void BtnBack6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

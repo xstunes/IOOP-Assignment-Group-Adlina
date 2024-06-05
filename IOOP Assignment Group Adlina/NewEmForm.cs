@@ -32,5 +32,15 @@ namespace IOOP_Assignment_Group_Adlina
             }
             
         }
+
+        private void TbNewEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnBack6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

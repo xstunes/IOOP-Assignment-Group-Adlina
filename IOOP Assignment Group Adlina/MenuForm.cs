@@ -94,7 +94,7 @@ namespace IOOP_Assignment_Group_Adlina
 
         void BinData()
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\xiang\source\repos\IOOP-Assignment-Group-Adlina3\IOOP Assignment Group Adlina\MainDB.mdf"";Integrated Security=True;Connect Timeout=30;Encrypt=False");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\xiang\source\repos\IOOP-Assignment-Group-Adlina4\IOOP Assignment Group Adlina\MAINDB.MDF"";Integrated Security=True;Connect Timeout=30;Encrypt=False");
             con.Open();
             SqlCommand cmd = new SqlCommand("select * from menu order by menuID asc", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);

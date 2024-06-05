@@ -29,5 +29,10 @@ namespace IOOP_Assignment_Group_Adlina
                 MessageBox.Show(stat);
             }
         }
+
+        private void BtnBack6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

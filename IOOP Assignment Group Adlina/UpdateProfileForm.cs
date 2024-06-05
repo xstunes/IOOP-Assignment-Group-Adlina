@@ -55,5 +55,10 @@ namespace IOOP_Assignment_Group_Adlina
             NewPassForm changepass = new NewPassForm(olusername);
             changepass.ShowDialog();
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
