@@ -21,5 +21,10 @@ namespace IOOP_Assignment_Group_Adlina
         {
 
         }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
