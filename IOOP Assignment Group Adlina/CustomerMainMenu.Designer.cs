@@ -31,11 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.FoodMenubtn = new System.Windows.Forms.RadioButton();
+            this.Orderfoodbtn = new System.Windows.Forms.RadioButton();
+            this.statusbtn = new System.Windows.Forms.RadioButton();
+            this.feedbackbtn = new System.Windows.Forms.RadioButton();
+            this.updatebtn = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -70,66 +70,69 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Welcome, Customer.";
             // 
-            // radioButton1
+            // FoodMenubtn
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(266, 230);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(115, 24);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Food Menu";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.FoodMenubtn.AutoSize = true;
+            this.FoodMenubtn.Location = new System.Drawing.Point(266, 230);
+            this.FoodMenubtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.FoodMenubtn.Name = "FoodMenubtn";
+            this.FoodMenubtn.Size = new System.Drawing.Size(115, 24);
+            this.FoodMenubtn.TabIndex = 3;
+            this.FoodMenubtn.TabStop = true;
+            this.FoodMenubtn.Text = "Food Menu";
+            this.FoodMenubtn.UseVisualStyleBackColor = true;
+            this.FoodMenubtn.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // radioButton2
+            // Orderfoodbtn
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(266, 274);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(115, 24);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Order Food";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.Orderfoodbtn.AutoSize = true;
+            this.Orderfoodbtn.Location = new System.Drawing.Point(266, 274);
+            this.Orderfoodbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Orderfoodbtn.Name = "Orderfoodbtn";
+            this.Orderfoodbtn.Size = new System.Drawing.Size(115, 24);
+            this.Orderfoodbtn.TabIndex = 4;
+            this.Orderfoodbtn.TabStop = true;
+            this.Orderfoodbtn.Text = "Order Food";
+            this.Orderfoodbtn.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // statusbtn
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(266, 314);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(283, 24);
-            this.radioButton3.TabIndex = 5;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "View Order and Reservation Status";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.statusbtn.AutoSize = true;
+            this.statusbtn.Location = new System.Drawing.Point(266, 314);
+            this.statusbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.statusbtn.Name = "statusbtn";
+            this.statusbtn.Size = new System.Drawing.Size(283, 24);
+            this.statusbtn.TabIndex = 5;
+            this.statusbtn.TabStop = true;
+            this.statusbtn.Text = "View Order and Reservation Status";
+            this.statusbtn.UseVisualStyleBackColor = true;
+            this.statusbtn.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
-            // radioButton4
+            // feedbackbtn
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(266, 355);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(105, 24);
-            this.radioButton4.TabIndex = 6;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Feedback";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.feedbackbtn.AutoSize = true;
+            this.feedbackbtn.Location = new System.Drawing.Point(266, 355);
+            this.feedbackbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.feedbackbtn.Name = "feedbackbtn";
+            this.feedbackbtn.Size = new System.Drawing.Size(105, 24);
+            this.feedbackbtn.TabIndex = 6;
+            this.feedbackbtn.TabStop = true;
+            this.feedbackbtn.Text = "Feedback";
+            this.feedbackbtn.UseVisualStyleBackColor = true;
+            this.feedbackbtn.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
-            // radioButton5
+            // updatebtn
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(266, 396);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(87, 24);
-            this.radioButton5.TabIndex = 7;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Update";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.updatebtn.AutoSize = true;
+            this.updatebtn.Location = new System.Drawing.Point(266, 396);
+            this.updatebtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.updatebtn.Name = "updatebtn";
+            this.updatebtn.Size = new System.Drawing.Size(87, 24);
+            this.updatebtn.TabIndex = 7;
+            this.updatebtn.TabStop = true;
+            this.updatebtn.Text = "Update";
+            this.updatebtn.UseVisualStyleBackColor = true;
+            this.updatebtn.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             // 
             // button1
             // 
@@ -159,11 +162,11 @@
             this.ClientSize = new System.Drawing.Size(846, 668);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.radioButton5);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.updatebtn);
+            this.Controls.Add(this.feedbackbtn);
+            this.Controls.Add(this.statusbtn);
+            this.Controls.Add(this.Orderfoodbtn);
+            this.Controls.Add(this.FoodMenubtn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -181,11 +184,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton FoodMenubtn;
+        private System.Windows.Forms.RadioButton Orderfoodbtn;
+        private System.Windows.Forms.RadioButton statusbtn;
+        private System.Windows.Forms.RadioButton feedbackbtn;
+        private System.Windows.Forms.RadioButton updatebtn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
     }
