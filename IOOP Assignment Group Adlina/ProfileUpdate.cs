@@ -13,8 +13,10 @@ namespace IOOP_Assignment_Group_Adlina
     internal class ProfileUpdate
     {
         string username, email, password;
-        private static string Connectionstring = ConfigurationManager.ConnectionStrings["IOOP_Assignment_Group_Adlina.Properties.Settings.MainDBConnectionString"].ConnectionString;
-        SqlConnection con = new SqlConnection(Connectionstring); //SqlConnection is assigned to con
+        static SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\xiang\source\repos\IOOP-Assignment-Group-Adlina4\IOOP Assignment Group Adlina\MainDB.mdf"";Integrated Security=True;Connect Timeout=30;Encrypt=False");
+        //private static string Connectionstring = ConfigurationManager.ConnectionStrings["IOOP_Assignment_Group_Adlina.Properties.Settings.MainDBConnectionString"].ConnectionString;
+        //SqlConnection con = new SqlConnection(Connectionstring); //SqlConnection is assigned to con
+        //Above connection string is not working ,i dont know why?
         SqlCommand cmd; //SqlCommand is assigned to cmd
         //SqlDataReader dr; //SqlDataReader assigned to dr
 
@@ -34,6 +36,7 @@ namespace IOOP_Assignment_Group_Adlina
 
         public string updateUser(string un)
         {
+            
             string status;
             con.Open();
 

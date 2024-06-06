@@ -28,55 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.LblKL = new System.Windows.Forms.Label();
-            this.LblRestaurant = new System.Windows.Forms.Label();
-            this.LblManageUser = new System.Windows.Forms.Label();
             this.BtnBack = new System.Windows.Forms.Button();
             this.BtnViewReg = new System.Windows.Forms.Button();
             this.BtnAddNewus = new System.Windows.Forms.Button();
             this.BtnDelReguser = new System.Windows.Forms.Button();
             this.BtnChangeRole = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.LblAddNew = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // LblKL
-            // 
-            this.LblKL.AutoSize = true;
-            this.LblKL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblKL.Location = new System.Drawing.Point(212, 59);
-            this.LblKL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LblKL.Name = "LblKL";
-            this.LblKL.Size = new System.Drawing.Size(176, 20);
-            this.LblKL.TabIndex = 5;
-            this.LblKL.Text = "Kuala Lumpur, Malaysia";
-            // 
-            // LblRestaurant
-            // 
-            this.LblRestaurant.AutoSize = true;
-            this.LblRestaurant.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRestaurant.Location = new System.Drawing.Point(106, 15);
-            this.LblRestaurant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LblRestaurant.Name = "LblRestaurant";
-            this.LblRestaurant.Size = new System.Drawing.Size(426, 44);
-            this.LblRestaurant.TabIndex = 4;
-            this.LblRestaurant.Text = "Hashbrown Restaurant";
-            // 
-            // LblManageUser
-            // 
-            this.LblManageUser.AutoSize = true;
-            this.LblManageUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblManageUser.Location = new System.Drawing.Point(223, 93);
-            this.LblManageUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LblManageUser.Name = "LblManageUser";
-            this.LblManageUser.Size = new System.Drawing.Size(144, 24);
-            this.LblManageUser.TabIndex = 6;
-            this.LblManageUser.Text = "Manage Users";
             // 
             // BtnBack
             // 
-            this.BtnBack.Location = new System.Drawing.Point(114, 347);
-            this.BtnBack.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnBack.Location = new System.Drawing.Point(96, 545);
             this.BtnBack.Name = "BtnBack";
-            this.BtnBack.Size = new System.Drawing.Size(59, 29);
+            this.BtnBack.Size = new System.Drawing.Size(88, 45);
             this.BtnBack.TabIndex = 12;
             this.BtnBack.Text = "Back";
             this.BtnBack.UseVisualStyleBackColor = true;
@@ -84,75 +52,122 @@
             // 
             // BtnViewReg
             // 
-            this.BtnViewReg.Location = new System.Drawing.Point(227, 143);
+            this.BtnViewReg.BackColor = System.Drawing.Color.Bisque;
+            this.BtnViewReg.Location = new System.Drawing.Point(340, 220);
+            this.BtnViewReg.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnViewReg.Name = "BtnViewReg";
-            this.BtnViewReg.Size = new System.Drawing.Size(129, 31);
+            this.BtnViewReg.Size = new System.Drawing.Size(194, 48);
             this.BtnViewReg.TabIndex = 13;
             this.BtnViewReg.Text = "Registered Users";
-            this.BtnViewReg.UseVisualStyleBackColor = true;
+            this.BtnViewReg.UseVisualStyleBackColor = false;
             this.BtnViewReg.Click += new System.EventHandler(this.BtnViewReg_Click);
             // 
             // BtnAddNewus
             // 
-            this.BtnAddNewus.Location = new System.Drawing.Point(227, 195);
+            this.BtnAddNewus.BackColor = System.Drawing.Color.Bisque;
+            this.BtnAddNewus.Location = new System.Drawing.Point(340, 300);
+            this.BtnAddNewus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnAddNewus.Name = "BtnAddNewus";
-            this.BtnAddNewus.Size = new System.Drawing.Size(129, 31);
+            this.BtnAddNewus.Size = new System.Drawing.Size(194, 48);
             this.BtnAddNewus.TabIndex = 14;
             this.BtnAddNewus.Text = "Add New User";
-            this.BtnAddNewus.UseVisualStyleBackColor = true;
+            this.BtnAddNewus.UseVisualStyleBackColor = false;
             this.BtnAddNewus.Click += new System.EventHandler(this.BtnAddNewus_Click);
             // 
             // BtnDelReguser
             // 
-            this.BtnDelReguser.Location = new System.Drawing.Point(227, 295);
+            this.BtnDelReguser.BackColor = System.Drawing.Color.Bisque;
+            this.BtnDelReguser.Location = new System.Drawing.Point(340, 454);
+            this.BtnDelReguser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnDelReguser.Name = "BtnDelReguser";
-            this.BtnDelReguser.Size = new System.Drawing.Size(129, 31);
+            this.BtnDelReguser.Size = new System.Drawing.Size(194, 48);
             this.BtnDelReguser.TabIndex = 15;
             this.BtnDelReguser.Text = "Delete Registered User";
-            this.BtnDelReguser.UseVisualStyleBackColor = true;
+            this.BtnDelReguser.UseVisualStyleBackColor = false;
             this.BtnDelReguser.Click += new System.EventHandler(this.BtnDelReguser_Click);
             // 
             // BtnChangeRole
             // 
-            this.BtnChangeRole.Location = new System.Drawing.Point(227, 245);
+            this.BtnChangeRole.BackColor = System.Drawing.Color.Bisque;
+            this.BtnChangeRole.Location = new System.Drawing.Point(340, 377);
+            this.BtnChangeRole.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.BtnChangeRole.Name = "BtnChangeRole";
-            this.BtnChangeRole.Size = new System.Drawing.Size(129, 30);
+            this.BtnChangeRole.Size = new System.Drawing.Size(194, 46);
             this.BtnChangeRole.TabIndex = 16;
             this.BtnChangeRole.Text = "Change Roles";
-            this.BtnChangeRole.UseVisualStyleBackColor = true;
+            this.BtnChangeRole.UseVisualStyleBackColor = false;
             this.BtnChangeRole.Click += new System.EventHandler(this.BtnChangeRole_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Peru;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.LblAddNew);
+            this.panel1.Location = new System.Drawing.Point(0, -1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(899, 129);
+            this.panel1.TabIndex = 21;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(230, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(426, 44);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Hashbrown Restaurant";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(352, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(176, 20);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Kuala Lumpur, Malaysia";
+            // 
+            // LblAddNew
+            // 
+            this.LblAddNew.AutoSize = true;
+            this.LblAddNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAddNew.Location = new System.Drawing.Point(366, 93);
+            this.LblAddNew.Name = "LblAddNew";
+            this.LblAddNew.Size = new System.Drawing.Size(144, 24);
+            this.LblAddNew.TabIndex = 8;
+            this.LblAddNew.Text = "Manage Users";
             // 
             // ManageUserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(600, 420);
+            this.BackColor = System.Drawing.Color.Tan;
+            this.ClientSize = new System.Drawing.Size(900, 646);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.BtnChangeRole);
             this.Controls.Add(this.BtnDelReguser);
             this.Controls.Add(this.BtnAddNewus);
             this.Controls.Add(this.BtnViewReg);
             this.Controls.Add(this.BtnBack);
-            this.Controls.Add(this.LblManageUser);
-            this.Controls.Add(this.LblKL);
-            this.Controls.Add(this.LblRestaurant);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ManageUserForm";
             this.Text = "Form3";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label LblKL;
-        private System.Windows.Forms.Label LblRestaurant;
-        private System.Windows.Forms.Label LblManageUser;
         private System.Windows.Forms.Button BtnBack;
         private System.Windows.Forms.Button BtnViewReg;
         private System.Windows.Forms.Button BtnAddNewus;
         private System.Windows.Forms.Button BtnDelReguser;
         private System.Windows.Forms.Button BtnChangeRole;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LblAddNew;
     }
 }

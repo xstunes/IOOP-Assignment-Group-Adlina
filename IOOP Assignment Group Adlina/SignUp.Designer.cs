@@ -47,10 +47,9 @@
             // 
             // BtnSignUp
             // 
-            this.BtnSignUp.Location = new System.Drawing.Point(516, 531);
-            this.BtnSignUp.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnSignUp.Location = new System.Drawing.Point(774, 817);
             this.BtnSignUp.Name = "BtnSignUp";
-            this.BtnSignUp.Size = new System.Drawing.Size(59, 29);
+            this.BtnSignUp.Size = new System.Drawing.Size(88, 45);
             this.BtnSignUp.TabIndex = 33;
             this.BtnSignUp.Text = "Sign Up";
             this.BtnSignUp.UseVisualStyleBackColor = true;
@@ -58,10 +57,9 @@
             // 
             // BtnBack3
             // 
-            this.BtnBack3.Location = new System.Drawing.Point(190, 531);
-            this.BtnBack3.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnBack3.Location = new System.Drawing.Point(285, 817);
             this.BtnBack3.Name = "BtnBack3";
-            this.BtnBack3.Size = new System.Drawing.Size(59, 29);
+            this.BtnBack3.Size = new System.Drawing.Size(88, 45);
             this.BtnBack3.TabIndex = 32;
             this.BtnBack3.Text = "Back";
             this.BtnBack3.UseVisualStyleBackColor = true;
@@ -75,37 +73,33 @@
             "Manager",
             "Chef",
             "Customer"});
-            this.CBSignrole.Location = new System.Drawing.Point(276, 357);
-            this.CBSignrole.Margin = new System.Windows.Forms.Padding(2);
+            this.CBSignrole.Location = new System.Drawing.Point(414, 549);
             this.CBSignrole.Name = "CBSignrole";
-            this.CBSignrole.Size = new System.Drawing.Size(92, 25);
+            this.CBSignrole.Size = new System.Drawing.Size(136, 25);
             this.CBSignrole.TabIndex = 29;
             this.CBSignrole.SelectedIndexChanged += new System.EventHandler(this.CBSignrole_SelectedIndexChanged);
             // 
             // TbSignEm
             // 
             this.TbSignEm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TbSignEm.Location = new System.Drawing.Point(276, 296);
-            this.TbSignEm.Margin = new System.Windows.Forms.Padding(2);
+            this.TbSignEm.Location = new System.Drawing.Point(414, 455);
             this.TbSignEm.Name = "TbSignEm";
-            this.TbSignEm.Size = new System.Drawing.Size(233, 21);
+            this.TbSignEm.Size = new System.Drawing.Size(348, 21);
             this.TbSignEm.TabIndex = 28;
             // 
             // TbSignUser
             // 
             this.TbSignUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TbSignUser.Location = new System.Drawing.Point(276, 238);
-            this.TbSignUser.Margin = new System.Windows.Forms.Padding(2);
+            this.TbSignUser.Location = new System.Drawing.Point(414, 366);
             this.TbSignUser.Name = "TbSignUser";
-            this.TbSignUser.Size = new System.Drawing.Size(233, 21);
+            this.TbSignUser.Size = new System.Drawing.Size(348, 21);
             this.TbSignUser.TabIndex = 27;
             // 
             // LblNewRole
             // 
             this.LblNewRole.AutoSize = true;
             this.LblNewRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNewRole.Location = new System.Drawing.Point(274, 338);
-            this.LblNewRole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblNewRole.Location = new System.Drawing.Point(411, 520);
             this.LblNewRole.Name = "LblNewRole";
             this.LblNewRole.Size = new System.Drawing.Size(44, 17);
             this.LblNewRole.TabIndex = 25;
@@ -115,8 +109,7 @@
             // 
             this.LblNewEmail.AutoSize = true;
             this.LblNewEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNewEmail.Location = new System.Drawing.Point(274, 278);
-            this.LblNewEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblNewEmail.Location = new System.Drawing.Point(411, 428);
             this.LblNewEmail.Name = "LblNewEmail";
             this.LblNewEmail.Size = new System.Drawing.Size(42, 17);
             this.LblNewEmail.TabIndex = 24;
@@ -126,8 +119,7 @@
             // 
             this.LblNewUser.AutoSize = true;
             this.LblNewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNewUser.Location = new System.Drawing.Point(274, 219);
-            this.LblNewUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblNewUser.Location = new System.Drawing.Point(411, 337);
             this.LblNewUser.Name = "LblNewUser";
             this.LblNewUser.Size = new System.Drawing.Size(73, 17);
             this.LblNewUser.TabIndex = 23;
@@ -137,8 +129,7 @@
             // 
             this.LblShowSignup.AutoSize = true;
             this.LblShowSignup.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblShowSignup.Location = new System.Drawing.Point(338, 184);
-            this.LblShowSignup.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblShowSignup.Location = new System.Drawing.Point(544, 195);
             this.LblShowSignup.Name = "LblShowSignup";
             this.LblShowSignup.Size = new System.Drawing.Size(84, 24);
             this.LblShowSignup.TabIndex = 22;
@@ -148,8 +139,7 @@
             // 
             this.LblKL.AutoSize = true;
             this.LblKL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblKL.Location = new System.Drawing.Point(288, 145);
-            this.LblKL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblKL.Location = new System.Drawing.Point(494, 141);
             this.LblKL.Name = "LblKL";
             this.LblKL.Size = new System.Drawing.Size(176, 20);
             this.LblKL.TabIndex = 21;
@@ -159,8 +149,7 @@
             // 
             this.LblRestaurant.AutoSize = true;
             this.LblRestaurant.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRestaurant.Location = new System.Drawing.Point(183, 102);
-            this.LblRestaurant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblRestaurant.Location = new System.Drawing.Point(363, 73);
             this.LblRestaurant.Name = "LblRestaurant";
             this.LblRestaurant.Size = new System.Drawing.Size(426, 44);
             this.LblRestaurant.TabIndex = 20;
@@ -170,7 +159,7 @@
             // 
             this.TbNewPass.Location = new System.Drawing.Point(274, 445);
             this.TbNewPass.Name = "TbNewPass";
-            this.TbNewPass.Size = new System.Drawing.Size(203, 20);
+            this.TbNewPass.Size = new System.Drawing.Size(203, 26);
             this.TbNewPass.TabIndex = 38;
             // 
             // LblNewPass
@@ -186,9 +175,10 @@
             // 
             // TbSignPass
             // 
-            this.TbSignPass.Location = new System.Drawing.Point(277, 428);
+            this.TbSignPass.Location = new System.Drawing.Point(416, 658);
+            this.TbSignPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TbSignPass.Name = "TbSignPass";
-            this.TbSignPass.Size = new System.Drawing.Size(203, 20);
+            this.TbSignPass.Size = new System.Drawing.Size(302, 26);
             this.TbSignPass.TabIndex = 38;
             this.TbSignPass.UseSystemPasswordChar = true;
             // 
@@ -196,8 +186,7 @@
             // 
             this.LblSignPass.AutoSize = true;
             this.LblSignPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblSignPass.Location = new System.Drawing.Point(274, 397);
-            this.LblSignPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblSignPass.Location = new System.Drawing.Point(411, 611);
             this.LblSignPass.Name = "LblSignPass";
             this.LblSignPass.Size = new System.Drawing.Size(100, 17);
             this.LblSignPass.TabIndex = 37;
@@ -205,10 +194,10 @@
             // 
             // SignUp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(820, 579);
+            this.BackColor = System.Drawing.Color.Tan;
+            this.ClientSize = new System.Drawing.Size(1230, 891);
             this.Controls.Add(this.TbSignPass);
             this.Controls.Add(this.LblSignPass);
             this.Controls.Add(this.BtnSignUp);
@@ -222,6 +211,7 @@
             this.Controls.Add(this.LblShowSignup);
             this.Controls.Add(this.LblKL);
             this.Controls.Add(this.LblRestaurant);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "SignUp";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.SignUp_Load);

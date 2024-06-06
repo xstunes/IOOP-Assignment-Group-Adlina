@@ -41,8 +41,7 @@
             // 
             this.LblFeedback.AutoSize = true;
             this.LblFeedback.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblFeedback.Location = new System.Drawing.Point(249, 102);
-            this.LblFeedback.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblFeedback.Location = new System.Drawing.Point(383, 165);
             this.LblFeedback.Name = "LblFeedback";
             this.LblFeedback.Size = new System.Drawing.Size(103, 24);
             this.LblFeedback.TabIndex = 17;
@@ -52,8 +51,7 @@
             // 
             this.LblKL.AutoSize = true;
             this.LblKL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblKL.Location = new System.Drawing.Point(208, 60);
-            this.LblKL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblKL.Location = new System.Drawing.Point(348, 124);
             this.LblKL.Name = "LblKL";
             this.LblKL.Size = new System.Drawing.Size(176, 20);
             this.LblKL.TabIndex = 16;
@@ -63,8 +61,7 @@
             // 
             this.LblRestaurant.AutoSize = true;
             this.LblRestaurant.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRestaurant.Location = new System.Drawing.Point(104, 16);
-            this.LblRestaurant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblRestaurant.Location = new System.Drawing.Point(231, 57);
             this.LblRestaurant.Name = "LblRestaurant";
             this.LblRestaurant.Size = new System.Drawing.Size(426, 44);
             this.LblRestaurant.TabIndex = 15;
@@ -72,20 +69,18 @@
             // 
             // BtnBack4
             // 
-            this.BtnBack4.Location = new System.Drawing.Point(110, 505);
-            this.BtnBack4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnBack4.Location = new System.Drawing.Point(104, 355);
             this.BtnBack4.Name = "BtnBack4";
-            this.BtnBack4.Size = new System.Drawing.Size(59, 29);
+            this.BtnBack4.Size = new System.Drawing.Size(88, 45);
             this.BtnBack4.TabIndex = 21;
             this.BtnBack4.Text = "Back";
             this.BtnBack4.UseVisualStyleBackColor = true;
             // 
             // BtnNext3
             // 
-            this.BtnNext3.Location = new System.Drawing.Point(436, 505);
-            this.BtnNext3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnNext3.Location = new System.Drawing.Point(737, 355);
             this.BtnNext3.Name = "BtnNext3";
-            this.BtnNext3.Size = new System.Drawing.Size(59, 29);
+            this.BtnNext3.Size = new System.Drawing.Size(88, 45);
             this.BtnNext3.TabIndex = 22;
             this.BtnNext3.Text = "Next";
             this.BtnNext3.UseVisualStyleBackColor = true;
@@ -94,8 +89,7 @@
             // 
             this.LblFilter.AutoSize = true;
             this.LblFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblFilter.Location = new System.Drawing.Point(197, 145);
-            this.LblFilter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblFilter.Location = new System.Drawing.Point(299, 243);
             this.LblFilter.Name = "LblFilter";
             this.LblFilter.Size = new System.Drawing.Size(51, 17);
             this.LblFilter.TabIndex = 23;
@@ -104,18 +98,17 @@
             // CbFeedback
             // 
             this.CbFeedback.FormattingEnabled = true;
-            this.CbFeedback.Location = new System.Drawing.Point(248, 142);
-            this.CbFeedback.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CbFeedback.Location = new System.Drawing.Point(375, 238);
             this.CbFeedback.Name = "CbFeedback";
-            this.CbFeedback.Size = new System.Drawing.Size(123, 21);
+            this.CbFeedback.Size = new System.Drawing.Size(182, 28);
             this.CbFeedback.TabIndex = 24;
             // 
             // ViewFBForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(600, 574);
+            this.BackColor = System.Drawing.Color.Tan;
+            this.ClientSize = new System.Drawing.Size(900, 477);
             this.Controls.Add(this.CbFeedback);
             this.Controls.Add(this.LblFilter);
             this.Controls.Add(this.BtnNext3);
@@ -123,7 +116,6 @@
             this.Controls.Add(this.LblFeedback);
             this.Controls.Add(this.LblKL);
             this.Controls.Add(this.LblRestaurant);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ViewFBForm";
             this.Text = "Form7";
             this.ResumeLayout(false);

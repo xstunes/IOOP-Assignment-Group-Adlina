@@ -63,5 +63,10 @@ namespace IOOP_Assignment_Group_Adlina
         {
 
         }
+
+        private void LblAddNew_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

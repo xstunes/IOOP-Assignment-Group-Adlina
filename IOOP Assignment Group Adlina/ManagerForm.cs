@@ -51,7 +51,8 @@ namespace IOOP_Assignment_Group_Adlina
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            MenuForm ad = new MenuForm();
+            ad.ShowDialog();
         }
 
         private void label2_Click(object sender, EventArgs e)
