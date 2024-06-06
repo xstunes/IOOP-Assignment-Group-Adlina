@@ -41,8 +41,8 @@ namespace IOOP_Assignment_Group_Adlina
         private void BtnBack2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AdminMenuForm admin = new AdminMenuForm();
-            admin.ShowDialog();
+            ManageUserForm muf = new ManageUserForm();
+            muf.ShowDialog();
         }
 
 
