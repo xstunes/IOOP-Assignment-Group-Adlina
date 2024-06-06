@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IOOP_Assignment_Group_Adlina
 {
-    public partial class Form7 : Form
+    public partial class ViewFBForm : Form
     {
-        public Form7()
+        public ViewFBForm()
         {
             InitializeComponent();
         }

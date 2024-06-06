@@ -13,79 +13,21 @@ using System.Runtime.Remoting.Messaging;
 
 namespace IOOP_Assignment_Group_Adlina
 {
+
     public partial class FormLogin : Form
     {
+        private UserClass user;
+        private static string Connectionstring = ConfigurationManager.ConnectionStrings["IOOP_Assignment_Group_Adlina.Properties.Settings.MainDBConnectionString"].ToString();
+
+        public void EmptyAll()
+        {
+            TbLoginUserEmail.Text = string.Empty;
+            TbLoginPass.Text = string.Empty;
+        }
+
         public FormLogin()
         {
             InitializeComponent();
-        }
-
-        public string LoginAuth(string un)
-        {
-            String status = null;//check login pass
-
-            //connect to database, via sqlconnection
-            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["IOOP_Assignment_Group_Adlina.Properties.Settings.MainDBConnectionString"].ToString());
-            con.Open(); //open connection
-
-            SqlCommand cmd = new SqlCommand("select count(*) from userData where (Username=@a or Email=@a) and (Password=@b)", con);
-            cmd.Parameters.AddWithValue("@a", getUsernameEmail());
-            cmd.Parameters.AddWithValue("@b", getPassword());
-
-            int count = Convert.ToInt32(cmd.ExecuteScalar());
-            if (count > 0) //if found user in database, count > 0
-            {
-                //to authenticate role of user and assign them to their respective pages
-                SqlCommand cmd2 = new SqlCommand("select Role from userData where (Username=@a or Email=@a) and (Password=@b)", con);
-                cmd2.Parameters.AddWithValue("@a", getUsernameEmail());
-                cmd2.Parameters.AddWithValue("@b", getPassword());
-                string userRole = cmd2.ExecuteScalar().ToString();
-
-                if (userRole == "Admin")
-                {
-                    //redirect to Admin page
-                    AdminMenuForm amf = new AdminMenuForm();
-                    amf.Show();
-                    this.Hide();
-                }
-                else if (userRole == "Manager")
-                {
-                    //redirect to Manager page
-                    ManagerForm mf = new ManagerForm();
-                    mf.Show();
-                    this.Hide();
-                }
-                else if (userRole == "Chef")
-                {
-                    //redirect to Chef page
-                    MenuForm mff = new MenuForm();  //replace later
-                    mff.Show();
-                    this.Hide();
-                }
-                else if (userRole == "Customer")
-                {
-                    //redirect to Customer page
-                    On9PayForm op = new On9PayForm();
-                    op.Show();
-                    this.Hide();
-                }
-                else
-
-                    status = ("Incorrect Username/Email or Password.");
-
-            }                
-            con.Close();
-            return status;
-        }
-
-        public string getUsernameEmail()
-        {
-            return TbLoginUserEmail.Text;
-        }
-
-        public string getPassword()
-        {
-            return TbLoginPass.Text;
         }
 
         private void FormLogin_Load(object sender, EventArgs e)
@@ -93,18 +35,33 @@ namespace IOOP_Assignment_Group_Adlina
 
         }
 
+
         private void BtnLogin_Click(object sender, EventArgs e) //When clicking login
         {
-            string stat;
-            UserClass obj = new UserClass(TbLoginUserEmail.Text, TbLoginPass.Text);
-            stat = LoginAuth(TbLoginUserEmail.Text);
+            this.Hide();
+            string stat = null;
+            stat = UserClass.Login(TbLoginUserEmail.Text, TbLoginPass.Text);
             if (stat != null)
             {
                 MessageBox.Show(stat);
-
             }
-            TbLoginUserEmail.Text = string.Empty;
-            TbLoginPass.Text = string.Empty;
+            EmptyAll();
+
+        }
+
+        private void BtnSignup_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SignUp newsu = new SignUp();
+            newsu.ShowDialog();
+
+        }
+
+        private void LlForgotPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            ForgotPassword newfp = new ForgotPassword();
+            newfp.ShowDialog();
 
         }
     }

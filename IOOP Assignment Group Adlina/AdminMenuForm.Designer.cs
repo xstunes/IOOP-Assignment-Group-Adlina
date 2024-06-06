@@ -28,141 +28,152 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.LblKL = new System.Windows.Forms.Label();
-            this.LblRestaurant = new System.Windows.Forms.Label();
-            this.LblAdmin = new System.Windows.Forms.Label();
-            this.RbtnManageAdmin = new System.Windows.Forms.RadioButton();
-            this.RbtnFeedback = new System.Windows.Forms.RadioButton();
-            this.RbtnSales = new System.Windows.Forms.RadioButton();
-            this.RbtnProfile = new System.Windows.Forms.RadioButton();
             this.BtnLogout = new System.Windows.Forms.Button();
-            this.BtnNext = new System.Windows.Forms.Button();
+            this.ManAllUser = new System.Windows.Forms.Button();
+            this.BtnViewFeed = new System.Windows.Forms.Button();
+            this.BtnViewSales = new System.Windows.Forms.Button();
+            this.BtnManProfile1 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.LblAddNew = new System.Windows.Forms.Label();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // LblKL
-            // 
-            this.LblKL.AutoSize = true;
-            this.LblKL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblKL.Location = new System.Drawing.Point(299, 74);
-            this.LblKL.Name = "LblKL";
-            this.LblKL.Size = new System.Drawing.Size(222, 25);
-            this.LblKL.TabIndex = 3;
-            this.LblKL.Text = "Kuala Lumpur, Malaysia";
-            // 
-            // LblRestaurant
-            // 
-            this.LblRestaurant.AutoSize = true;
-            this.LblRestaurant.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRestaurant.Location = new System.Drawing.Point(159, 20);
-            this.LblRestaurant.Name = "LblRestaurant";
-            this.LblRestaurant.Size = new System.Drawing.Size(523, 54);
-            this.LblRestaurant.TabIndex = 2;
-            this.LblRestaurant.Text = "Hashbrown Restaurant";
-            // 
-            // LblAdmin
-            // 
-            this.LblAdmin.AutoSize = true;
-            this.LblAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAdmin.Location = new System.Drawing.Point(305, 118);
-            this.LblAdmin.Name = "LblAdmin";
-            this.LblAdmin.Size = new System.Drawing.Size(216, 29);
-            this.LblAdmin.TabIndex = 4;
-            this.LblAdmin.Text = "Welcome, Admin.";
-            // 
-            // RbtnManageAdmin
-            // 
-            this.RbtnManageAdmin.AutoSize = true;
-            this.RbtnManageAdmin.Location = new System.Drawing.Point(350, 195);
-            this.RbtnManageAdmin.Name = "RbtnManageAdmin";
-            this.RbtnManageAdmin.Size = new System.Drawing.Size(117, 20);
-            this.RbtnManageAdmin.TabIndex = 5;
-            this.RbtnManageAdmin.TabStop = true;
-            this.RbtnManageAdmin.Text = "Manage Users";
-            this.RbtnManageAdmin.UseVisualStyleBackColor = true;
-            // 
-            // RbtnFeedback
-            // 
-            this.RbtnFeedback.AutoSize = true;
-            this.RbtnFeedback.Location = new System.Drawing.Point(349, 229);
-            this.RbtnFeedback.Name = "RbtnFeedback";
-            this.RbtnFeedback.Size = new System.Drawing.Size(90, 20);
-            this.RbtnFeedback.TabIndex = 6;
-            this.RbtnFeedback.TabStop = true;
-            this.RbtnFeedback.Text = "Feedback";
-            this.RbtnFeedback.UseVisualStyleBackColor = true;
-            // 
-            // RbtnSales
-            // 
-            this.RbtnSales.AutoSize = true;
-            this.RbtnSales.Location = new System.Drawing.Point(349, 264);
-            this.RbtnSales.Name = "RbtnSales";
-            this.RbtnSales.Size = new System.Drawing.Size(63, 20);
-            this.RbtnSales.TabIndex = 7;
-            this.RbtnSales.TabStop = true;
-            this.RbtnSales.Text = "Sales";
-            this.RbtnSales.UseVisualStyleBackColor = true;
-            // 
-            // RbtnProfile
-            // 
-            this.RbtnProfile.AutoSize = true;
-            this.RbtnProfile.Location = new System.Drawing.Point(349, 299);
-            this.RbtnProfile.Name = "RbtnProfile";
-            this.RbtnProfile.Size = new System.Drawing.Size(119, 20);
-            this.RbtnProfile.TabIndex = 8;
-            this.RbtnProfile.TabStop = true;
-            this.RbtnProfile.Text = "Manage Profile";
-            this.RbtnProfile.UseVisualStyleBackColor = true;
             // 
             // BtnLogout
             // 
-            this.BtnLogout.Location = new System.Drawing.Point(168, 405);
+            this.BtnLogout.BackColor = System.Drawing.Color.Bisque;
+            this.BtnLogout.Location = new System.Drawing.Point(403, 610);
             this.BtnLogout.Name = "BtnLogout";
-            this.BtnLogout.Size = new System.Drawing.Size(78, 36);
+            this.BtnLogout.Size = new System.Drawing.Size(87, 45);
             this.BtnLogout.TabIndex = 9;
-            this.BtnLogout.Text = "Logout";
-            this.BtnLogout.UseVisualStyleBackColor = true;
+            this.BtnLogout.Text = "Sign out";
+            this.BtnLogout.UseVisualStyleBackColor = false;
             // 
-            // BtnNext
+            // ManAllUser
             // 
-            this.BtnNext.Location = new System.Drawing.Point(603, 405);
-            this.BtnNext.Name = "BtnNext";
-            this.BtnNext.Size = new System.Drawing.Size(79, 36);
-            this.BtnNext.TabIndex = 10;
-            this.BtnNext.Text = "Next";
-            this.BtnNext.UseVisualStyleBackColor = true;
+            this.ManAllUser.BackColor = System.Drawing.Color.Bisque;
+            this.ManAllUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ManAllUser.Location = new System.Drawing.Point(97, 231);
+            this.ManAllUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ManAllUser.Name = "ManAllUser";
+            this.ManAllUser.Size = new System.Drawing.Size(265, 121);
+            this.ManAllUser.TabIndex = 11;
+            this.ManAllUser.Text = "Manage Users";
+            this.ManAllUser.UseVisualStyleBackColor = false;
+            this.ManAllUser.Click += new System.EventHandler(this.ManAllUser_Click);
             // 
-            // Form2
+            // BtnViewFeed
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.BtnViewFeed.BackColor = System.Drawing.Color.Bisque;
+            this.BtnViewFeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnViewFeed.Location = new System.Drawing.Point(97, 426);
+            this.BtnViewFeed.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnViewFeed.Name = "BtnViewFeed";
+            this.BtnViewFeed.Size = new System.Drawing.Size(265, 122);
+            this.BtnViewFeed.TabIndex = 12;
+            this.BtnViewFeed.Text = "View Feedback";
+            this.BtnViewFeed.UseVisualStyleBackColor = false;
+            this.BtnViewFeed.Click += new System.EventHandler(this.BtnViewFeed_Click);
+            // 
+            // BtnViewSales
+            // 
+            this.BtnViewSales.BackColor = System.Drawing.Color.Bisque;
+            this.BtnViewSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnViewSales.Location = new System.Drawing.Point(541, 231);
+            this.BtnViewSales.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnViewSales.Name = "BtnViewSales";
+            this.BtnViewSales.Size = new System.Drawing.Size(259, 121);
+            this.BtnViewSales.TabIndex = 13;
+            this.BtnViewSales.Text = "View Sales";
+            this.BtnViewSales.UseVisualStyleBackColor = false;
+            this.BtnViewSales.Click += new System.EventHandler(this.BtnViewSales_Click);
+            // 
+            // BtnManProfile1
+            // 
+            this.BtnManProfile1.BackColor = System.Drawing.Color.Bisque;
+            this.BtnManProfile1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnManProfile1.Location = new System.Drawing.Point(541, 426);
+            this.BtnManProfile1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnManProfile1.Name = "BtnManProfile1";
+            this.BtnManProfile1.Size = new System.Drawing.Size(259, 122);
+            this.BtnManProfile1.TabIndex = 14;
+            this.BtnManProfile1.Text = "Manage Profile";
+            this.BtnManProfile1.UseVisualStyleBackColor = false;
+            this.BtnManProfile1.Click += new System.EventHandler(this.BtnManProfile1_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Peru;
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.LblAddNew);
+            this.panel2.Location = new System.Drawing.Point(2, 2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(899, 129);
+            this.panel2.TabIndex = 21;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(243, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(426, 44);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Hashbrown Restaurant";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(365, 62);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(176, 20);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Kuala Lumpur, Malaysia";
+            // 
+            // LblAddNew
+            // 
+            this.LblAddNew.AutoSize = true;
+            this.LblAddNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAddNew.Location = new System.Drawing.Point(409, 94);
+            this.LblAddNew.Name = "LblAddNew";
+            this.LblAddNew.Size = new System.Drawing.Size(70, 24);
+            this.LblAddNew.TabIndex = 8;
+            this.LblAddNew.Text = "Admin";
+            this.LblAddNew.Click += new System.EventHandler(this.LblAddNew_Click);
+            // 
+            // AdminMenuForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(800, 487);
-            this.Controls.Add(this.BtnNext);
+            this.BackColor = System.Drawing.Color.Tan;
+            this.ClientSize = new System.Drawing.Size(900, 714);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.BtnManProfile1);
+            this.Controls.Add(this.BtnViewSales);
+            this.Controls.Add(this.BtnViewFeed);
+            this.Controls.Add(this.ManAllUser);
             this.Controls.Add(this.BtnLogout);
-            this.Controls.Add(this.RbtnProfile);
-            this.Controls.Add(this.RbtnSales);
-            this.Controls.Add(this.RbtnFeedback);
-            this.Controls.Add(this.RbtnManageAdmin);
-            this.Controls.Add(this.LblAdmin);
-            this.Controls.Add(this.LblKL);
-            this.Controls.Add(this.LblRestaurant);
-            this.Name = "Form2";
+            this.Name = "AdminMenuForm";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.AdminMenuForm_Load);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label LblKL;
-        private System.Windows.Forms.Label LblRestaurant;
-        private System.Windows.Forms.Label LblAdmin;
-        private System.Windows.Forms.RadioButton RbtnManageAdmin;
-        private System.Windows.Forms.RadioButton RbtnFeedback;
-        private System.Windows.Forms.RadioButton RbtnSales;
-        private System.Windows.Forms.RadioButton RbtnProfile;
         private System.Windows.Forms.Button BtnLogout;
-        private System.Windows.Forms.Button BtnNext;
+        private System.Windows.Forms.Button ManAllUser;
+        private System.Windows.Forms.Button BtnViewFeed;
+        private System.Windows.Forms.Button BtnViewSales;
+        private System.Windows.Forms.Button BtnManProfile1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LblAddNew;
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace IOOP_Assignment_Group_Adlina
 {
-    partial class Form7
+    partial class ViewFBForm
     {
         /// <summary>
         /// Required designer variable.
@@ -41,9 +41,9 @@
             // 
             this.LblFeedback.AutoSize = true;
             this.LblFeedback.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblFeedback.Location = new System.Drawing.Point(332, 125);
+            this.LblFeedback.Location = new System.Drawing.Point(383, 165);
             this.LblFeedback.Name = "LblFeedback";
-            this.LblFeedback.Size = new System.Drawing.Size(129, 29);
+            this.LblFeedback.Size = new System.Drawing.Size(103, 24);
             this.LblFeedback.TabIndex = 17;
             this.LblFeedback.Text = "Feedback";
             // 
@@ -51,9 +51,9 @@
             // 
             this.LblKL.AutoSize = true;
             this.LblKL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblKL.Location = new System.Drawing.Point(278, 74);
+            this.LblKL.Location = new System.Drawing.Point(348, 124);
             this.LblKL.Name = "LblKL";
-            this.LblKL.Size = new System.Drawing.Size(222, 25);
+            this.LblKL.Size = new System.Drawing.Size(176, 20);
             this.LblKL.TabIndex = 16;
             this.LblKL.Text = "Kuala Lumpur, Malaysia";
             // 
@@ -61,26 +61,26 @@
             // 
             this.LblRestaurant.AutoSize = true;
             this.LblRestaurant.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRestaurant.Location = new System.Drawing.Point(138, 20);
+            this.LblRestaurant.Location = new System.Drawing.Point(231, 57);
             this.LblRestaurant.Name = "LblRestaurant";
-            this.LblRestaurant.Size = new System.Drawing.Size(523, 54);
+            this.LblRestaurant.Size = new System.Drawing.Size(426, 44);
             this.LblRestaurant.TabIndex = 15;
             this.LblRestaurant.Text = "Hashbrown Restaurant";
             // 
             // BtnBack4
             // 
-            this.BtnBack4.Location = new System.Drawing.Point(147, 621);
+            this.BtnBack4.Location = new System.Drawing.Point(104, 355);
             this.BtnBack4.Name = "BtnBack4";
-            this.BtnBack4.Size = new System.Drawing.Size(79, 36);
+            this.BtnBack4.Size = new System.Drawing.Size(88, 45);
             this.BtnBack4.TabIndex = 21;
             this.BtnBack4.Text = "Back";
             this.BtnBack4.UseVisualStyleBackColor = true;
             // 
             // BtnNext3
             // 
-            this.BtnNext3.Location = new System.Drawing.Point(582, 621);
+            this.BtnNext3.Location = new System.Drawing.Point(737, 355);
             this.BtnNext3.Name = "BtnNext3";
-            this.BtnNext3.Size = new System.Drawing.Size(79, 36);
+            this.BtnNext3.Size = new System.Drawing.Size(88, 45);
             this.BtnNext3.TabIndex = 22;
             this.BtnNext3.Text = "Next";
             this.BtnNext3.UseVisualStyleBackColor = true;
@@ -89,26 +89,26 @@
             // 
             this.LblFilter.AutoSize = true;
             this.LblFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblFilter.Location = new System.Drawing.Point(263, 179);
+            this.LblFilter.Location = new System.Drawing.Point(299, 243);
             this.LblFilter.Name = "LblFilter";
-            this.LblFilter.Size = new System.Drawing.Size(62, 20);
+            this.LblFilter.Size = new System.Drawing.Size(51, 17);
             this.LblFilter.TabIndex = 23;
             this.LblFilter.Text = "Filter : ";
             // 
             // CbFeedback
             // 
             this.CbFeedback.FormattingEnabled = true;
-            this.CbFeedback.Location = new System.Drawing.Point(331, 175);
+            this.CbFeedback.Location = new System.Drawing.Point(375, 238);
             this.CbFeedback.Name = "CbFeedback";
-            this.CbFeedback.Size = new System.Drawing.Size(163, 24);
+            this.CbFeedback.Size = new System.Drawing.Size(182, 28);
             this.CbFeedback.TabIndex = 24;
             // 
-            // Form7
+            // ViewFBForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(800, 706);
+            this.BackColor = System.Drawing.Color.Tan;
+            this.ClientSize = new System.Drawing.Size(900, 477);
             this.Controls.Add(this.CbFeedback);
             this.Controls.Add(this.LblFilter);
             this.Controls.Add(this.BtnNext3);
@@ -116,7 +116,7 @@
             this.Controls.Add(this.LblFeedback);
             this.Controls.Add(this.LblKL);
             this.Controls.Add(this.LblRestaurant);
-            this.Name = "Form7";
+            this.Name = "ViewFBForm";
             this.Text = "Form7";
             this.ResumeLayout(false);
             this.PerformLayout();
