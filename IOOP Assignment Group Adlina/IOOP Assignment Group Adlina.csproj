@@ -67,6 +67,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PasswordGen.cs" />
     <Compile Include="CustomerMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>

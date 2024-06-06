@@ -142,33 +142,37 @@ namespace IOOP_Assignment_Group_Adlina
 
         }
 
-        public static string DeleteUser(int id)
+        public static string DeleteUser(string id)
         {
             string status = null;
-            using(con = new SqlConnection(Connectionstring))
-            {
-                con.Open();
-                cmd = new SqlCommand("DELETE FROM userData WHERE userID = @a", con);
-                cmd.Parameters.AddWithValue("a", id);
-                dr = cmd.ExecuteReader();
-                if (dr.Read())
+            using (con = new SqlConnection(Connectionstring))
+                if (int.TryParse(id, out int value))
                 {
-                    dr.Close();
+                    con.Open();
                     cmd = new SqlCommand("DELETE FROM userData WHERE userID = @a", con);
                     cmd.Parameters.AddWithValue("a", id);
-                    cmd.ExecuteNonQuery();
+                    dr = cmd.ExecuteReader();
+                    if (dr.Read())
+                    {
+                        dr.Close();
+                        cmd = new SqlCommand("DELETE FROM userData WHERE userID = @a", con);
+                        cmd.Parameters.AddWithValue("a", id);
+                        cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Successfully deleted.");
+                        MessageBox.Show("Successfully deleted.");
+                    }
+                    else
+                    {
+                        status = "Error : User does not exist.";
+                    }
                 }
                 else
-                {
-                    status = "Error : User does not exist.";
-                }
-            }
-            con.Close();
-            return status;
+                    status = "The number of userID only accepted.";
+                con.Close ();
+                return status;
 
         }
+    
     
     }
 
