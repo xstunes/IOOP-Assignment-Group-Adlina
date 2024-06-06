@@ -48,7 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.ConfigurationManager, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
@@ -65,6 +67,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chef.cs" />
+    <Compile Include="ChefForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChefForm.Designer.cs">
+      <DependentUpon>ChefForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChefUpdateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChefUpdateProfile.Designer.cs">
+      <DependentUpon>ChefUpdateProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageInventory.Designer.cs">
+      <DependentUpon>ManageInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.cs" />
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +178,12 @@
     <Compile Include="AddUserForm.Designer.cs">
       <DependentUpon>AddUserForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vieworders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vieworders.Designer.cs">
+      <DependentUpon>Vieworders.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewUsersForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,8 +221,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChefForm.resx">
+      <DependentUpon>ChefForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChefUpdateProfile.resx">
+      <DependentUpon>ChefUpdateProfile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageInventory.resx">
+      <DependentUpon>ManageInventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewEmForm.resx">
       <DependentUpon>NewEmForm.cs</DependentUpon>
@@ -237,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vieworders.resx">
+      <DependentUpon>Vieworders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewUsersForm.resx">
       <DependentUpon>ViewUsersForm.cs</DependentUpon>
