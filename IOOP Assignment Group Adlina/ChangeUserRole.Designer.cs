@@ -49,16 +49,18 @@
             "Manager",
             "Chef",
             "Customer"});
-            this.CbRoles1.Location = new System.Drawing.Point(290, 326);
+            this.CbRoles1.Location = new System.Drawing.Point(193, 212);
+            this.CbRoles1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CbRoles1.Name = "CbRoles1";
-            this.CbRoles1.Size = new System.Drawing.Size(320, 25);
+            this.CbRoles1.Size = new System.Drawing.Size(215, 25);
             this.CbRoles1.TabIndex = 17;
             // 
             // LblNewRole
             // 
             this.LblNewRole.AutoSize = true;
             this.LblNewRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNewRole.Location = new System.Drawing.Point(286, 297);
+            this.LblNewRole.Location = new System.Drawing.Point(191, 193);
+            this.LblNewRole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblNewRole.Name = "LblNewRole";
             this.LblNewRole.Size = new System.Drawing.Size(72, 25);
             this.LblNewRole.TabIndex = 16;
@@ -67,16 +69,18 @@
             // TbUserID
             // 
             this.TbUserID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TbUserID.Location = new System.Drawing.Point(290, 230);
+            this.TbUserID.Location = new System.Drawing.Point(193, 150);
+            this.TbUserID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TbUserID.Name = "TbUserID";
-            this.TbUserID.Size = new System.Drawing.Size(320, 21);
+            this.TbUserID.Size = new System.Drawing.Size(215, 21);
             this.TbUserID.TabIndex = 19;
             // 
             // LblUserID
             // 
             this.LblUserID.AutoSize = true;
             this.LblUserID.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblUserID.Location = new System.Drawing.Point(288, 202);
+            this.LblUserID.Location = new System.Drawing.Point(192, 131);
+            this.LblUserID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblUserID.Name = "LblUserID";
             this.LblUserID.Size = new System.Drawing.Size(83, 25);
             this.LblUserID.TabIndex = 18;
@@ -84,22 +88,23 @@
             // 
             // BtnBack3
             // 
-            this.BtnBack3.Location = new System.Drawing.Point(57, 506);
+            this.BtnBack3.Location = new System.Drawing.Point(38, 329);
+            this.BtnBack3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnBack3.Name = "BtnBack3";
-            this.BtnBack3.Size = new System.Drawing.Size(88, 45);
+            this.BtnBack3.Size = new System.Drawing.Size(59, 29);
             this.BtnBack3.TabIndex = 21;
             this.BtnBack3.Text = "Back";
             this.BtnBack3.UseVisualStyleBackColor = true;
             // 
             // BtnConfirm
             // 
-            this.BtnConfirm.Location = new System.Drawing.Point(763, 506);
-            this.BtnConfirm.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BtnConfirm.Location = new System.Drawing.Point(509, 329);
             this.BtnConfirm.Name = "BtnConfirm";
-            this.BtnConfirm.Size = new System.Drawing.Size(88, 45);
+            this.BtnConfirm.Size = new System.Drawing.Size(59, 29);
             this.BtnConfirm.TabIndex = 22;
             this.BtnConfirm.Text = "Confirm";
             this.BtnConfirm.UseVisualStyleBackColor = true;
+            this.BtnConfirm.Click += new System.EventHandler(this.BtnConfirm_Click);
             // 
             // panel1
             // 
@@ -107,16 +112,18 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.LblAddNew);
-            this.panel1.Location = new System.Drawing.Point(2, 0);
+            this.panel1.Location = new System.Drawing.Point(1, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(910, 129);
+            this.panel1.Size = new System.Drawing.Size(607, 84);
             this.panel1.TabIndex = 23;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(230, 17);
+            this.label1.Location = new System.Drawing.Point(153, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(426, 44);
             this.label1.TabIndex = 6;
@@ -126,7 +133,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(352, 61);
+            this.label2.Location = new System.Drawing.Point(235, 40);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(176, 20);
             this.label2.TabIndex = 7;
@@ -136,7 +144,8 @@
             // 
             this.LblAddNew.AutoSize = true;
             this.LblAddNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAddNew.Location = new System.Drawing.Point(372, 96);
+            this.LblAddNew.Location = new System.Drawing.Point(248, 62);
+            this.LblAddNew.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblAddNew.Name = "LblAddNew";
             this.LblAddNew.Size = new System.Drawing.Size(132, 24);
             this.LblAddNew.TabIndex = 8;
@@ -144,10 +153,10 @@
             // 
             // FormChangeroleus
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
-            this.ClientSize = new System.Drawing.Size(912, 596);
+            this.ClientSize = new System.Drawing.Size(608, 387);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BtnConfirm);
             this.Controls.Add(this.BtnBack3);
@@ -155,7 +164,6 @@
             this.Controls.Add(this.LblUserID);
             this.Controls.Add(this.CbRoles1);
             this.Controls.Add(this.LblNewRole);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormChangeroleus";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.ChangeUserRole_Load);
