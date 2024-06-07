@@ -105,9 +105,11 @@
             this.CbFeedback.Name = "CbFeedback";
             this.CbFeedback.Size = new System.Drawing.Size(123, 21);
             this.CbFeedback.TabIndex = 24;
+            this.CbFeedback.SelectedIndexChanged += new System.EventHandler(this.CbFeedback_SelectedIndexChanged);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(60, 188);
             this.dataGridView1.Name = "dataGridView1";

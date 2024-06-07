@@ -18,10 +18,14 @@ namespace IOOP_Assignment_Group_Adlina
         static SqlConnection con; //SqlConnection is assigned to con
         static SqlCommand cmd; //SqlCommand is assigned to cmd
         static SqlDataReader dr; //SqlDataReader assigned to dr
-        static SqlDataAdapter da; //SQlDataAdapter assigned to da
+
         public ViewFBForm()
         {
             InitializeComponent();
+        }
+        private void ViewFBForm_Load(object sender, EventArgs e)
+        { 
+
         }
 
         private void LblKL_Click(object sender, EventArgs e)
@@ -36,9 +40,32 @@ namespace IOOP_Assignment_Group_Adlina
             amf.ShowDialog();
         }
 
-        private void ViewFBForm_Load(object sender, EventArgs e)
-        {
+        
 
+        private void FetchandBindData(string filter)
+        {
+            using (con = new SqlConnection(Connectionstring))
+            {
+                con.Open();
+                cmd = new SqlCommand("SELECT Feedback, FeedbackType FROM customer WHERE FeedbackType = @type", con);
+                cmd.Parameters.AddWithValue("@type", filter);
+
+                SqlDataAdapter dataAdapter= new SqlDataAdapter(cmd);
+                DataTable dataTable = new DataTable();
+                dataAdapter.Fill(dataTable);
+
+                dataGridView1.DataSource = dataTable;
+
+
+            }
+        }
+
+        private void CbFeedback_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string SelectedFilter = CbFeedback.SelectedItem.ToString();
+            FetchandBindData(SelectedFilter);
         }
     }
+
+
 }

@@ -67,7 +67,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminSalesnFB.cs" />
     <Compile Include="CustomerClass.cs" />
     <Compile Include="PasswordGen.cs" />
     <Compile Include="CustomerMainMenu.cs">

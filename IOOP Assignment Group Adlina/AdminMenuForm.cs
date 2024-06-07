@@ -13,6 +13,7 @@ namespace IOOP_Assignment_Group_Adlina
     public partial class AdminMenuForm : Form
     {
         string OlUsername;
+
         public AdminMenuForm()
         {
             InitializeComponent();
@@ -22,13 +23,12 @@ namespace IOOP_Assignment_Group_Adlina
         {
             InitializeComponent();
             this.OlUsername = olusername;
-
+            DisplayWelcome(olusername);
         }
 
-        private void RbtnManageAdmin_CheckedChanged(object sender, EventArgs e)
+        private void DisplayWelcome(string olusername)
         {
-            
-
+            LblAddNew.Text = "Welcome " + olusername + " !";
         }
 
         private void ManAllUser_Click(object sender, EventArgs e)
@@ -57,6 +57,17 @@ namespace IOOP_Assignment_Group_Adlina
             UpdateProfileForm up = new UpdateProfileForm(OlUsername);
             up.ShowDialog();
         }
+        private void BtnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormLogin login = new FormLogin();
+            login.ShowDialog();
+        }
+        
+        private void RbtnManageAdmin_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
 
         private void AdminMenuForm_Load(object sender, EventArgs e)
         {
@@ -67,5 +78,7 @@ namespace IOOP_Assignment_Group_Adlina
         {
 
         }
+
+
     }
 }
