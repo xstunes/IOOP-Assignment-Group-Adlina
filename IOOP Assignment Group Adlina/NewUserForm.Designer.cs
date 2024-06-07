@@ -41,26 +41,29 @@
             // 
             // TbNewUser
             // 
-            this.TbNewUser.Location = new System.Drawing.Point(309, 320);
+            this.TbNewUser.Location = new System.Drawing.Point(206, 208);
+            this.TbNewUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TbNewUser.Name = "TbNewUser";
-            this.TbNewUser.Size = new System.Drawing.Size(298, 26);
+            this.TbNewUser.Size = new System.Drawing.Size(200, 20);
             this.TbNewUser.TabIndex = 19;
             // 
             // LblNewUser
             // 
             this.LblNewUser.AutoSize = true;
             this.LblNewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNewUser.Location = new System.Drawing.Point(304, 278);
+            this.LblNewUser.Location = new System.Drawing.Point(203, 181);
+            this.LblNewUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblNewUser.Name = "LblNewUser";
-            this.LblNewUser.Size = new System.Drawing.Size(246, 37);
+            this.LblNewUser.Size = new System.Drawing.Size(164, 25);
             this.LblNewUser.TabIndex = 20;
             this.LblNewUser.Text = "New Username:";
             // 
             // BtnBack6
             // 
-            this.BtnBack6.Location = new System.Drawing.Point(75, 480);
+            this.BtnBack6.Location = new System.Drawing.Point(50, 312);
+            this.BtnBack6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnBack6.Name = "BtnBack6";
-            this.BtnBack6.Size = new System.Drawing.Size(88, 45);
+            this.BtnBack6.Size = new System.Drawing.Size(59, 29);
             this.BtnBack6.TabIndex = 29;
             this.BtnBack6.Text = "Back";
             this.BtnBack6.UseVisualStyleBackColor = true;
@@ -68,9 +71,10 @@
             // 
             // BtnUpdate
             // 
-            this.BtnUpdate.Location = new System.Drawing.Point(737, 480);
+            this.BtnUpdate.Location = new System.Drawing.Point(491, 312);
+            this.BtnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnUpdate.Name = "BtnUpdate";
-            this.BtnUpdate.Size = new System.Drawing.Size(88, 45);
+            this.BtnUpdate.Size = new System.Drawing.Size(59, 29);
             this.BtnUpdate.TabIndex = 30;
             this.BtnUpdate.Text = "Update";
             this.BtnUpdate.UseVisualStyleBackColor = true;
@@ -83,17 +87,19 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.LblAddNew);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(899, 162);
+            this.panel1.Size = new System.Drawing.Size(599, 105);
             this.panel1.TabIndex = 31;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(207, -4);
+            this.label1.Location = new System.Drawing.Point(138, -3);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(634, 65);
+            this.label1.Size = new System.Drawing.Size(426, 44);
             this.label1.TabIndex = 6;
             this.label1.Text = "Hashbrown Restaurant";
             // 
@@ -101,9 +107,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(340, 74);
+            this.label2.Location = new System.Drawing.Point(227, 48);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(267, 29);
+            this.label2.Size = new System.Drawing.Size(176, 20);
             this.label2.TabIndex = 7;
             this.label2.Text = "Kuala Lumpur, Malaysia";
             // 
@@ -111,25 +118,28 @@
             // 
             this.LblAddNew.AutoSize = true;
             this.LblAddNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAddNew.Location = new System.Drawing.Point(305, 117);
+            this.LblAddNew.Location = new System.Drawing.Point(203, 76);
+            this.LblAddNew.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblAddNew.Name = "LblAddNew";
-            this.LblAddNew.Size = new System.Drawing.Size(371, 32);
+            this.LblAddNew.Size = new System.Drawing.Size(252, 24);
             this.LblAddNew.TabIndex = 8;
             this.LblAddNew.Text = "Profile Setting : Username";
             // 
             // NewUserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
-            this.ClientSize = new System.Drawing.Size(900, 563);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BtnUpdate);
             this.Controls.Add(this.BtnBack6);
             this.Controls.Add(this.LblNewUser);
             this.Controls.Add(this.TbNewUser);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "NewUserForm";
             this.Text = "New User Form";
+            this.Load += new System.EventHandler(this.NewUserForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

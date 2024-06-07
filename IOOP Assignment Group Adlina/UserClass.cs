@@ -210,8 +210,37 @@ namespace IOOP_Assignment_Group_Adlina
 
 
         }
-    
-    
+
+
+        public static string UpdateRole(string role, string id)
+        {
+            string status;
+            using (con = new SqlConnection(Connectionstring))
+            {
+                con.Open();
+
+                cmd = new SqlCommand("UPDATE userData SET Role = @ro WHERE userID = @id", con);
+                cmd.Parameters.AddWithValue("@ro", role);
+                cmd.Parameters.AddWithValue("id", id);
+                
+                int i = cmd.ExecuteNonQuery();
+                if (i>0)
+                {
+                    status = "Changed role for userID :" + id + "successfully";
+                }
+                else
+                {
+                    status = "Invalid userID or role not exist.";
+                }
+
+                con.Close();
+                return status;
+
+
+            }
+        }
+
+
     }
 
 }

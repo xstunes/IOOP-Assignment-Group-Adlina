@@ -75,7 +75,7 @@
             // BtnBack4
             // 
             this.BtnBack4.Location = new System.Drawing.Point(60, 633);
-            this.BtnBack4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnBack4.Margin = new System.Windows.Forms.Padding(2);
             this.BtnBack4.Name = "BtnBack4";
             this.BtnBack4.Size = new System.Drawing.Size(59, 29);
             this.BtnBack4.TabIndex = 21;
@@ -97,8 +97,11 @@
             // CbFeedback
             // 
             this.CbFeedback.FormattingEnabled = true;
+            this.CbFeedback.Items.AddRange(new object[] {
+            "Food",
+            "Reservation"});
             this.CbFeedback.Location = new System.Drawing.Point(250, 155);
-            this.CbFeedback.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CbFeedback.Margin = new System.Windows.Forms.Padding(2);
             this.CbFeedback.Name = "CbFeedback";
             this.CbFeedback.Size = new System.Drawing.Size(123, 21);
             this.CbFeedback.TabIndex = 24;
@@ -124,7 +127,7 @@
             this.Controls.Add(this.LblFeedback);
             this.Controls.Add(this.LblKL);
             this.Controls.Add(this.LblRestaurant);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ViewFBForm";
             this.Text = "Form7";
             this.Load += new System.EventHandler(this.ViewFBForm_Load);

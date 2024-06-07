@@ -41,9 +41,9 @@ namespace IOOP_Assignment_Group_Adlina
             {
                 //have to have curly bracket after closing the brackets on Using
                 con.Open(); //open connection
-                c
+              
                 // cmd already defined as SqlCommand above, so just use cmd = new SqlCommand ( put your query , con)
-                cmd = new SqlCommand("UPDATE userData SET Username =@nm WHERE Username LIKE @ou;", con);// con refers to already defined SqlConnection
+                cmd = new SqlCommand("UPDATE userData SET Username = @nm WHERE Username LIKE @ou;", con);// con refers to already defined SqlConnection
                 cmd.Parameters.AddWithValue("@nm", un);
                 cmd.Parameters.AddWithValue("@ou", username);
 
@@ -68,7 +68,7 @@ namespace IOOP_Assignment_Group_Adlina
             {
                 con.Open();
 
-                cmd = new SqlCommand("UPDATE userData SET Email =@em WHERE Username LIKE @ou;", con);
+                cmd = new SqlCommand("UPDATE userData SET Email = @em WHERE Username LIKE @ou;", con);
                 cmd.Parameters.AddWithValue("@em", em);
                 cmd.Parameters.AddWithValue("@ou", username);
 
@@ -94,7 +94,7 @@ namespace IOOP_Assignment_Group_Adlina
             {
                 con.Open();
 
-                cmd = new SqlCommand("UPDATE userData SET Password =@pa WHERE Username LIKE @ou;", con);
+                cmd = new SqlCommand("UPDATE userData SET Password = @pa WHERE Username LIKE @ou;", con);
                 cmd.Parameters.AddWithValue("@pa", pa);
                 cmd.Parameters.AddWithValue("@ou", username);
 
@@ -108,6 +108,7 @@ namespace IOOP_Assignment_Group_Adlina
                     status = "Unable to update.";
                 }
             }
+
             con.Close();
             return status;
         }

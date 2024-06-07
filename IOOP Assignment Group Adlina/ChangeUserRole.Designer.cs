@@ -49,7 +49,7 @@
             "Manager",
             "Chef",
             "Customer"});
-            this.CbRoles1.Location = new System.Drawing.Point(193, 212);
+            this.CbRoles1.Location = new System.Drawing.Point(193, 237);
             this.CbRoles1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CbRoles1.Name = "CbRoles1";
             this.CbRoles1.Size = new System.Drawing.Size(215, 25);
@@ -59,7 +59,7 @@
             // 
             this.LblNewRole.AutoSize = true;
             this.LblNewRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNewRole.Location = new System.Drawing.Point(191, 193);
+            this.LblNewRole.Location = new System.Drawing.Point(192, 210);
             this.LblNewRole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblNewRole.Name = "LblNewRole";
             this.LblNewRole.Size = new System.Drawing.Size(72, 25);
@@ -69,7 +69,7 @@
             // TbUserID
             // 
             this.TbUserID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TbUserID.Location = new System.Drawing.Point(193, 150);
+            this.TbUserID.Location = new System.Drawing.Point(193, 158);
             this.TbUserID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TbUserID.Name = "TbUserID";
             this.TbUserID.Size = new System.Drawing.Size(215, 21);
@@ -115,14 +115,14 @@
             this.panel1.Location = new System.Drawing.Point(1, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(607, 84);
+            this.panel1.Size = new System.Drawing.Size(607, 116);
             this.panel1.TabIndex = 23;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(153, 11);
+            this.label1.Location = new System.Drawing.Point(109, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(426, 44);
@@ -133,7 +133,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(235, 40);
+            this.label2.Location = new System.Drawing.Point(231, 53);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(176, 20);
@@ -144,7 +144,7 @@
             // 
             this.LblAddNew.AutoSize = true;
             this.LblAddNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAddNew.Location = new System.Drawing.Point(248, 62);
+            this.LblAddNew.Location = new System.Drawing.Point(247, 81);
             this.LblAddNew.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblAddNew.Name = "LblAddNew";
             this.LblAddNew.Size = new System.Drawing.Size(132, 24);

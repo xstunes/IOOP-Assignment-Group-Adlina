@@ -54,7 +54,6 @@ namespace IOOP_Assignment_Group_Adlina
 
         private void BtnManProfile1_Click(object sender, EventArgs e)
         {
-            this.Hide();
             UpdateProfileForm up = new UpdateProfileForm(OlUsername);
             up.ShowDialog();
         }

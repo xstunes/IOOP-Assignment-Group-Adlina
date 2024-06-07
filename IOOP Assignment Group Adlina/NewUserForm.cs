@@ -41,7 +41,14 @@ namespace IOOP_Assignment_Group_Adlina
 
         private void BtnBack6_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            UpdateProfileForm upf = new UpdateProfileForm(TbNewUser.Text);
+            upf.ShowDialog();
+        }
+
+        private void NewUserForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

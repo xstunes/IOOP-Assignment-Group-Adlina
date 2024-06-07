@@ -54,5 +54,10 @@ namespace IOOP_Assignment_Group_Adlina
             ManageUserForm muf = new ManageUserForm();
             muf.ShowDialog();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

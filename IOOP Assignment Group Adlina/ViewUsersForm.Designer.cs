@@ -51,7 +51,7 @@
             // 
             this.LblKL.AutoSize = true;
             this.LblKL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblKL.Location = new System.Drawing.Point(230, 59);
+            this.LblKL.Location = new System.Drawing.Point(232, 64);
             this.LblKL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblKL.Name = "LblKL";
             this.LblKL.Size = new System.Drawing.Size(176, 20);
@@ -62,7 +62,7 @@
             // 
             this.LblRestaurant.AutoSize = true;
             this.LblRestaurant.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRestaurant.Location = new System.Drawing.Point(144, 18);
+            this.LblRestaurant.Location = new System.Drawing.Point(114, 20);
             this.LblRestaurant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblRestaurant.Name = "LblRestaurant";
             this.LblRestaurant.Size = new System.Drawing.Size(426, 44);
@@ -71,8 +71,8 @@
             // 
             // BtnBack2
             // 
-            this.BtnBack2.Location = new System.Drawing.Point(262, 307);
-            this.BtnBack2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnBack2.Location = new System.Drawing.Point(273, 307);
+            this.BtnBack2.Margin = new System.Windows.Forms.Padding(2);
             this.BtnBack2.Name = "BtnBack2";
             this.BtnBack2.Size = new System.Drawing.Size(59, 29);
             this.BtnBack2.TabIndex = 19;
@@ -98,13 +98,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
-            this.ClientSize = new System.Drawing.Size(600, 356);
+            this.ClientSize = new System.Drawing.Size(607, 364);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.BtnBack2);
             this.Controls.Add(this.LblViewUser);
             this.Controls.Add(this.LblKL);
             this.Controls.Add(this.LblRestaurant);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ViewUsersForm";
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.ViewUsersForm_Load);
