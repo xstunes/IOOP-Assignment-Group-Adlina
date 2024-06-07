@@ -46,9 +46,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(204, 238);
+            this.label2.Location = new System.Drawing.Point(124, 216);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(377, 24);
+            this.label2.Size = new System.Drawing.Size(545, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Please Proceed To Pay At The Counter";
             // 

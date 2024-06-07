@@ -30,7 +30,7 @@ namespace IOOP_Assignment_Group_Adlina
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MenuForm mf = new MenuForm();
+            FoodMenuForm mf = new FoodMenuForm();
             mf.ShowDialog();
         }
     }

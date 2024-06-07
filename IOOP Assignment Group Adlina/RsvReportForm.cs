@@ -25,7 +25,7 @@ namespace IOOP_Assignment_Group_Adlina
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MenuForm menuForm = new MenuForm();
+            FoodMenuForm menuForm = new FoodMenuForm();
             menuForm.ShowDialog();
         }
 
