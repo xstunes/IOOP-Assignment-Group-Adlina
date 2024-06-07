@@ -52,7 +52,7 @@
             this.LblNewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblNewUser.Location = new System.Drawing.Point(304, 278);
             this.LblNewUser.Name = "LblNewUser";
-            this.LblNewUser.Size = new System.Drawing.Size(164, 25);
+            this.LblNewUser.Size = new System.Drawing.Size(246, 37);
             this.LblNewUser.TabIndex = 20;
             this.LblNewUser.Text = "New Username:";
             // 
@@ -84,16 +84,16 @@
             this.panel1.Controls.Add(this.LblAddNew);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(899, 129);
+            this.panel1.Size = new System.Drawing.Size(899, 162);
             this.panel1.TabIndex = 31;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(230, 17);
+            this.label1.Location = new System.Drawing.Point(207, -4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(426, 44);
+            this.label1.Size = new System.Drawing.Size(634, 65);
             this.label1.TabIndex = 6;
             this.label1.Text = "Hashbrown Restaurant";
             // 
@@ -101,9 +101,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(352, 61);
+            this.label2.Location = new System.Drawing.Point(340, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(176, 20);
+            this.label2.Size = new System.Drawing.Size(267, 29);
             this.label2.TabIndex = 7;
             this.label2.Text = "Kuala Lumpur, Malaysia";
             // 
@@ -111,9 +111,9 @@
             // 
             this.LblAddNew.AutoSize = true;
             this.LblAddNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAddNew.Location = new System.Drawing.Point(309, 93);
+            this.LblAddNew.Location = new System.Drawing.Point(305, 117);
             this.LblAddNew.Name = "LblAddNew";
-            this.LblAddNew.Size = new System.Drawing.Size(252, 24);
+            this.LblAddNew.Size = new System.Drawing.Size(371, 32);
             this.LblAddNew.TabIndex = 8;
             this.LblAddNew.Text = "Profile Setting : Username";
             // 
@@ -129,7 +129,7 @@
             this.Controls.Add(this.LblNewUser);
             this.Controls.Add(this.TbNewUser);
             this.Name = "NewUserForm";
-            this.Text = "Form9";
+            this.Text = "New User Form";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

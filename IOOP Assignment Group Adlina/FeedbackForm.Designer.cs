@@ -53,7 +53,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(392, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 31);
+            this.label1.Size = new System.Drawing.Size(248, 47);
             this.label1.TabIndex = 0;
             this.label1.Text = "FEEDBACK";
             // 
@@ -71,7 +71,7 @@
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(68, 167);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(157, 24);
+            this.radioButton1.Size = new System.Drawing.Size(164, 24);
             this.radioButton1.TabIndex = 3;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Very Disappointed";
@@ -82,7 +82,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(285, 167);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(121, 24);
+            this.radioButton2.Size = new System.Drawing.Size(128, 24);
             this.radioButton2.TabIndex = 4;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Disappointed";
@@ -93,7 +93,7 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.Location = new System.Drawing.Point(467, 167);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(78, 24);
+            this.radioButton3.Size = new System.Drawing.Size(85, 24);
             this.radioButton3.TabIndex = 5;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Neutral";
@@ -104,7 +104,7 @@
             this.radioButton4.AutoSize = true;
             this.radioButton4.Location = new System.Drawing.Point(601, 167);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(89, 24);
+            this.radioButton4.Size = new System.Drawing.Size(96, 24);
             this.radioButton4.TabIndex = 6;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Satisfied";
@@ -115,7 +115,7 @@
             this.radioButton5.AutoSize = true;
             this.radioButton5.Location = new System.Drawing.Point(738, 167);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(125, 24);
+            this.radioButton5.Size = new System.Drawing.Size(132, 24);
             this.radioButton5.TabIndex = 7;
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Very Satisfied";
@@ -151,7 +151,7 @@
             this.radioButton6.AutoSize = true;
             this.radioButton6.Location = new System.Drawing.Point(160, 376);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(64, 24);
+            this.radioButton6.Size = new System.Drawing.Size(71, 24);
             this.radioButton6.TabIndex = 11;
             this.radioButton6.TabStop = true;
             this.radioButton6.Text = "Food";
@@ -162,7 +162,7 @@
             this.radioButton7.AutoSize = true;
             this.radioButton7.Location = new System.Drawing.Point(258, 376);
             this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(112, 24);
+            this.radioButton7.Size = new System.Drawing.Size(119, 24);
             this.radioButton7.TabIndex = 12;
             this.radioButton7.TabStop = true;
             this.radioButton7.Text = "Reservation";
@@ -185,6 +185,7 @@
             this.button1.TabIndex = 16;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -194,6 +195,7 @@
             this.button2.TabIndex = 17;
             this.button2.Text = "Submit";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 

@@ -31,7 +31,9 @@ namespace IOOP_Assignment_Group_Adlina
 
         private void orderfoodbtn_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            MenuForm mf = new MenuForm();
+            mf.ShowDialog();
         }
 
         private void statusbtn_Click(object sender, EventArgs e)
@@ -53,6 +55,11 @@ namespace IOOP_Assignment_Group_Adlina
             this.Hide();
             UpdateCustomerInfo updateCustomerInfo = new UpdateCustomerInfo();
             updateCustomerInfo.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thankyou so much for ordering!!");
         }
     }
 }

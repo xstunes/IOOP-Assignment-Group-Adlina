@@ -21,5 +21,17 @@ namespace IOOP_Assignment_Group_Adlina
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thanks for your feedback, Hoping to see you soon again!!");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuForm mf = new MenuForm();
+            mf.ShowDialog();
+        }
     }
 }
