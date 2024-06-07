@@ -67,6 +67,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chef.cs" />
+    <Compile Include="ChefForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChefForm.Designer.cs">
+      <DependentUpon>ChefForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +92,18 @@
     </Compile>
     <Compile Include="ChangeUserRole.Designer.cs">
       <DependentUpon>ChangeUserRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MangeInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MangeInventory.Designer.cs">
+      <DependentUpon>MangeInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUpdateOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewUpdateOrder.Designer.cs">
+      <DependentUpon>ViewUpdateOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="ProfileUpdate.cs" />
     <Compile Include="PayatCounter.cs">
@@ -105,6 +124,12 @@
     </Compile>
     <Compile Include="UpdateCustomerInfo.Designer.cs">
       <DependentUpon>UpdateCustomerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProfile.Designer.cs">
+      <DependentUpon>UpdateProfile.cs</DependentUpon>
     </Compile>
     <Compile Include="UpdateProfileForm.cs">
       <SubType>Form</SubType>
@@ -234,6 +259,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChefForm.resx">
+      <DependentUpon>ChefForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerMainMenu.resx">
       <DependentUpon>CustomerMainMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -246,6 +274,9 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MangeInventory.resx">
+      <DependentUpon>MangeInventory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NewEmForm.resx">
       <DependentUpon>NewEmForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -254,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerForm.resx">
       <DependentUpon>ManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewUpdateOrder.resx">
+      <DependentUpon>ViewUpdateOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PayatCounter.resx">
       <DependentUpon>PayatCounter.cs</DependentUpon>
@@ -293,6 +327,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateCustomerInfo.resx">
       <DependentUpon>UpdateCustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProfile.resx">
+      <DependentUpon>UpdateProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateProfileForm.resx">
       <DependentUpon>UpdateProfileForm.cs</DependentUpon>
