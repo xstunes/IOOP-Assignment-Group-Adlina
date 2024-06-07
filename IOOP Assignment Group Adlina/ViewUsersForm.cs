@@ -29,7 +29,7 @@ namespace IOOP_Assignment_Group_Adlina
             using (con = new SqlConnection(Connectionstring))
             {
                 con.Open();
-                da = new SqlDataAdapter("SELECT * FROM userData", con);
+                da = new SqlDataAdapter("SELECT userID, Username, Email, Role FROM userData", con);
                 DataSet ds = new DataSet();
                 da.Fill(ds, "userData");
                 dataGridView1.DataSource = ds.Tables["userData"].DefaultView;
@@ -41,12 +41,13 @@ namespace IOOP_Assignment_Group_Adlina
         private void BtnBack2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AdminMenuForm admin = new AdminMenuForm();
-            admin.ShowDialog();
+            ManageUserForm muf = new ManageUserForm();
+            muf.ShowDialog();
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
-
-
+        }
     }
 }

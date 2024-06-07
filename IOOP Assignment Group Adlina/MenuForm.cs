@@ -12,9 +12,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace IOOP_Assignment_Group_Adlina
 {
-    public partial class MenuForm : Form
+    public partial class FoodMenuForm : Form
     {
-        public MenuForm()
+        public FoodMenuForm()
         {
             InitializeComponent();
         }

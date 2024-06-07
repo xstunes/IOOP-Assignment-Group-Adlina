@@ -13,12 +13,11 @@ namespace IOOP_Assignment_Group_Adlina
     internal class ProfileUpdate
     {
         string username, email, password;
-        static SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\xiang\source\repos\IOOP-Assignment-Group-Adlina4\IOOP Assignment Group Adlina\MainDB.mdf"";Integrated Security=True;Connect Timeout=30;Encrypt=False");
-        //private static string Connectionstring = ConfigurationManager.ConnectionStrings["IOOP_Assignment_Group_Adlina.Properties.Settings.MainDBConnectionString"].ConnectionString;
-        //SqlConnection con = new SqlConnection(Connectionstring); //SqlConnection is assigned to con
-        //Above connection string is not working ,i dont know why?
-        SqlCommand cmd; //SqlCommand is assigned to cmd
-        //SqlDataReader dr; //SqlDataReader assigned to dr
+        //Assign the Connectionstring (variable) to its connection string. Simplified by using connection string name in App.config but have to use ConfigurationManager.
+        private static string Connectionstring = ConfigurationManager.ConnectionStrings["IOOP_Assignment_Group_Adlina.Properties.Settings.MainDBConnectionString"].ConnectionString;
+        static SqlConnection con; //SqlConnection is assigned/defined to con
+        static SqlCommand cmd; //SqlCommand is assigned/defined to cmd
+        static SqlDataReader dr; //SqlDataReader assigned/defined to dr
 
         //Constructor with three parameters  
         public ProfileUpdate(string username, string email, string password)
@@ -38,20 +37,25 @@ namespace IOOP_Assignment_Group_Adlina
         {
             
             string status;
-            con.Open();
-
-            SqlCommand cmd = new SqlCommand("UPDATE userData SET Username =@nm WHERE Username LIKE @ou;", con);
-            cmd.Parameters.AddWithValue("@nm", un);
-            cmd.Parameters.AddWithValue("@ou", username);
-
-            int i = cmd.ExecuteNonQuery();
-            if (i != 0)
+            using (con = new SqlConnection(Connectionstring))// using the connection string by using (call SqlConnection by variable assigned) = new SqlConnection( variable that define the connection string above)
             {
-                status = "Update Successfully.";
-            }
-            else
-            {
-                status = "Unable to update.";
+                //have to have curly bracket after closing the brackets on Using
+                con.Open(); //open connection
+              
+                // cmd already defined as SqlCommand above, so just use cmd = new SqlCommand ( put your query , con)
+                cmd = new SqlCommand("UPDATE userData SET Username = @nm WHERE Username LIKE @ou;", con);// con refers to already defined SqlConnection
+                cmd.Parameters.AddWithValue("@nm", un);
+                cmd.Parameters.AddWithValue("@ou", username);
+
+                int i = cmd.ExecuteNonQuery();
+                if (i != 0)
+                {
+                    status = "Update Successfully.";
+                }
+                else
+                {
+                    status = "Unable to update.";
+                }
             }
             con.Close();
             return status;
@@ -60,21 +64,25 @@ namespace IOOP_Assignment_Group_Adlina
         public string updateEm(string em)
         {
             string status;
-            con.Open();
-
-            SqlCommand cmd = new SqlCommand("UPDATE userData SET Email =@em WHERE Username LIKE @ou;", con);
-            cmd.Parameters.AddWithValue("@em", em);
-            cmd.Parameters.AddWithValue("@ou", username);
-
-            int i = cmd.ExecuteNonQuery();
-            if (i != 0)
+            using (con = new SqlConnection(Connectionstring))
             {
-                status = "Update Successfully.";
+                con.Open();
+
+                cmd = new SqlCommand("UPDATE userData SET Email = @em WHERE Username LIKE @ou;", con);
+                cmd.Parameters.AddWithValue("@em", em);
+                cmd.Parameters.AddWithValue("@ou", username);
+
+                int i = cmd.ExecuteNonQuery();
+                if (i != 0)
+                {
+                    status = "Update Successfully.";
+                }
+                else
+                {
+                    status = "Unable to update.";
+                }
             }
-            else
-            {
-                status = "Unable to update.";
-            }
+
             con.Close();
             return status;
         }
@@ -82,21 +90,25 @@ namespace IOOP_Assignment_Group_Adlina
         public string updatePass(string pa)
         {
             string status;
-            con.Open();
-
-            SqlCommand cmd = new SqlCommand("UPDATE userData SET Password =@pa WHERE Username LIKE @ou;", con);
-            cmd.Parameters.AddWithValue("@pa", pa);
-            cmd.Parameters.AddWithValue("@ou", username);
-
-            int i = cmd.ExecuteNonQuery();
-            if (i != 0)
+            using (con = new SqlConnection(Connectionstring))
             {
-                status = "Update Successfully.";
+                con.Open();
+
+                cmd = new SqlCommand("UPDATE userData SET Password = @pa WHERE Username LIKE @ou;", con);
+                cmd.Parameters.AddWithValue("@pa", pa);
+                cmd.Parameters.AddWithValue("@ou", username);
+
+                int i = cmd.ExecuteNonQuery();
+                if (i != 0)
+                {
+                    status = "Update Successfully.";
+                }
+                else
+                {
+                    status = "Unable to update.";
+                }
             }
-            else
-            {
-                status = "Unable to update.";
-            }
+
             con.Close();
             return status;
         }

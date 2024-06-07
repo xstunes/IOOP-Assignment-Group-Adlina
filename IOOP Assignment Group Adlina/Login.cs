@@ -19,7 +19,7 @@ namespace IOOP_Assignment_Group_Adlina
         private UserClass user;
         private static string Connectionstring = ConfigurationManager.ConnectionStrings["IOOP_Assignment_Group_Adlina.Properties.Settings.MainDBConnectionString"].ToString();
 
-        public void EmptyAll()
+        private void EmptyAll()
         {
             TbLoginUserEmail.Text = string.Empty;
             TbLoginPass.Text = string.Empty;

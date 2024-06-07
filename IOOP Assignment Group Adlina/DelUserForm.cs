@@ -33,14 +33,30 @@ namespace IOOP_Assignment_Group_Adlina
         private void BtnDelete_Click(object sender, EventArgs e)
         {
             string stat = null;
-            int value = int.Parse(TbUserID.Text);
-            stat = UserClass.DeleteUser(value);
+            stat = UserClass.DeleteUser(TbUserID.Text);
             if (stat != null)
             {
                 MessageBox.Show(stat);
             }
             EmptyAll();
 
+
+        }
+
+        private void DelUserForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnBack3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ManageUserForm muf = new ManageUserForm();
+            muf.ShowDialog();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

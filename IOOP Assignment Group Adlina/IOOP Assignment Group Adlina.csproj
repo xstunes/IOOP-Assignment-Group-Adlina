@@ -67,6 +67,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Chef.cs" />
     <Compile Include="ChefForm.cs">
       <SubType>Form</SubType>
@@ -74,6 +75,10 @@
     <Compile Include="ChefForm.Designer.cs">
       <DependentUpon>ChefForm.cs</DependentUpon>
     </Compile>
+=======
+    <Compile Include="CustomerClass.cs" />
+    <Compile Include="PasswordGen.cs" />
+>>>>>>> 4daf72de290d488e190e3a6011ab075cd9bf05a7
     <Compile Include="CustomerMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>

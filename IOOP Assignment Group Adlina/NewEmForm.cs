@@ -40,7 +40,9 @@ namespace IOOP_Assignment_Group_Adlina
 
         private void BtnBack6_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            UpdateProfileForm upf = new UpdateProfileForm(TbNewEmail.Text);
+            upf.ShowDialog();
         }
     }
 }

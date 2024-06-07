@@ -46,13 +46,14 @@ namespace IOOP_Assignment_Group_Adlina
                 con.Open();
                 if (username != string.Empty || email != string.Empty || password != string.Empty || role != string.Empty) //checking if the user exist or not
                 {
-                    cmd = new SqlCommand("SELECT * FROM userData WHERE username = @a", con);
+                    cmd = new SqlCommand("SELECT * FROM userData WHERE username = @a and email = @b", con);
                     cmd.Parameters.AddWithValue("@a", username);
+                    cmd.Parameters.AddWithValue ("@b", email);
                     dr = cmd.ExecuteReader();
                     if (dr.Read())
                     {
                         dr.Close();
-                        MessageBox.Show("User exist. Try another username.");
+                        MessageBox.Show("User exist. Try another username/email.");
                     }
                     else //if not exist, continue adding data into db
                     {
@@ -73,6 +74,43 @@ namespace IOOP_Assignment_Group_Adlina
                 return status;
             }
 
+        }
+
+        public static string AdminAddNew (string username, string email, string role)
+        {
+            string status = null;
+            using (con = new SqlConnection(Connectionstring))
+            {
+                con.Open();
+                if (username != string.Empty || email != string.Empty || role != string.Empty)
+                {
+                    cmd = new SqlCommand("SELECT * FROM userData WHERE username = @a", con);
+                    cmd.Parameters.AddWithValue("@a", username);
+                    cmd.Parameters.AddWithValue("@b", email);
+                    dr = cmd.ExecuteReader();
+                    if (dr.Read())
+                    {
+                        dr.Close();
+                        MessageBox.Show("User exist. Try another username/email.");
+                    }
+                    else
+                    {
+                        dr.Close();
+                        cmd = new SqlCommand("INSERT INTO userData (Username, Email, Role) VALUES (@username, @email, @role)", con);
+                        cmd.Parameters.AddWithValue("@username", username);
+                        cmd.Parameters.AddWithValue("@email", email);
+                        cmd.Parameters.AddWithValue("@role", role);
+                        cmd.ExecuteNonQuery();
+
+                        MessageBox.Show("User added successfully");
+
+                    }
+                }
+                else
+                    status = "Please fill in all the fields.";
+                con.Close();
+                return status;
+            }
         }
 
 
@@ -142,34 +180,67 @@ namespace IOOP_Assignment_Group_Adlina
 
         }
 
-        public static string DeleteUser(int id)
+        public static string DeleteUser(string id)
         {
             string status = null;
-            using(con = new SqlConnection(Connectionstring))
+            using (con = new SqlConnection(Connectionstring))
             {
                 con.Open();
-                cmd = new SqlCommand("DELETE FROM userData WHERE userID = @a", con);
-                cmd.Parameters.AddWithValue("a", id);
-                dr = cmd.ExecuteReader();
-                if (dr.Read())
+
+                if (int.TryParse(id, out int value))
                 {
-                    dr.Close();
                     cmd = new SqlCommand("DELETE FROM userData WHERE userID = @a", con);
                     cmd.Parameters.AddWithValue("a", id);
-                    cmd.ExecuteNonQuery();
+                    int RowsDeleted = cmd.ExecuteNonQuery();
+                    if (RowsDeleted > 0)
+                    {
+                        MessageBox.Show(" Successfully deleted.");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error : user not exist.");
+                    }
+                    
+                }
+                else
+                    status = "The number of userID only accepted.";
+            }
+            con.Close() ;
+            return status;
 
-                    MessageBox.Show("Successfully deleted.");
+
+        }
+
+
+        public static string UpdateRole(string role, string id)
+        {
+            string status;
+            using (con = new SqlConnection(Connectionstring))
+            {
+                con.Open();
+
+                cmd = new SqlCommand("UPDATE userData SET Role = @ro WHERE userID = @id", con);
+                cmd.Parameters.AddWithValue("@ro", role);
+                cmd.Parameters.AddWithValue("id", id);
+                
+                int i = cmd.ExecuteNonQuery();
+                if (i>0)
+                {
+                    status = "Changed role for userID :" + id + "successfully";
                 }
                 else
                 {
-                    status = "Error : User does not exist.";
+                    status = "Invalid userID or role not exist.";
                 }
-            }
-            con.Close();
-            return status;
 
+                con.Close();
+                return status;
+
+
+            }
         }
-    
+
+
     }
 
 }
