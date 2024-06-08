@@ -40,7 +40,7 @@
             // 
             this.LblViewUser.AutoSize = true;
             this.LblViewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblViewUser.Location = new System.Drawing.Point(214, 96);
+            this.LblViewUser.Location = new System.Drawing.Point(196, 88);
             this.LblViewUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblViewUser.Name = "LblViewUser";
             this.LblViewUser.Size = new System.Drawing.Size(222, 24);
@@ -51,7 +51,7 @@
             // 
             this.LblKL.AutoSize = true;
             this.LblKL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblKL.Location = new System.Drawing.Point(232, 64);
+            this.LblKL.Location = new System.Drawing.Point(225, 53);
             this.LblKL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblKL.Name = "LblKL";
             this.LblKL.Size = new System.Drawing.Size(176, 20);
@@ -62,7 +62,7 @@
             // 
             this.LblRestaurant.AutoSize = true;
             this.LblRestaurant.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRestaurant.Location = new System.Drawing.Point(114, 20);
+            this.LblRestaurant.Location = new System.Drawing.Point(107, 9);
             this.LblRestaurant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblRestaurant.Name = "LblRestaurant";
             this.LblRestaurant.Size = new System.Drawing.Size(426, 44);

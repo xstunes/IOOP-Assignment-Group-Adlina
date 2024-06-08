@@ -78,18 +78,18 @@
             // 
             this.LblSales.AutoSize = true;
             this.LblSales.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblSales.Location = new System.Drawing.Point(266, 120);
+            this.LblSales.Location = new System.Drawing.Point(228, 136);
             this.LblSales.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblSales.Name = "LblSales";
-            this.LblSales.Size = new System.Drawing.Size(61, 24);
+            this.LblSales.Size = new System.Drawing.Size(129, 24);
             this.LblSales.TabIndex = 27;
-            this.LblSales.Text = "Sales";
+            this.LblSales.Text = "Sales Report";
             // 
             // LblKL
             // 
             this.LblKL.AutoSize = true;
             this.LblKL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblKL.Location = new System.Drawing.Point(225, 80);
+            this.LblKL.Location = new System.Drawing.Point(208, 102);
             this.LblKL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblKL.Name = "LblKL";
             this.LblKL.Size = new System.Drawing.Size(176, 20);
@@ -100,7 +100,7 @@
             // 
             this.LblRestaurant.AutoSize = true;
             this.LblRestaurant.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRestaurant.Location = new System.Drawing.Point(147, 36);
+            this.LblRestaurant.Location = new System.Drawing.Point(93, 58);
             this.LblRestaurant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblRestaurant.Name = "LblRestaurant";
             this.LblRestaurant.Size = new System.Drawing.Size(426, 44);

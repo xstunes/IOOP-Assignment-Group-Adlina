@@ -57,6 +57,7 @@ namespace IOOP_Assignment_Group_Adlina
                 LblGenPass.Text = password;
                 MessageBox.Show("User added successfully.");
             }
+            UserClass.ValidateEmail(TbEmailAdmin.Text);
 
         }
 

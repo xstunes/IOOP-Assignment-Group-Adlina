@@ -46,9 +46,10 @@
             this.LblRestaurant.AutoSize = true;
             this.LblRestaurant.BackColor = System.Drawing.Color.Bisque;
             this.LblRestaurant.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRestaurant.Location = new System.Drawing.Point(152, 23);
+            this.LblRestaurant.Location = new System.Drawing.Point(101, 15);
+            this.LblRestaurant.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblRestaurant.Name = "LblRestaurant";
-            this.LblRestaurant.Size = new System.Drawing.Size(634, 65);
+            this.LblRestaurant.Size = new System.Drawing.Size(426, 44);
             this.LblRestaurant.TabIndex = 0;
             this.LblRestaurant.Text = "Hashbrown Restaurant";
             // 
@@ -56,9 +57,10 @@
             // 
             this.LblKL.AutoSize = true;
             this.LblKL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblKL.Location = new System.Drawing.Point(338, 91);
+            this.LblKL.Location = new System.Drawing.Point(225, 59);
+            this.LblKL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblKL.Name = "LblKL";
-            this.LblKL.Size = new System.Drawing.Size(267, 29);
+            this.LblKL.Size = new System.Drawing.Size(176, 20);
             this.LblKL.TabIndex = 1;
             this.LblKL.Text = "Kuala Lumpur, Malaysia";
             // 
@@ -66,9 +68,10 @@
             // 
             this.LblLogin.AutoSize = true;
             this.LblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLogin.Location = new System.Drawing.Point(429, 143);
+            this.LblLogin.Location = new System.Drawing.Point(286, 93);
+            this.LblLogin.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLogin.Name = "LblLogin";
-            this.LblLogin.Size = new System.Drawing.Size(90, 32);
+            this.LblLogin.Size = new System.Drawing.Size(62, 24);
             this.LblLogin.TabIndex = 2;
             this.LblLogin.Text = "Login";
             // 
@@ -76,9 +79,10 @@
             // 
             this.LblLoginUserEmail.AutoSize = true;
             this.LblLoginUserEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLoginUserEmail.Location = new System.Drawing.Point(242, 197);
+            this.LblLoginUserEmail.Location = new System.Drawing.Point(161, 128);
+            this.LblLoginUserEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLoginUserEmail.Name = "LblLoginUserEmail";
-            this.LblLoginUserEmail.Size = new System.Drawing.Size(194, 25);
+            this.LblLoginUserEmail.Size = new System.Drawing.Size(128, 17);
             this.LblLoginUserEmail.TabIndex = 3;
             this.LblLoginUserEmail.Text = "Username or Email";
             // 
@@ -86,26 +90,29 @@
             // 
             this.LblLoginPass.AutoSize = true;
             this.LblLoginPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblLoginPass.Location = new System.Drawing.Point(242, 283);
+            this.LblLoginPass.Location = new System.Drawing.Point(161, 184);
+            this.LblLoginPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblLoginPass.Name = "LblLoginPass";
-            this.LblLoginPass.Size = new System.Drawing.Size(106, 25);
+            this.LblLoginPass.Size = new System.Drawing.Size(69, 17);
             this.LblLoginPass.TabIndex = 4;
             this.LblLoginPass.Text = "Password";
             // 
             // TbLoginUserEmail
             // 
             this.TbLoginUserEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TbLoginUserEmail.Location = new System.Drawing.Point(246, 225);
+            this.TbLoginUserEmail.Location = new System.Drawing.Point(164, 146);
+            this.TbLoginUserEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TbLoginUserEmail.Name = "TbLoginUserEmail";
-            this.TbLoginUserEmail.Size = new System.Drawing.Size(379, 28);
+            this.TbLoginUserEmail.Size = new System.Drawing.Size(254, 21);
             this.TbLoginUserEmail.TabIndex = 5;
             // 
             // TbLoginPass
             // 
             this.TbLoginPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TbLoginPass.Location = new System.Drawing.Point(246, 311);
+            this.TbLoginPass.Location = new System.Drawing.Point(164, 202);
+            this.TbLoginPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TbLoginPass.Name = "TbLoginPass";
-            this.TbLoginPass.Size = new System.Drawing.Size(379, 28);
+            this.TbLoginPass.Size = new System.Drawing.Size(254, 21);
             this.TbLoginPass.TabIndex = 6;
             this.TbLoginPass.UseSystemPasswordChar = true;
             // 
@@ -113,9 +120,10 @@
             // 
             this.LlForgotPass.AutoSize = true;
             this.LlForgotPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LlForgotPass.Location = new System.Drawing.Point(474, 345);
+            this.LlForgotPass.Location = new System.Drawing.Point(304, 225);
+            this.LlForgotPass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LlForgotPass.Name = "LlForgotPass";
-            this.LlForgotPass.Size = new System.Drawing.Size(174, 25);
+            this.LlForgotPass.Size = new System.Drawing.Size(114, 17);
             this.LlForgotPass.TabIndex = 7;
             this.LlForgotPass.TabStop = true;
             this.LlForgotPass.Text = "Forgot Password";
@@ -123,9 +131,10 @@
             // 
             // BtnLogin
             // 
-            this.BtnLogin.Location = new System.Drawing.Point(579, 418);
+            this.BtnLogin.Location = new System.Drawing.Point(386, 272);
+            this.BtnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnLogin.Name = "BtnLogin";
-            this.BtnLogin.Size = new System.Drawing.Size(100, 49);
+            this.BtnLogin.Size = new System.Drawing.Size(67, 32);
             this.BtnLogin.TabIndex = 8;
             this.BtnLogin.Text = "Login";
             this.BtnLogin.UseVisualStyleBackColor = true;
@@ -133,9 +142,10 @@
             // 
             // BtnSignup
             // 
-            this.BtnSignup.Location = new System.Drawing.Point(224, 418);
+            this.BtnSignup.Location = new System.Drawing.Point(149, 272);
+            this.BtnSignup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnSignup.Name = "BtnSignup";
-            this.BtnSignup.Size = new System.Drawing.Size(100, 49);
+            this.BtnSignup.Size = new System.Drawing.Size(67, 32);
             this.BtnSignup.TabIndex = 9;
             this.BtnSignup.Text = "Sign Up";
             this.BtnSignup.UseVisualStyleBackColor = true;
@@ -143,12 +153,12 @@
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(900, 563);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.BtnSignup);
             this.Controls.Add(this.BtnLogin);
             this.Controls.Add(this.LlForgotPass);
@@ -159,6 +169,7 @@
             this.Controls.Add(this.LblLogin);
             this.Controls.Add(this.LblKL);
             this.Controls.Add(this.LblRestaurant);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

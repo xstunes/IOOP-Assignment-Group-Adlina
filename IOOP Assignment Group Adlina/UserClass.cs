@@ -38,6 +38,11 @@ namespace IOOP_Assignment_Group_Adlina
             this.id = id;
         }
 
+        public static bool ValidateEmail(string email)
+        {
+            return email.Contains("@") && email.EndsWith(".com");
+        }
+
         public static string Registernew(string username, string email, string password, string role)
         {
             string status = null;

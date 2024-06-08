@@ -42,6 +42,7 @@ namespace IOOP_Assignment_Group_Adlina
             {
                 MessageBox.Show(stat);
             }
+            UserClass.ValidateEmail(TbSignEm.Text);
             EmptyAll();
             
         }

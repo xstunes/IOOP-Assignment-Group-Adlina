@@ -56,5 +56,10 @@ namespace IOOP_Assignment_Group_Adlina
             AdminMenuForm admin = new AdminMenuForm();
             admin.ShowDialog();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
