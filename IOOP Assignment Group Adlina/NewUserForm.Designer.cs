@@ -42,7 +42,7 @@
             // TbNewUser
             // 
             this.TbNewUser.Location = new System.Drawing.Point(206, 208);
-            this.TbNewUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TbNewUser.Margin = new System.Windows.Forms.Padding(2);
             this.TbNewUser.Name = "TbNewUser";
             this.TbNewUser.Size = new System.Drawing.Size(200, 20);
             this.TbNewUser.TabIndex = 19;
@@ -61,7 +61,7 @@
             // BtnBack6
             // 
             this.BtnBack6.Location = new System.Drawing.Point(50, 312);
-            this.BtnBack6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnBack6.Margin = new System.Windows.Forms.Padding(2);
             this.BtnBack6.Name = "BtnBack6";
             this.BtnBack6.Size = new System.Drawing.Size(59, 29);
             this.BtnBack6.TabIndex = 29;
@@ -72,7 +72,7 @@
             // BtnUpdate
             // 
             this.BtnUpdate.Location = new System.Drawing.Point(491, 312);
-            this.BtnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.BtnUpdate.Name = "BtnUpdate";
             this.BtnUpdate.Size = new System.Drawing.Size(59, 29);
             this.BtnUpdate.TabIndex = 30;
@@ -87,7 +87,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.LblAddNew);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(599, 105);
             this.panel1.TabIndex = 31;
@@ -96,7 +96,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(138, -3);
+            this.label1.Location = new System.Drawing.Point(101, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(426, 44);
@@ -107,7 +107,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(227, 48);
+            this.label2.Location = new System.Drawing.Point(213, 56);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(176, 20);
@@ -118,7 +118,7 @@
             // 
             this.LblAddNew.AutoSize = true;
             this.LblAddNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAddNew.Location = new System.Drawing.Point(203, 76);
+            this.LblAddNew.Location = new System.Drawing.Point(180, 76);
             this.LblAddNew.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblAddNew.Name = "LblAddNew";
             this.LblAddNew.Size = new System.Drawing.Size(252, 24);
@@ -136,7 +136,7 @@
             this.Controls.Add(this.BtnBack6);
             this.Controls.Add(this.LblNewUser);
             this.Controls.Add(this.TbNewUser);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "NewUserForm";
             this.Text = "New User Form";
             this.Load += new System.EventHandler(this.NewUserForm_Load);

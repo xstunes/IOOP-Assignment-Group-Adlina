@@ -15,7 +15,6 @@ namespace IOOP_Assignment_Group_Adlina
         static SqlConnection con; //SqlConnection is assigned to con
         static SqlCommand cmd; //SqlCommand is assigned to cmd
         static SqlDataReader dr; //SqlDataReader assigned to dr
-        static SqlDataAdapter da; //SQlDataAdapter assigned to da
 
         public static bool AunthenticateUser(string user)
         {
@@ -52,6 +51,28 @@ namespace IOOP_Assignment_Group_Adlina
                 cmd.Parameters.AddWithValue("@email", email);
                 cmd.Parameters.AddWithValue("@password", password);
                 cmd.Parameters.AddWithValue("@role", role);
+                cmd.ExecuteNonQuery();
+            }
+            return password;
+        }
+
+        public static string GenRanPassForgot(string username, int length)
+        {
+            char[] alphabet = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' };
+            Random rnd = new Random();
+            string password = "";
+
+            for (int i = 0; i < length; i++)
+            {
+                password += alphabet[rnd.Next(0, alphabet.Length)];
+            }
+
+            using (con = new SqlConnection(Connectionstring))
+            {
+                con.Open();
+                cmd = new SqlCommand("UPDATE userData SET Password = @pa WHERE Username = @un", con);
+                cmd.Parameters.AddWithValue("@pa", password);
+                cmd.Parameters.AddWithValue("@un", username);
                 cmd.ExecuteNonQuery();
             }
             return password;

@@ -49,8 +49,8 @@
             "Manager",
             "Chef",
             "Customer"});
-            this.CbRoles1.Location = new System.Drawing.Point(193, 237);
-            this.CbRoles1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CbRoles1.Location = new System.Drawing.Point(197, 237);
+            this.CbRoles1.Margin = new System.Windows.Forms.Padding(2);
             this.CbRoles1.Name = "CbRoles1";
             this.CbRoles1.Size = new System.Drawing.Size(215, 25);
             this.CbRoles1.TabIndex = 17;
@@ -70,7 +70,7 @@
             // 
             this.TbUserID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TbUserID.Location = new System.Drawing.Point(193, 158);
-            this.TbUserID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TbUserID.Margin = new System.Windows.Forms.Padding(2);
             this.TbUserID.Name = "TbUserID";
             this.TbUserID.Size = new System.Drawing.Size(215, 21);
             this.TbUserID.TabIndex = 19;
@@ -89,7 +89,7 @@
             // BtnBack3
             // 
             this.BtnBack3.Location = new System.Drawing.Point(38, 329);
-            this.BtnBack3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnBack3.Margin = new System.Windows.Forms.Padding(2);
             this.BtnBack3.Name = "BtnBack3";
             this.BtnBack3.Size = new System.Drawing.Size(59, 29);
             this.BtnBack3.TabIndex = 21;
@@ -113,7 +113,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.LblAddNew);
             this.panel1.Location = new System.Drawing.Point(1, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(607, 116);
             this.panel1.TabIndex = 23;

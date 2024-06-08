@@ -17,10 +17,6 @@ namespace IOOP_Assignment_Group_Adlina
         private UserClass user;
         private PasswordGen generateranpass;
         private static string Connectionstring = ConfigurationManager.ConnectionStrings["IOOP_Assignment_Group_Adlina.Properties.Settings.MainDBConnectionString"].ConnectionString;
-        static SqlConnection con; //SqlConnection is assigned to con
-        static SqlCommand cmd; //SqlCommand is assigned to cmd
-        static SqlDataReader dr; //SqlDataReader assigned to dr
-        static SqlDataAdapter da; //SQlDataAdapter assigned to da
 
         public AddUserForm()
         {
@@ -58,6 +54,7 @@ namespace IOOP_Assignment_Group_Adlina
                 MessageBox.Show("User added successfully.");
             }
             UserClass.ValidateEmail(TbEmailAdmin.Text);
+            EmptyAll();
 
         }
 

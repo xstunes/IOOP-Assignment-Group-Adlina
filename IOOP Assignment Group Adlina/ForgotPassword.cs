@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +14,40 @@ namespace IOOP_Assignment_Group_Adlina
 {
     public partial class ForgotPassword : Form
     {
+        private UserClass user;
+        private PasswordGen genpass;
+
         public ForgotPassword()
         {
             InitializeComponent();
+        }
+
+        private void ForgotPassword_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void EmptyAll()
+        {
+            TbUsername.Text = string.Empty;
+        }
+
+        private void BtnGen_Click(object sender, EventArgs e)
+        {
+            string user = TbUsername.Text;
+            string password = null;
+            if(PasswordGen.AunthenticateUser(user) == false)
+            {
+                MessageBox.Show("Invalid username.");
+
+            }
+            else
+            {
+                password = PasswordGen.GenRanPassForgot(TbUsername.Text, 5);
+                LblGenPass.Text = password;
+                MessageBox.Show("Reset successful. Please login with the generated password and change it in your manage profile.");
+            }
+            EmptyAll();
         }
     }
 }

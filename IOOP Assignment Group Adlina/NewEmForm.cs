@@ -44,5 +44,10 @@ namespace IOOP_Assignment_Group_Adlina
             UpdateProfileForm upf = new UpdateProfileForm(TbNewEmail.Text);
             upf.ShowDialog();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
