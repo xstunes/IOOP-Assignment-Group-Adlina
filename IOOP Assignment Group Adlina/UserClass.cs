@@ -9,6 +9,7 @@ using System.Configuration;
 using System.Security.Cryptography.X509Certificates;
 using System.Runtime.CompilerServices;
 using System.Data;
+using System.Text.RegularExpressions;
 namespace IOOP_Assignment_Group_Adlina
 {
     public class UserClass
@@ -40,7 +41,8 @@ namespace IOOP_Assignment_Group_Adlina
 
         public static bool ValidateEmail(string email)
         {
-            return email.Contains("@") && email.EndsWith(".com");
+            string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$"; // ^ start of the string, [^@\s]+ at least 1 character before @, [^@\s]+ at least 1 character after @, \. is the dot, $ asserts position at the end of string
+            return Regex.IsMatch(email, pattern);
         }
 
         public static string Registernew(string username, string email, string password, string role)
@@ -49,6 +51,7 @@ namespace IOOP_Assignment_Group_Adlina
             using (con = new SqlConnection(Connectionstring))
             {
                 con.Open();
+                ValidateEmail(email);
                 if (username != string.Empty || email != string.Empty || password != string.Empty || role != string.Empty) //checking if the user exist or not
                 {
                     cmd = new SqlCommand("SELECT * FROM userData WHERE username = @a and email = @b", con);
@@ -87,6 +90,7 @@ namespace IOOP_Assignment_Group_Adlina
             using (con = new SqlConnection(Connectionstring))
             {
                 con.Open();
+                ValidateEmail(email);
                 if (username != string.Empty || email != string.Empty || role != string.Empty)
                 {
                     cmd = new SqlCommand("SELECT * FROM userData WHERE username = @a", con);
@@ -177,6 +181,8 @@ namespace IOOP_Assignment_Group_Adlina
                 else
                 {
                     status = "Incorrect username/email or password.";
+                    FormLogin login = new FormLogin();
+                    login.Show();
                 }
 
                 con.Close();

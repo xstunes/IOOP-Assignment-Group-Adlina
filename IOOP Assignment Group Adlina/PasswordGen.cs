@@ -70,7 +70,7 @@ namespace IOOP_Assignment_Group_Adlina
             using (con = new SqlConnection(Connectionstring))
             {
                 con.Open();
-                cmd = new SqlCommand("UPDATE userData SET Password = @pa WHERE Username = @un", con);
+                cmd = new SqlCommand("UPDATE userData SET Password = @pa WHERE Username LIKE @un", con);
                 cmd.Parameters.AddWithValue("@pa", password);
                 cmd.Parameters.AddWithValue("@un", username);
                 cmd.ExecuteNonQuery();

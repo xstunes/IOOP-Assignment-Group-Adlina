@@ -36,18 +36,26 @@ namespace IOOP_Assignment_Group_Adlina
         {
             string user = TbUsername.Text;
             string password = null;
-            if(PasswordGen.AunthenticateUser(user) == false)
+
+            if(PasswordGen.AunthenticateUser(user))
             {
-                MessageBox.Show("Invalid username.");
+                password = PasswordGen.GenRanPassForgot(user, 5);
+                LblGenPass.Text = password;
+                MessageBox.Show("Reset successful. Please login with the generated password and change it in your manage profile.");
 
             }
             else
             {
-                password = PasswordGen.GenRanPassForgot(TbUsername.Text, 5);
-                LblGenPass.Text = password;
-                MessageBox.Show("Reset successful. Please login with the generated password and change it in your manage profile.");
+                MessageBox.Show("Invalid username.");
             }
             EmptyAll();
+        }
+
+        private void BtnBack3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormLogin login = new FormLogin();
+            login.ShowDialog();
         }
     }
 }

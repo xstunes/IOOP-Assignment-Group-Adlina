@@ -45,7 +45,7 @@
             // 
             this.BtnGen.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGen.Location = new System.Drawing.Point(255, 326);
-            this.BtnGen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnGen.Margin = new System.Windows.Forms.Padding(2);
             this.BtnGen.Name = "BtnGen";
             this.BtnGen.Size = new System.Drawing.Size(62, 27);
             this.BtnGen.TabIndex = 34;
@@ -89,12 +89,13 @@
             // BtnBack3
             // 
             this.BtnBack3.Location = new System.Drawing.Point(74, 379);
-            this.BtnBack3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnBack3.Margin = new System.Windows.Forms.Padding(2);
             this.BtnBack3.Name = "BtnBack3";
             this.BtnBack3.Size = new System.Drawing.Size(61, 23);
             this.BtnBack3.TabIndex = 36;
             this.BtnBack3.Text = "Back";
             this.BtnBack3.UseVisualStyleBackColor = true;
+            this.BtnBack3.Click += new System.EventHandler(this.BtnBack3_Click);
             // 
             // panel1
             // 
@@ -102,7 +103,7 @@
             this.panel1.Controls.Add(this.LblRestaurant);
             this.panel1.Controls.Add(this.LblKL);
             this.panel1.Location = new System.Drawing.Point(1, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(799, 131);
             this.panel1.TabIndex = 37;

@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace IOOP_Assignment_Group_Adlina
 {
@@ -42,6 +44,8 @@ namespace IOOP_Assignment_Group_Adlina
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             string user = TbUsernameAdmin.Text;
+            string email = TbEmailAdmin.Text;
+            string role = CbRoleAdmin.Text;
             string password = null;
             if (PasswordGen.AunthenticateUser(user))
             {
@@ -49,11 +53,19 @@ namespace IOOP_Assignment_Group_Adlina
             }
             else
             {
-                password = PasswordGen.GenRandomPassword(TbUsernameAdmin.Text, TbEmailAdmin.Text, CbRoleAdmin.Text, 5);
-                LblGenPass.Text = password;
-                MessageBox.Show("User added successfully.");
+
+                if (user != string.Empty || email != string.Empty || role != string.Empty)
+                {
+                    password = PasswordGen.GenRandomPassword(user, email, role, 5);
+                    LblGenPass.Text = password;
+                    MessageBox.Show("User added successfully");
+                }
+                else
+                {
+                    MessageBox.Show("Please fill in all fields.");
+                }
+
             }
-            UserClass.ValidateEmail(TbEmailAdmin.Text);
             EmptyAll();
 
         }
