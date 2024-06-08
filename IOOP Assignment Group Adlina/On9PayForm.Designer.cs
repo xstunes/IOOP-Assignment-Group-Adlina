@@ -1,6 +1,6 @@
 ﻿namespace IOOP_Assignment_Group_Adlina
 {
-    partial class On9PayForm
+    partial class OnlinePayForm
     {
         /// <summary>
         /// Required designer variable.
@@ -52,7 +52,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(285, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(221, 26);
+            this.label1.Size = new System.Drawing.Size(316, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "ONLINE PAYMENT";
             // 
@@ -71,7 +71,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(215, 179);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 13);
+            this.label3.Size = new System.Drawing.Size(114, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Card Number";
             // 
@@ -81,7 +81,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(215, 256);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 13);
+            this.label4.Size = new System.Drawing.Size(89, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Expiration";
             // 
@@ -91,7 +91,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(478, 256);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.Size = new System.Drawing.Size(45, 20);
             this.label5.TabIndex = 4;
             this.label5.Text = "CVC";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -102,7 +102,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(215, 333);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 13);
+            this.label6.Size = new System.Drawing.Size(71, 20);
             this.label6.TabIndex = 5;
             this.label6.Text = "Country";
             // 
@@ -112,7 +112,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(478, 333);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(27, 13);
+            this.label7.Size = new System.Drawing.Size(37, 20);
             this.label7.TabIndex = 6;
             this.label7.Text = "ZIP";
             // 
@@ -182,7 +182,7 @@
             this.checkBox1.Location = new System.Drawing.Point(201, 426);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(105, 21);
+            this.checkBox1.Size = new System.Drawing.Size(144, 29);
             this.checkBox1.TabIndex = 14;
             this.checkBox1.Text = "I\'m not robot";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -197,7 +197,7 @@
             this.panel1.Size = new System.Drawing.Size(798, 129);
             this.panel1.TabIndex = 21;
             // 
-            // On9PayForm
+            // OnlinePayForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -217,8 +217,8 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "On9PayForm";
-            this.Text = "Form24";
+            this.Name = "OnlinePayForm";
+            this.Text = "Oneline payment";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

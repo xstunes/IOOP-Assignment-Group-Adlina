@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IOOP_Assignment_Group_Adlina
 {
-    public partial class On9PayForm : Form
+    public partial class OnlinePayForm : Form
     {
-        public On9PayForm()
+        public OnlinePayForm()
         {
             InitializeComponent();
         }
