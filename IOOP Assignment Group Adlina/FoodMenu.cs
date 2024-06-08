@@ -14,7 +14,7 @@ namespace IOOP_Assignment_Group_Adlina
         private string price;
         private string category;
         
-        static SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\xiang\source\repos\IOOP-Assignment-Group-Adlina4\IOOP Assignment Group Adlina\MAINDB.MDF"";Integrated Security=True;Connect Timeout=30;Encrypt=False");
+        static SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\MainDB.mdf;Integrated Security=True;Connect Timeout=30");
 
         public string MenuID { get => menuID; set => menuID = value; }
 

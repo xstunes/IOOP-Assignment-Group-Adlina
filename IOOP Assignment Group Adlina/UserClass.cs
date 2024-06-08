@@ -150,9 +150,9 @@ namespace IOOP_Assignment_Group_Adlina
                     else if (userRole == "Chef")
                     {
                         FormLogin login = new FormLogin();
-                        //AdminMenuForm admin = new AdminMenuForm();
-                        login.Hide();
-                        login.ShowDialog();
+                        ChefForm cf = new ChefForm();
+                        cf.Hide();
+                        cf.ShowDialog();
                     }
                     else if (userRole == "Customer")
                     {

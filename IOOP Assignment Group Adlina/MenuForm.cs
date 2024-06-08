@@ -31,7 +31,7 @@ namespace IOOP_Assignment_Group_Adlina
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\xiang\source\repos\IOOP-Assignment-Group-Adlina1\IOOP Assignment Group Adlina\MainDB.mdf"";Integrated Security=True;Connect Timeout=30;Encrypt=False");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\MainDB.mdf;Integrated Security=True;Connect Timeout=30");
             con.Open();
 
             SqlCommand cmd = new SqlCommand("insert menu set foodItem=@foodItem,price=@price,category=@category where menu=@menuID", con);
@@ -52,7 +52,7 @@ namespace IOOP_Assignment_Group_Adlina
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\xiang\source\repos\IOOP-Assignment-Group-Adlina1\IOOP Assignment Group Adlina\MainDB.mdf"";Integrated Security=True;Connect Timeout=30;Encrypt=False");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\MainDB.mdf;Integrated Security=True;Connect Timeout=30");
             con.Open();
 
             SqlCommand cmd = new SqlCommand("update menu set foodItem=@foodItem,price=@price,category=@category where menu=@menuID", con);
@@ -73,7 +73,7 @@ namespace IOOP_Assignment_Group_Adlina
 
         private void button3_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\xiang\source\repos\IOOP-Assignment-Group-Adlina1\IOOP Assignment Group Adlina\MainDB.mdf"";Integrated Security=True;Connect Timeout=30;Encrypt=False");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\MainDB.mdf;Integrated Security=True;Connect Timeout=30");
             con.Open();
 
             SqlCommand cmd = new SqlCommand("delete menu set foodItem=@foodItem,price=@price,category=@category where menu=@menuID", con);
@@ -94,7 +94,7 @@ namespace IOOP_Assignment_Group_Adlina
 
         void BinData()
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\xiang\source\repos\IOOP-Assignment-Group-Adlina4\IOOP Assignment Group Adlina\MAINDB.MDF"";Integrated Security=True;Connect Timeout=30;Encrypt=False");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\MainDB.mdf;Integrated Security=True;Connect Timeout=30");
             con.Open();
             SqlCommand cmd = new SqlCommand("select * from menu order by menuID asc", con);
             SqlDataAdapter da = new SqlDataAdapter(cmd);
