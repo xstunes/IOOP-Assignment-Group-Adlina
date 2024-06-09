@@ -45,5 +45,12 @@ namespace IOOP_Assignment_Group_Adlina
             }
             EmptyAll();
         }
+
+        private void BtnBack3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ManageUserForm muf = new ManageUserForm();
+            muf.ShowDialog();
+        }
     }
 }

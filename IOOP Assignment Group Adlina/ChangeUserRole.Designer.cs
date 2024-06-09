@@ -95,6 +95,7 @@
             this.BtnBack3.TabIndex = 21;
             this.BtnBack3.Text = "Back";
             this.BtnBack3.UseVisualStyleBackColor = true;
+            this.BtnBack3.Click += new System.EventHandler(this.BtnBack3_Click);
             // 
             // BtnConfirm
             // 
