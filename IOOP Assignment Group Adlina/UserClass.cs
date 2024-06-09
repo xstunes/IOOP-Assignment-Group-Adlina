@@ -14,6 +14,7 @@ namespace IOOP_Assignment_Group_Adlina
 {
     public class UserClass
     {
+        // object , field
         public int id;
         public string username, email, password, role;
         private static string Connectionstring = ConfigurationManager.ConnectionStrings["IOOP_Assignment_Group_Adlina.Properties.Settings.MainDBConnectionString"].ConnectionString;
@@ -22,6 +23,7 @@ namespace IOOP_Assignment_Group_Adlina
         static SqlDataReader dr; //SqlDataReader assigned to dr
         static SqlDataAdapter da; //SQlDataAdapter assigned to da
 
+        // constructor
         public UserClass(string username, string email, string password, string role)
         {
             this.username = username;
@@ -39,6 +41,8 @@ namespace IOOP_Assignment_Group_Adlina
             this.id = id;
         }
 
+
+        // methods
         public static bool ValidateEmail(string email)
         {
             string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$"; // ^ start of the string, [^@\s]+ at least 1 character before @, [^@\s]+ at least 1 character after @, \. is the dot, $ asserts position at the end of string

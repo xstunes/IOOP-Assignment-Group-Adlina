@@ -11,18 +11,21 @@ namespace IOOP_Assignment_Group_Adlina
 {
     public class PasswordGen
     {
+        //field, object
         private static string Connectionstring = ConfigurationManager.ConnectionStrings["IOOP_Assignment_Group_Adlina.Properties.Settings.MainDBConnectionString"].ConnectionString;
         static SqlConnection con; //SqlConnection is assigned to con
         static SqlCommand cmd; //SqlCommand is assigned to cmd
         static SqlDataReader dr; //SqlDataReader assigned to dr
 
+
+        // method
         public static bool AunthenticateUser(string user)
         {
             bool userExist = false;
             using (con = new SqlConnection(Connectionstring))
             {
                 con.Open();
-                cmd = new SqlCommand("SELECT COUNT(*) FROM userData WHERE Username = @a", con);
+                cmd = new SqlCommand("SELECT COUNT(*) FROM userData WHERE Username = @a", con);// checks if username is in database
                 cmd.Parameters.AddWithValue("@a", user);
 
                 int count =  (int)cmd.ExecuteScalar();
